@@ -1,16 +1,16 @@
 
-var xhrOnProgress = function (fun) {
-    xhrOnProgress.onprogress = fun;
-    return function () {
-        var xhr = $.ajaxSettings.xhr();
-        if (typeof xhrOnProgress.onprogress !== 'function')
-            return xhr;
-        if (xhrOnProgress.onprogress && xhr.upload) {
-            xhr.upload.onprogress = xhrOnProgress.onprogress;
-        }
-        return xhr;
-    }
-  }
+            var xhrOnProgress = function (fun) {
+                xhrOnProgress.onprogress = fun;
+                return function () {
+                    var xhr = $.ajaxSettings.xhr();
+                    if (typeof xhrOnProgress.onprogress !== 'function')
+                        return xhr;
+                    if (xhrOnProgress.onprogress && xhr.upload) {
+                        xhr.upload.onprogress = xhrOnProgress.onprogress;
+                    }
+                    return xhr;
+                }
+            }
             var tinymceConfig= {
                 tinyID: "mytextarea",//作用域ID
                 placeholder: '', //默认文字

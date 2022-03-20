@@ -1,4 +1,4 @@
-import{d as t}from"./vendor.370c6722.js";const e=t({components:{},template:`<div class="fv-mardown-html"><div class="fv-mardown-main"><h1 id="axupimgs" tabindex="-1"><a class="header-anchor" href="#axupimgs">#</a> axupimgs</h1>
+import{d as t}from"./vendor.38666b3a.js";const e=t({components:{},template:`<div class="fv-mardown-html"><div class="fv-mardown-main"><h1 id="axupimgs" tabindex="-1"><a class="header-anchor" href="#axupimgs">#</a> axupimgs</h1>
 <hr>
 <p><strong>Advertisement :)</strong></p>
 <ul>
@@ -88,8 +88,8 @@ i18n with plurals support and easy syntax.</li>
 <h2 id="Code" tabindex="-1"><a class="header-anchor" href="#Code">#</a> Code</h2>
 <p>Inline <code class="fv-code_inline">code</code></p>
 <p>Block code \u201Cfences\u201D</p>
-<pre><code>Sample text here...
-</code></pre>
+<p>Sample text here...
+</p>
 <p>Syntax highlighting</p>
 <pre class="hljs fv-hljs"><code class=" hljs hljs-js" @click.stop="()=>{}"><span class="hljs-keyword">var</span> foo = <span class="hljs-keyword">function</span> (<span class="hljs-params">bar</span>) {
  <span class="hljs-keyword">return</span> bar++;
@@ -177,8 +177,8 @@ i18n with plurals support and easy syntax.</li>
 <p>Inline footnote^[Text of inline footnote] definition.</p>
 <p>Duplicated footnote reference[^second].</p>
 <p>[^first]: Footnote <strong>can have markup</strong></p>
-<pre><code>and multiple paragraphs.
-</code></pre>
+<p>and multiple paragraphs.
+</p>
 <p>[^second]: Footnote text.</p>
 <h3 id="Definition lists" tabindex="-1"><a class="header-anchor" href="#Definition lists">#</a> <a href="https://github.com/markdown-it/markdown-it-deflist">Definition lists</a></h3>
 <p>Term 1</p>
@@ -186,10 +186,10 @@ i18n with plurals support and easy syntax.</li>
 with lazy continuation.</p>
 <p>Term 2 with <em>inline markup</em></p>
 <p>:   Definition 2</p>
-<pre><code>    { some code, part of Definition 2 }
+<p>    { some code, part of Definition 2 }
 
 Third paragraph of definition 2.
-</code></pre>
+</p>
 <p><em>Compact style:</em></p>
 <p>Term 1
 ~ Definition 1</p>
