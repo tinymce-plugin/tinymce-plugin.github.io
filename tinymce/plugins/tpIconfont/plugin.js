@@ -12,7 +12,7 @@
     var global$6 = tinymce.util.Tools.resolve('tinymce.util.XHR');
     var global$11 = tinymce.util.Tools.resolve('tinymce.util.I18n');
     const tp$Tools = editor.tp$.Tools
-    const tp$Component = editor.tp$.Component;
+    const tp$Component = editor.tp$.Components;
     const tp$PanelComponents = editor.tp$.PanelComponents;
     let fontList = [{
         text: 'Select...',

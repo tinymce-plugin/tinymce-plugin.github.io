@@ -27,7 +27,7 @@
                  min_height:400,
                  max_height: 700,
                 //  baseURL: './'
-                 plugins: ' print  axupimgs clearhtml  preview insertdatetime  attachment  searchreplace visualblocks autolink  layout fullscreen toc image upfile link media code codesample table charmap hr pagebreak  anchor advlist lists textpattern help emoticons autosave bdmap indent2em   axupimgs   letterspacing imagetools quickbars attachment wordcount autoresize importword',
+                 plugins: ' print  axupimgs clearhtml  preview insertdatetime  attachment  searchreplace visualblocks autolink  layout fullscreen toc image upfile link media code codesample table charmap hr pagebreak  anchor advlist lists textpattern help emoticons autosave bdmap indent2em   axupimgs   letterspacing imagetools quickbars attachment wordcount autoresize  importword tpCollapse tpTabs tpButtons',
                  toolbar_groups: {
                          formatting: {
                              text: '文字格式',
@@ -40,7 +40,7 @@
                              items: 'alignleft aligncenter alignright alignjustify',
                          }
                   },
-                 toolbar: ['|code formatselect fontselect fontsizeselect forecolor backcolor bold italic underline strikethrough  link alignment indent2em outdent  indent lineheight letterspacing bullist numlist blockquote subscript superscript layout removeformat table image  axupimgs media upfile attachment  emoticons importword charmap  hr pagebreak  clearhtml  codesample visualblocks insertdatetime  bdmap  quickbars  toc cut copy undo redo ltr rtl restoredraft  searchreplace fullscreen  help wordcount preview'],
+                 toolbar: ['|code formatselect fontselect fontsizeselect forecolor backcolor bold italic underline strikethrough  link alignment indent2em outdent  indent lineheight letterspacing bullist numlist blockquote subscript superscript layout removeformat table image  axupimgs media upfile attachment  emoticons importword charmap  hr pagebreak  clearhtml  tpImportword codesample visualblocks insertdatetime  bdmap  quickbars  toc cut copy undo redo ltr rtl tpCollapse tpTabs tpButtons restoredraft  searchreplace fullscreen  help wordcount preview'],
                  table_style_by_css: true,
                  OperationManualHtml: '',
                  CommonProblemHtml: '',
