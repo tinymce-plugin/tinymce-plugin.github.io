@@ -5,7 +5,7 @@ tinymce.PluginManager.add('tpTabs', function (editor, url) {
   var global$11 = tinymce.util.Tools.resolve('tinymce.util.I18n');
   var global$6 = tinymce.util.Tools.resolve('tinymce.util.XHR');
   const tp$Tools = editor.tp$.Tools;
-  const tp$Component = editor.tp$.Component;
+  const tp$Component = editor.tp$.Components;
   let _$ = tinymce.dom.DomQuery;
   var tabsToolbar = editor.getParam('tpTabs_toolbar', ' tptabdelete tptabsadd tptabsprops tptabsdelete |tpalignleft tpaligncenter tpalignright', "String");
   var indent2em_val = editor.getParam('tpTabs', null, 'Object');

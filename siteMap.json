@@ -1,0 +1,87 @@
+{
+  "TimeID": 1649690287622,
+  "siteMap": {
+    "plugins": [
+      {
+        "name": "letterspacing",
+        "path": "letterspacing",
+        "meta": {
+          "title": "测试的得到啊大大大"
+        }
+      }
+    ],
+    "docsMap": {
+      "tinymce-plugin-docs": {
+        "guide/introduction": {
+          "type": "file",
+          "title": "前言",
+          "name": "introduction",
+          "en-title": "introduction",
+          "path": "docs/tinymce-plugin-docs/resources/guide/introduction.md",
+          "contributors-list": []
+        },
+        "guide/quickStart": {
+          "type": "file",
+          "title": "快速上手",
+          "name": "quickStart",
+          "en-title": "quickStart",
+          "path": "docs/tinymce-plugin-docs/resources/guide/quickStart.md",
+          "contributors-list": []
+        },
+        "guide/contributing": {
+          "type": "dir",
+          "title": "进行贡献",
+          "name": "contributing",
+          "en-title": "contributing",
+          "path": "docs/tinymce-plugin-docs/resources/guide/contributing.md"
+        },
+        "guide/contributing/writing-guide": {
+          "type": "file",
+          "title": "文档编写",
+          "name": "writing-guide",
+          "en-title": "writing-guide",
+          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide.md",
+          "contributors-list": []
+        },
+        "guide/contributing/plugin": {
+          "type": "file",
+          "title": "贡献插件test",
+          "name": "plugin",
+          "en-title": "plugin",
+          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/plugin.md",
+          "contributors-list": []
+        }
+      }
+    },
+    "routes": [],
+    "menuList": [
+      {
+        "type": "docs",
+        "repo": "tinymce-plugin-docs",
+        "path": "guide/introduction"
+      },
+      {
+        "type": "docs",
+        "repo": "tinymce-plugin-docs",
+        "path": "guide/quickStart"
+      },
+      {
+        "type": "docs",
+        "repo": "tinymce-plugin-docs",
+        "path": "guide/contributing",
+        "children": [
+          {
+            "type": "docs",
+            "repo": "tinymce-plugin-docs",
+            "path": "guide/contributing/writing-guide"
+          },
+          {
+            "type": "docs",
+            "repo": "tinymce-plugin-docs",
+            "path": "guide/contributing/plugin"
+          }
+        ]
+      }
+    ]
+  }
+}

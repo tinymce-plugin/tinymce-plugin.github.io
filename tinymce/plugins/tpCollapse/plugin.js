@@ -7,7 +7,7 @@ tinymce.PluginManager.add('tpCollapse', function(editor, url) {
     var global$11 = tinymce.util.Tools.resolve('tinymce.util.I18n');
     var global$6 = tinymce.util.Tools.resolve('tinymce.util.XHR');
     const tp$Tools = editor.tp$.Tools
-    const tp$Component = editor.tp$.Component;
+    const tp$Component = editor.tp$.Components;
     const tp$PanelComponents = editor.tp$.PanelComponents;
     global$6.send({
         url: '/tinymce/plugins/tpCollapse/collapse.css',

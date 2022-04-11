@@ -6,10 +6,10 @@ tinymce.PluginManager.add('tpButtons', function (editor, url) {
   var global$6 = tinymce.util.Tools.resolve('tinymce.util.XHR');
   var buttonsToolbar = editor.getParam('tpButtons_toolbar', '|tpalignleft tpaligncenter tpalignright', "String");
   const tp$Tools = editor.tp$.Tools;
-  const tp$Component = editor.tp$.Component;
+  const tp$Component = editor.tp$.Components;
   var indent2em_val = editor.getParam('tpButtons', null, 'Object');
   // indent2em_val ? tp$Component.createCustomTags('tabs', indent2em_val, editor) : ''
-
+ console.log(editor.tp$);
   global$6.send({
     url: '/tinymce/plugins/tpButtons/tpButtons.css',
     async: false,
