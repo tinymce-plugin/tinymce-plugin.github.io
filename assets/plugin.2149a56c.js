@@ -1,3 +1,0 @@
-import{d as a}from"./index.eb9d9415.js";const d=a({components:{},template:`<div class="fv-mardown-html"><div class="fv-mardown-main"><h1 id="\u8D21\u732E\u63D2\u4EF6" tabindex="-1"><a class="header-anchor" href="#\u8D21\u732E\u63D2\u4EF6">#</a> \u8D21\u732E\u63D2\u4EF6</h1>
-<h2 id="\u5982\u4F55\u8D21\u732E\u4E00\u4E2A\u63D2\u4EF6" tabindex="-1"><a class="header-anchor" href="#\u5982\u4F55\u8D21\u732E\u4E00\u4E2A\u63D2\u4EF6">#</a> \u5982\u4F55\u8D21\u732E\u4E00\u4E2A\u63D2\u4EF6</h2>
-</div></div><PagesRouter  docPath="guide/contributing/plugin.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="plugin" />`});export{d as default};

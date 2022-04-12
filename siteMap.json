@@ -1,5 +1,5 @@
 {
-  "TimeID": 1649690287622,
+  "TimeID": 1649728017483,
   "siteMap": {
     "plugins": [
       {
@@ -45,7 +45,7 @@
         },
         "guide/contributing/plugin": {
           "type": "file",
-          "title": "贡献插件test",
+          "title": "贡献插件",
           "name": "plugin",
           "en-title": "plugin",
           "path": "docs/tinymce-plugin-docs/resources/guide/contributing/plugin.md",
