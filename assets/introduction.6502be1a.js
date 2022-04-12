@@ -1,4 +1,4 @@
-import{d as Q}from"./index.fbfb93fd.js";import"./tinymce.edafff27.js";import{T as _}from"./Tinymce-vue.c504b679.js";import{R as c,a as W,E as tt}from"./Editor.143d3919.js";/*! 
+import{d as Q}from"./index.b289b4a4.js";import"./tinymce.edafff27.js";import{T as _}from"./Tinymce-vue.e4ef8a14.js";import{R as c,a as W,E as tt}from"./Editor.143d3919.js";/*! 
 *  @plugin tinymce-plugin
 *  @version 0.0.9 (2022-4-11)
 *  @description tinymce-plugin
