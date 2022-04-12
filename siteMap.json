@@ -1,5 +1,5 @@
 {
-  "TimeID": 1649728017483,
+  "TimeID": 1649735096924,
   "siteMap": {
     "plugins": [
       {
@@ -18,7 +18,13 @@
           "name": "introduction",
           "en-title": "introduction",
           "path": "docs/tinymce-plugin-docs/resources/guide/introduction.md",
-          "contributors-list": []
+          "contributors-list": [
+            {
+              "repo": "/Five-great",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?s=40&amp;v=4",
+              "name": "Five-great"
+            }
+          ]
         },
         "guide/quickStart": {
           "type": "file",
@@ -26,7 +32,13 @@
           "name": "quickStart",
           "en-title": "quickStart",
           "path": "docs/tinymce-plugin-docs/resources/guide/quickStart.md",
-          "contributors-list": []
+          "contributors-list": [
+            {
+              "repo": "/Five-great",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?s=40&amp;v=4",
+              "name": "Five-great"
+            }
+          ]
         },
         "guide/contributing": {
           "type": "dir",
@@ -41,7 +53,13 @@
           "name": "writing-guide",
           "en-title": "writing-guide",
           "path": "docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide.md",
-          "contributors-list": []
+          "contributors-list": [
+            {
+              "repo": "/Five-great",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?s=40&amp;v=4",
+              "name": "Five-great"
+            }
+          ]
         },
         "guide/contributing/plugin": {
           "type": "file",
@@ -49,7 +67,13 @@
           "name": "plugin",
           "en-title": "plugin",
           "path": "docs/tinymce-plugin-docs/resources/guide/contributing/plugin.md",
-          "contributors-list": []
+          "contributors-list": [
+            {
+              "repo": "/Five-great",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?s=40&amp;v=4",
+              "name": "Five-great"
+            }
+          ]
         }
       }
     },
