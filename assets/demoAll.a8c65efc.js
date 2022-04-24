@@ -1,4 +1,4 @@
-import { _ as _export_sfc, r as resolveComponent, c as createElementBlock, a as createVNode, b as createBaseVNode, o as openBlock } from "./index.bb0c60f1.js";
+import { _ as _export_sfc, r as resolveComponent, c as createElementBlock, a as createVNode, b as createBaseVNode, o as openBlock } from "./index.35146aad.js";
 const _sfc_main = {
   name: "DemoAllIframe"
 };

@@ -1,4 +1,4 @@
-import { _ as _export_sfc, o as openBlock, c as createElementBlock, f as defineComponent } from "./index.bb0c60f1.js";
+import { _ as _export_sfc, o as openBlock, c as createElementBlock, f as defineComponent } from "./index.35146aad.js";
 import { R as React, E as Editor, a as ReactDOM } from "./Editor.698cd658.js";
 import "./tpImportword.b64f5c97.js";
 var TinymceVue2_vue_vue_type_style_index_0_scoped_true_lang = "";
