@@ -110,7 +110,7 @@
     var doAct = function (editor,value,callback) {
       editor.undoManager.transact(function(){
         editor.focus();
-        callback(editor,value)
+        callback (editor,value)
       })
     };
     var global$1 = tinymce.util.Tools.resolve('tinymce.util.Tools');

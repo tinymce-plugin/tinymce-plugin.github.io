@@ -1,0 +1,19 @@
+
+.loading[data-v-c5dacd42]{
+    position: relative;
+}
+.tinymce_loading[data-v-c5dacd42]{
+     position:absolute;
+     top: 0;
+     left: 0;
+     background: rgba(0,0,0,0.6);
+     z-index: 99999;
+     opacity: 0;
+     pointer-events: none;
+     /* transition: all 0.3s; */
+     width: 100%;
+     height: 100%;
+}
+.loading .tinymce_loading[data-v-c5dacd42]{
+     opacity: 1;
+}
