@@ -9,7 +9,7 @@ tinymce.PluginManager.add('tpButtons', function (editor, url) {
   const tp$Component = editor.tp$.Components;
   var indent2em_val = editor.getParam('tpButtons', null, 'Object');
   // indent2em_val ? tp$Component.createCustomTags('tabs', indent2em_val, editor) : ''
- console.log(editor.tp$);
+//  console.log(editor.tp$);
   global$6.send({
     url: '/tinymce/plugins/tpButtons/tpButtons.css',
     async: false,

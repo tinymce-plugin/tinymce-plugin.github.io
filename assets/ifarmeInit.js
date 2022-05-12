@@ -7,5 +7,5 @@ const autoIframeHeight = (that)=>{
       }else{
         that.contentWindow.clearInterval(that.contentWindow.TimeID)
       }
-  },50)
+  },100)
 }
