@@ -28711,7 +28711,7 @@ var nprogress$1 = { exports: {} };
 })(nprogress$1);
 var NProgress = nprogress$1.exports;
 var nprogress = "";
-var SiteMap = [{ "name": "introduction", "component": () => __vitePreload(() => import("./introduction.ff998461.js"), true ? ["assets/introduction.ff998461.js","assets/introduction.d474b653.css","assets/Editor.698cd658.js","assets/tpImportword.b64f5c97.js"] : void 0), "path": "/introduction", "meta": { "title": "\u524D\u8A00" } }, { "name": "quickStart", "component": () => __vitePreload(() => import("./quickStart.22755ced.js"), true ? ["assets/quickStart.22755ced.js","assets/quickStart.098a4047.css","assets/Editor.698cd658.js","assets/tpImportword.b64f5c97.js"] : void 0), "path": "/quickStart", "meta": { "title": "\u5FEB\u901F\u4E0A\u624B" } }, { "name": "contributing", "path": "/contributing", "component": { "template": '<div class="contributing" ><router-view></router-view></div>' }, "meta": { "title": "\u8FDB\u884C\u8D21\u732E" }, "children": [{ "name": "writing-guide", "path": "writing-guide", "component": () => __vitePreload(() => import("./writing-guide.bcca76da.js"), true ? [] : void 0), "meta": { "title": "\u6587\u6863\u7F16\u5199" } }, { "name": "plugin", "path": "plugin", "component": () => __vitePreload(() => import("./plugin.75ca119b.js"), true ? [] : void 0), "meta": { "title": "\u8D21\u732E\u63D2\u4EF6" } }] }];
+var SiteMap = [{ "name": "introduction", "component": () => __vitePreload(() => import("./introduction.611eedd0.js"), true ? ["assets/introduction.611eedd0.js","assets/introduction.d474b653.css","assets/Editor.698cd658.js","assets/tpImportword.b64f5c97.js"] : void 0), "path": "/introduction", "meta": { "title": "\u524D\u8A00" } }, { "name": "quickStart", "component": () => __vitePreload(() => import("./quickStart.f3b8f7ab.js"), true ? ["assets/quickStart.f3b8f7ab.js","assets/quickStart.098a4047.css","assets/Editor.698cd658.js","assets/tpImportword.b64f5c97.js"] : void 0), "path": "/quickStart", "meta": { "title": "\u5FEB\u901F\u4E0A\u624B" } }, { "name": "contributing", "path": "/contributing", "component": { "template": '<div class="contributing" ><router-view></router-view></div>' }, "meta": { "title": "\u8FDB\u884C\u8D21\u732E" }, "children": [{ "name": "plugin", "path": "plugin", "component": () => __vitePreload(() => import("./plugin.7836cb9b.js"), true ? [] : void 0), "meta": { "title": "\u8D21\u732E\u63D2\u4EF6" } }, { "name": "writing-guide", "path": "writing-guide", "component": () => __vitePreload(() => import("./writing-guide.4b6d9735.js"), true ? [] : void 0), "meta": { "title": "\u6587\u6863\u7F16\u5199" } }] }];
 const Examples = {
   template: '<div class="examples w1300" ><router-view></router-view></div>'
 };
@@ -28738,7 +28738,7 @@ let routes = [
         meta: {
           title: "\u63D2\u4EF6Demo"
         },
-        component: () => __vitePreload(() => import("./demo.c3256a0b.js"), true ? [] : void 0)
+        component: () => __vitePreload(() => import("./demo.48dee21e.js"), true ? [] : void 0)
       },
       {
         path: "demoall",
@@ -28746,7 +28746,7 @@ let routes = [
         meta: {
           title: "\u5168\u90E8Demo"
         },
-        component: () => __vitePreload(() => import("./demoAll.04570840.js"), true ? [] : void 0)
+        component: () => __vitePreload(() => import("./demoAll.138f4368.js"), true ? [] : void 0)
       },
       {
         path: "vuedemo",
@@ -28754,7 +28754,7 @@ let routes = [
         meta: {
           title: "vueDemo"
         },
-        component: () => __vitePreload(() => import("./index.5678c766.js"), true ? ["assets/index.5678c766.js","assets/index.57443603.css","assets/zh_CN.f6590927.js","assets/zh_CN.4baac78b.css","assets/tpImportword.b64f5c97.js"] : void 0)
+        component: () => __vitePreload(() => import("./index.39ba5d92.js"), true ? ["assets/index.39ba5d92.js","assets/index.57443603.css","assets/zh_CN.246d3277.js","assets/zh_CN.4baac78b.css","assets/tpImportword.b64f5c97.js"] : void 0)
       },
       {
         path: "vuedemo2",
@@ -28762,7 +28762,7 @@ let routes = [
         meta: {
           title: "vueDemo2"
         },
-        component: () => __vitePreload(() => import("./index2.2d81f017.js"), true ? ["assets/index2.2d81f017.js","assets/index2.2f646f7d.css","assets/zh_CN.f6590927.js","assets/zh_CN.4baac78b.css","assets/tpImportword.b64f5c97.js"] : void 0)
+        component: () => __vitePreload(() => import("./index2.1f6c576f.js"), true ? ["assets/index2.1f6c576f.js","assets/index2.2f646f7d.css","assets/zh_CN.246d3277.js","assets/zh_CN.4baac78b.css","assets/tpImportword.b64f5c97.js"] : void 0)
       }
     ]
   }
