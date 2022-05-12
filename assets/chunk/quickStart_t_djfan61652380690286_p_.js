@@ -9,11 +9,17 @@ import"./pinia.js";import{J as s}from"./vue.js";const l=s({components:{},templat
 <pre class="hljs fv-hljs "><ul class="highlight-line-number  nonumber"  ><li ><span>1</span></li></ul><code class=" hljs  hljs-html" @click.stop="()=>{}"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/@npkg/tinymce-plugin&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code><div class="language-text" >html</div></pre>
 <h3 id="NPM" tabindex="-1"><a class="header-anchor" href="#NPM">#</a> NPM</h3>
-<pre class="hljs fv-hljs "><ul class="highlight-line-number  nonumber"  ><li ><span>1</span></li></ul><code class=" hljs  hljs-sh" @click.stop="()=>{}"><span class="hljs-built_in">npm</span> i tinymce-plugin \u6216 <span class="hljs-built_in">yarn</span> <span class="hljs-built_in">add</span> tinymce-plugin -D
+<codeGroup>
+ <codeGroupItem title="NPM" active>
+<pre class="hljs fv-hljs "><ul class="highlight-line-number  nonumber"  ><li ><span>1</span></li></ul><code class=" hljs  hljs-sh" @click.stop="()=>{}"><span class="hljs-built_in">npm</span> i tinymce-plugin \u6216 <span class="hljs-built_in">npm</span> i @npkg/tinymce-plugin 
 </code><div class="language-text" >sh</div></pre>
+</codeGroupItem>
+<codeGroupItem title="YARN">
+<pre class="hljs fv-hljs "><ul class="highlight-line-number  nonumber"  ><li ><span>1</span></li></ul><code class=" hljs  hljs-sh" @click.stop="()=>{}"><span class="hljs-built_in">yarn</span> <span class="hljs-built_in">add</span> tinymce-plugin -D \u6216 <span class="hljs-built_in">yarn</span> <span class="hljs-built_in">add</span> @npkg/tinymce-plugin -D
+</code><div class="language-text" >sh</div></pre>
+</codeGroupItem>
+</codeGroup>
 <p>\u6216</p>
-<pre class="hljs fv-hljs "><ul class="highlight-line-number  nonumber"  ><li ><span>1</span></li></ul><code class=" hljs  hljs-sh" @click.stop="()=>{}"><span class="hljs-built_in">npm</span> i @npkg/tinymce-plugin \u6216 <span class="hljs-built_in">yarn</span> <span class="hljs-built_in">add</span> @npkg/tinymce-plugin -D
-</code><div class="language-text" >sh</div></pre>
 <h3 id="\u81EA\u884C\u4E0B\u8F7D" tabindex="-1"><a class="header-anchor" href="#\u81EA\u884C\u4E0B\u8F7D">#</a> \u81EA\u884C\u4E0B\u8F7D</h3>
 <p>\u8FD9\u4E9B\u6587\u4EF6\u53EF\u4EE5\u5728 <a href="https://unpkg.com/browse/tinymce-plugin/" target="_blank"><em><em><strong>unpkg</strong></em></em></a> \u6216\u8005<a href="https://cdn.jsdelivr.net/npm/tinymce-plugin/" target="_blank"><em><em><strong>jsDelivr</strong></em></em></a>  \u8FD9\u4E9B CDN \u4E0A\u6D4F\u89C8\u548C\u4E0B\u8F7D,\u81EA\u884C\u5B58\u653E</p>
 <h2 id="\u4F7F\u7528" tabindex="-1"><a class="header-anchor" href="#\u4F7F\u7528">#</a> \u4F7F\u7528</h2>
@@ -54,4 +60,4 @@ tinymce.<span class="hljs-title function_">init</span>({
 <span class="hljs-keyword">import</span> <span class="hljs-string">&quot;@npkg/tinymce-plugin/plugins/tpLayout&quot;</span>;
 <span class="hljs-keyword">import</span> <span class="hljs-string">&quot;@npkg/tinymce-plugin/plugins/tpImportword&quot;</span>;
 </code><div class="language-text" >js</div></pre>
-</div></div><PagesRouter  docPath="__docs__/quickStart.md" mapType="docs" docRepo="tp-importword" pagesName="quickStart_t_ufbyf11652379870842_p_" />`});export{l as default};
+</div></div><PagesRouter  docPath="guide/quickStart.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="quickStart_t_djfan61652380690286_p_" />`});export{l as default};

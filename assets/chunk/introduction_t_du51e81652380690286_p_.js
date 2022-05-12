@@ -40,4 +40,4 @@ import"./pinia.js";import{J as n}from"./vue.js";const i=n({components:{},templat
 <img src="/qq.png#pic_center" alt="qq\u7FA4\u4E8C\u7EF4\u7801"></p>
 <p><a href="/contributing/writing-guide#%E9%A6%96%E8%A1%8C%E7%BC%A9%E8%BF%9B(%E5%A2%9E%E5%BC%BA%E7%89%88)">\u8D21\u732E\u63D2\u4EF6</a></p>
 <hr>
-</div></div><PagesRouter  docPath="guide/introduction.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="introduction_t_lecm7b1652379870842_p_" />`});export{i as default};
+</div></div><PagesRouter  docPath="guide/introduction.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="introduction_t_du51e81652380690286_p_" />`});export{i as default};
