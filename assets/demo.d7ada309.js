@@ -1,11 +1,11 @@
-import { _ as _export_sfc, r as resolveComponent, c as createElementBlock, a as createVNode, b as createBaseVNode, o as openBlock } from "./index.0a9adc35.js";
+import { _ as _export_sfc, r as resolveComponent, c as createElementBlock, a as createVNode, b as createBaseVNode, o as openBlock } from "./index.06794f1d.js";
 const _sfc_main = {
-  name: "DemoAllIframe"
+  name: "DemoIframe"
 };
 const _hoisted_1 = /* @__PURE__ */ createBaseVNode("iframe", {
   id: "demoIframeID",
   name: "demoIframeID",
-  src: "/tinymce/indexall.html",
+  src: "/tinymce/index.html",
   frameborder: "0",
   scrolling: "no",
   width: "100%",
@@ -15,8 +15,8 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_PagesRouter = resolveComponent("PagesRouter");
   return openBlock(), createElementBlock("div", null, [
     _hoisted_1,
-    createVNode(_component_PagesRouter, { pagesName: "demoall" })
+    createVNode(_component_PagesRouter, { pagesName: "demo" })
   ]);
 }
-var demoAll = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
-export { demoAll as default };
+var demo = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
+export { demo as default };
