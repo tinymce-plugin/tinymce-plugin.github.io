@@ -1,5 +1,5 @@
 {
-  "TimeID": 1652373388081,
+  "TimeID": 1652373396585,
   "siteMap": {
     "plugins": [
       {
@@ -75,12 +75,12 @@
           "en-title": "contributing",
           "path": "docs/tinymce-plugin-docs/resources/guide/contributing.md"
         },
-        "guide/contributing/plugin": {
+        "guide/contributing/writing-guide": {
           "type": "file",
-          "title": "贡献插件",
-          "name": "plugin",
-          "en-title": "plugin",
-          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/plugin.md",
+          "title": "文档编写",
+          "name": "writing-guide",
+          "en-title": "writing-guide",
+          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide.md",
           "contributors-list": [
             {
               "repo": "/Five-great",
@@ -89,12 +89,12 @@
             }
           ]
         },
-        "guide/contributing/writing-guide": {
+        "guide/contributing/plugin": {
           "type": "file",
-          "title": "文档编写",
-          "name": "writing-guide",
-          "en-title": "writing-guide",
-          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide.md",
+          "title": "贡献插件",
+          "name": "plugin",
+          "en-title": "plugin",
+          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/plugin.md",
           "contributors-list": [
             {
               "repo": "/Five-great",
@@ -125,12 +125,12 @@
           {
             "type": "docs",
             "repo": "tinymce-plugin-docs",
-            "path": "guide/contributing/plugin"
+            "path": "guide/contributing/writing-guide"
           },
           {
             "type": "docs",
             "repo": "tinymce-plugin-docs",
-            "path": "guide/contributing/writing-guide"
+            "path": "guide/contributing/plugin"
           }
         ]
       }
@@ -164,19 +164,19 @@
       },
       "children": [
         {
-          "name": "plugin",
-          "path": "plugin",
-          "component": "###()=>import('../../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/plugin.md')###",
-          "meta": {
-            "title": "贡献插件"
-          }
-        },
-        {
           "name": "writing-guide",
           "path": "writing-guide",
           "component": "###()=>import('../../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide.md')###",
           "meta": {
             "title": "文档编写"
+          }
+        },
+        {
+          "name": "plugin",
+          "path": "plugin",
+          "component": "###()=>import('../../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/plugin.md')###",
+          "meta": {
+            "title": "贡献插件"
           }
         }
       ]
