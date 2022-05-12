@@ -60,4 +60,4 @@ tinymce.<span class="hljs-title function_">init</span>({
 <span class="hljs-keyword">import</span> <span class="hljs-string">&quot;@npkg/tinymce-plugin/plugins/tpLayout&quot;</span>;
 <span class="hljs-keyword">import</span> <span class="hljs-string">&quot;@npkg/tinymce-plugin/plugins/tpImportword&quot;</span>;
 </code><div class="language-text" >js</div></pre>
-</div></div><PagesRouter  docPath="guide/quickStart.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="quickStart_t_djfan61652380690286_p_" />`});export{l as default};
+</div></div><PagesRouter  docPath="guide/quickStart.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="quickStart_t_tp4zm91652383391474_p_" />`});export{l as default};
