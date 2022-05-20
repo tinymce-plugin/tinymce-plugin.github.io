@@ -416,7 +416,7 @@ tinymce.PluginManager.add('tpTabs', function (editor, url) {
   tp$tabs.push(tab$advanced);
 
   var getInitialData = function (data) {
-    console.dir(data);
+    // console.dir(data);
     return data ? {
       width: editor.dom.getSize(data).w + 'px',
       margin: editor.dom.getStyle(data, 'margin'),

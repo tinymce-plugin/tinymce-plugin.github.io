@@ -11646,7 +11646,7 @@
       editor.nodeChanged();
     };
     var showResizeRect = function (targetElm) {
-      console.log(targetElm)
+      // console.log(targetElm)
       unbindResizeHandleEvents();
       var position = dom.getPos(targetElm, rootElement);
       var selectedElmX = position.x;
@@ -25458,7 +25458,7 @@
   };
   var blockIeDrop = function (editor) {
     editor.on('drop', function (e) {
-      console.log(e)
+      // console.log(e)
       var realTarget = typeof e.clientX !== 'undefined' ? editor.getDoc().elementFromPoint(e.clientX, e.clientY) : null;
       if (isContentEditableFalse$a(realTarget) || editor.dom.getContentEditableParent(realTarget) === 'false') {
         e.preventDefault();
