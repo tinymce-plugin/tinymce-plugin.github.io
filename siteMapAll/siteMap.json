@@ -1,6 +1,6 @@
 {
-  "TimeID": 1653147048886,
-  "sha": "6fa119cb7914de141b3562670e24928ceacbe083",
+  "TimeID": 1653147417018,
+  "sha": "10c7ce86919dd56fd1ba887122dac969629c8baa",
   "siteMap": {
     "plugins": [],
     "pluginsDDDD": [],
@@ -229,11 +229,11 @@
             }
           ],
           "type": "file",
-          "title": "关于骨架屏",
+          "title": "skeleton",
           "name": "skeleton",
           "en-title": "skeleton",
-          "path": "docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_fco3rs1653147047911_p_.md",
-          "upTime": 1653147048877
+          "path": "docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_45zow11653147416250_p_.md",
+          "upTime": 1653147417017
         },
         "guide/skill/skill-info": {
           "contributors-list": [
@@ -254,10 +254,10 @@
         },
         "guide/skill": {
           "type": "dir",
-          "title": "使用技巧",
+          "title": "skill",
           "name": "skill",
           "en-title": "skill",
-          "upTime": 1653147048876,
+          "upTime": 1653147417016,
           "path": "docs/tinymce-plugin-docs/resources/guide/skill.md"
         },
         "guide/commonproblem/images": {
@@ -323,6 +323,11 @@
         },
         "./build/site/repos/tinymce-plugin-docs/guide/skill/skeleton": {
           "contributors-list": [
+            {
+              "name": "Five-great",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "https://github.com/Five-great"
+            },
             {
               "name": "Five-great",
               "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
@@ -568,21 +573,6 @@
       {
         "type": "docs",
         "repo": "tinymce-plugin-docs",
-        "path": "guide/skill",
-        "children": [
-          {
-            "type": "docs",
-            "repo": "tinymce-plugin-docs",
-            "path": "guide/skill/skeleton",
-            "sort": 0
-          }
-        ],
-        "sort": "7",
-        "oldLen": 1
-      },
-      {
-        "type": "docs",
-        "repo": "tinymce-plugin-docs",
         "path": "guide/customize",
         "children": [
           {
@@ -599,6 +589,21 @@
           }
         ],
         "sort": "1"
+      },
+      {
+        "type": "docs",
+        "repo": "tinymce-plugin-docs",
+        "path": "guide/skill",
+        "children": [
+          {
+            "type": "docs",
+            "repo": "tinymce-plugin-docs",
+            "path": "guide/skill/skeleton",
+            "sort": 0
+          }
+        ],
+        "sort": 0,
+        "oldLen": 1
       },
       {
         "type": "docs",
@@ -720,30 +725,6 @@
       ]
     },
     {
-      "name": "skill",
-      "path": "/skill",
-      "redirect": {
-        "name": "skeleton_t_fco3rs1653147047911_p_"
-      },
-      "component": {
-        "template": "<div class=\"skill\" ><router-view></router-view></div>"
-      },
-      "meta": {
-        "title": "使用技巧"
-      },
-      "children": [
-        {
-          "name": "skeleton_t_fco3rs1653147047911_p_",
-          "path": "skeleton.html",
-          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_fco3rs1653147047911_p_",
-          "meta": {
-            "title": "关于骨架屏"
-          },
-          "dirRepo": "tinymce-plugin-docs"
-        }
-      ]
-    },
-    {
       "name": "customize",
       "path": "/customize",
       "redirect": {
@@ -771,6 +752,30 @@
           "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/customize/table_t_v9tlck1653147047911_p_",
           "meta": {
             "title": "table 表格插件"
+          },
+          "dirRepo": "tinymce-plugin-docs"
+        }
+      ]
+    },
+    {
+      "name": "skill",
+      "path": "/skill",
+      "redirect": {
+        "name": "skeleton_t_45zow11653147416250_p_"
+      },
+      "component": {
+        "template": "<div class=\"skill\" ><router-view></router-view></div>"
+      },
+      "meta": {
+        "title": "skill"
+      },
+      "children": [
+        {
+          "name": "skeleton_t_45zow11653147416250_p_",
+          "path": "skeleton.html",
+          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_45zow11653147416250_p_",
+          "meta": {
+            "title": "skeleton"
           },
           "dirRepo": "tinymce-plugin-docs"
         }
@@ -901,144 +906,24 @@
     }
   ],
   "fileStatus": {
-    "add": [
+    "add": [],
+    "remove": [],
+    "updata": [
       {
-        "type": "docs",
         "repo": "tinymce-plugin-docs",
-        "path": "guide/introduction",
-        "sort": 999999
-      },
-      {
-        "type": "docs",
-        "repo": "tinymce-plugin-docs",
-        "path": "guide/quickStart",
-        "sort": 999998
-      },
-      {
-        "type": "docs",
-        "repo": "tinymce-plugin-docs",
-        "path": "guide/commonproblem",
-        "children": [
-          {
-            "type": "docs",
-            "repo": "tinymce-plugin-docs",
-            "path": "guide/commonproblem/images",
-            "sort": 0
-          }
-        ],
-        "sort": 0
-      },
-      {
-        "type": "docs",
-        "repo": "tinymce-plugin-docs",
-        "path": "guide/customize",
-        "children": [
-          {
-            "type": "docs",
-            "repo": "tinymce-plugin-docs",
-            "path": "guide/customize/images",
-            "sort": 0
-          },
-          {
-            "type": "docs",
-            "repo": "tinymce-plugin-docs",
-            "path": "guide/customize/table",
-            "sort": 0
-          }
-        ],
-        "sort": "1"
-      },
-      {
-        "type": "docs",
-        "repo": "tinymce-plugin-docs",
-        "path": "guide/examples",
-        "children": [
-          {
-            "type": "docs",
-            "repo": "tinymce-plugin-docs",
-            "path": "guide/examples/basic",
-            "sort": "99"
-          }
-        ],
-        "sort": "8"
-      },
-      {
-        "type": "docs",
-        "repo": "tinymce-plugin-docs",
-        "path": "guide/contributing",
-        "children": [
-          {
-            "type": "docs",
-            "repo": "tinymce-plugin-docs",
-            "path": "guide/contributing/writing-guide",
-            "children": [
-              {
-                "type": "docs",
-                "repo": "tinymce-plugin-docs",
-                "path": "guide/contributing/writing-guide/guide",
-                "sort": "9"
-              },
-              {
-                "type": "docs",
-                "repo": "tinymce-plugin-docs",
-                "path": "guide/contributing/writing-guide/grammar",
-                "sort": "8"
-              },
-              {
-                "type": "docs",
-                "repo": "tinymce-plugin-docs",
-                "path": "guide/contributing/writing-guide/grammar-demo",
-                "sort": 0
-              }
-            ],
-            "sort": "5"
-          },
-          {
-            "type": "docs",
-            "repo": "tinymce-plugin-docs",
-            "path": "guide/contributing/syntax",
-            "children": [
-              {
-                "type": "docs",
-                "repo": "tinymce-plugin-docs",
-                "path": "guide/contributing/syntax/link-images",
-                "sort": 0
-              },
-              {
-                "type": "docs",
-                "repo": "tinymce-plugin-docs",
-                "path": "guide/contributing/syntax/tip-code",
-                "sort": 0
-              }
-            ],
-            "sort": "4"
-          },
-          {
-            "type": "docs",
-            "repo": "tinymce-plugin-docs",
-            "path": "guide/contributing/plugin",
-            "sort": 0
-          }
-        ],
-        "sort": -1
+        "path": "guide/skill/skeleton",
+        "author": {
+          "name": "Five-great",
+          "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+          "repo": "https://github.com/Five-great"
+        }
       }
     ],
-    "remove": [],
-    "updata": [],
     "addList": [
-      "introduction_t_rr8u151653147047911_p_",
-      "quickStart_t_mpzgwo1653147047911_p_",
-      "images_t_bym55m1653147047911_p_",
-      "images_t_qkodko1653147047911_p_",
-      "table_t_v9tlck1653147047911_p_",
-      "basic_t_oelyh51653147047911_p_",
-      "plugin_t_todu741653147047911_p_",
-      "link-images_t_0skb2a1653147047911_p_",
-      "tip-code_t_kdettz1653147047911_p_",
-      "grammar-demo_t_ncjqsa1653147047911_p_",
-      "grammar_t_ju57zy1653147047911_p_",
-      "guide_t_zzzxbl1653147047911_p_"
+      "skeleton_t_45zow11653147416250_p_"
     ],
-    "removeList": []
+    "removeList": [
+      "skeleton_t_fco3rs1653147047911_p_"
+    ]
   }
 }
