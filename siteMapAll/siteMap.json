@@ -1,6 +1,6 @@
 {
-  "TimeID": 1653149193270,
-  "sha": "74dd2a01f026b759ca592e7714742e5e50acfa93",
+  "TimeID": 1653149781724,
+  "sha": "f055fbe96d0372359e753d44e40d46cbd4e1d92b",
   "siteMap": {
     "plugins": [],
     "pluginsDDDD": [],
@@ -229,11 +229,11 @@
             }
           ],
           "type": "file",
-          "title": "关于骨架屏",
+          "title": "skeleton",
           "name": "skeleton",
           "en-title": "skeleton",
-          "path": "docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_utj7yd1653149192799_p_.md",
-          "upTime": 1653149193267
+          "path": "docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_blqqw91653149781260_p_.md",
+          "upTime": 1653149781723
         },
         "guide/skill/skill-info": {
           "contributors-list": [
@@ -254,10 +254,10 @@
         },
         "guide/skill": {
           "type": "dir",
-          "title": "使用技巧",
+          "title": "skill",
           "name": "skill",
           "en-title": "skill",
-          "upTime": 1653149193267,
+          "upTime": 1653149781722,
           "path": "docs/tinymce-plugin-docs/resources/guide/skill.md"
         },
         "guide/commonproblem/images": {
@@ -323,6 +323,11 @@
         },
         "./build/site/repos/tinymce-plugin-docs/guide/skill/skeleton": {
           "contributors-list": [
+            {
+              "name": "Five-great",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "https://github.com/Five-great"
+            },
             {
               "name": "Five-great",
               "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
@@ -574,21 +579,6 @@
       {
         "type": "docs",
         "repo": "tinymce-plugin-docs",
-        "path": "guide/skill",
-        "children": [
-          {
-            "type": "docs",
-            "repo": "tinymce-plugin-docs",
-            "path": "guide/skill/skeleton",
-            "sort": 0
-          }
-        ],
-        "sort": "7",
-        "oldLen": 1
-      },
-      {
-        "type": "docs",
-        "repo": "tinymce-plugin-docs",
         "path": "guide/customize",
         "children": [
           {
@@ -606,6 +596,21 @@
         ],
         "sort": "1",
         "oldLen": 2
+      },
+      {
+        "type": "docs",
+        "repo": "tinymce-plugin-docs",
+        "path": "guide/skill",
+        "children": [
+          {
+            "type": "docs",
+            "repo": "tinymce-plugin-docs",
+            "path": "guide/skill/skeleton",
+            "sort": 0
+          }
+        ],
+        "sort": 0,
+        "oldLen": 1
       },
       {
         "type": "docs",
@@ -731,30 +736,6 @@
       ]
     },
     {
-      "name": "skill",
-      "path": "/skill",
-      "redirect": {
-        "name": "skeleton_t_utj7yd1653149192799_p_"
-      },
-      "component": {
-        "template": "<div class=\"skill\" ><router-view></router-view></div>"
-      },
-      "meta": {
-        "title": "使用技巧"
-      },
-      "children": [
-        {
-          "name": "skeleton_t_utj7yd1653149192799_p_",
-          "path": "skeleton.html",
-          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_utj7yd1653149192799_p_",
-          "meta": {
-            "title": "关于骨架屏"
-          },
-          "dirRepo": "tinymce-plugin-docs"
-        }
-      ]
-    },
-    {
       "name": "customize",
       "path": "/customize",
       "redirect": {
@@ -782,6 +763,30 @@
           "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/customize/table_t_jks0vy1653149192799_p_",
           "meta": {
             "title": "table 表格插件"
+          },
+          "dirRepo": "tinymce-plugin-docs"
+        }
+      ]
+    },
+    {
+      "name": "skill",
+      "path": "/skill",
+      "redirect": {
+        "name": "skeleton_t_blqqw91653149781260_p_"
+      },
+      "component": {
+        "template": "<div class=\"skill\" ><router-view></router-view></div>"
+      },
+      "meta": {
+        "title": "skill"
+      },
+      "children": [
+        {
+          "name": "skeleton_t_blqqw91653149781260_p_",
+          "path": "skeleton.html",
+          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_blqqw91653149781260_p_",
+          "meta": {
+            "title": "skeleton"
           },
           "dirRepo": "tinymce-plugin-docs"
         }
@@ -914,8 +919,22 @@
   "fileStatus": {
     "add": [],
     "remove": [],
-    "updata": [],
-    "addList": [],
-    "removeList": []
+    "updata": [
+      {
+        "repo": "tinymce-plugin-docs",
+        "path": "guide/skill/skeleton",
+        "author": {
+          "name": "Five-great",
+          "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+          "repo": "https://github.com/Five-great"
+        }
+      }
+    ],
+    "addList": [
+      "skeleton_t_blqqw91653149781260_p_"
+    ],
+    "removeList": [
+      "skeleton_t_utj7yd1653149192799_p_"
+    ]
   }
 }
