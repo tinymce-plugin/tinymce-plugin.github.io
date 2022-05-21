@@ -1,6 +1,6 @@
 {
-  "TimeID": 1653143422684,
-  "sha": "9f1a312ca9f81e803aceb2bc20295c4f79e35194",
+  "TimeID": 1653146422774,
+  "sha": "7da25fc39e81d61ef270a951a3d889d12d4d2f3e",
   "siteMap": {
     "plugins": [],
     "pluginsDDDD": [],
@@ -232,8 +232,8 @@
           "title": "skeleton",
           "name": "skeleton",
           "en-title": "skeleton",
-          "path": "docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_92tbmh1653143422295_p_.md",
-          "upTime": 1653143422683
+          "path": "docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_bicla51653146421912_p_.md",
+          "upTime": 1653146422773
         },
         "guide/skill/skill-info": {
           "contributors-list": [
@@ -257,7 +257,7 @@
           "title": "skill",
           "name": "skill",
           "en-title": "skill",
-          "upTime": 1653143422683,
+          "upTime": 1653146422772,
           "path": "docs/tinymce-plugin-docs/resources/guide/skill.md"
         },
         "guide/commonproblem/images": {
@@ -323,6 +323,11 @@
         },
         "./build/site/repos/tinymce-plugin-docs/guide/skill/skeleton": {
           "contributors-list": [
+            {
+              "name": "Five-great",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "https://github.com/Five-great"
+            },
             {
               "name": "Five-great",
               "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
@@ -556,7 +561,7 @@
       "name": "skill",
       "path": "/skill",
       "redirect": {
-        "name": "skeleton_t_92tbmh1653143422295_p_"
+        "name": "skeleton_t_bicla51653146421912_p_"
       },
       "component": {
         "template": "<div class=\"skill\" ><router-view></router-view></div>"
@@ -566,9 +571,9 @@
       },
       "children": [
         {
-          "name": "skeleton_t_92tbmh1653143422295_p_",
+          "name": "skeleton_t_bicla51653146421912_p_",
           "path": "skeleton.html",
-          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_92tbmh1653143422295_p_",
+          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_bicla51653146421912_p_",
           "meta": {
             "title": "skeleton"
           },
@@ -592,10 +597,10 @@
       }
     ],
     "addList": [
-      "skeleton_t_92tbmh1653143422295_p_"
+      "skeleton_t_bicla51653146421912_p_"
     ],
     "removeList": [
-      "skeleton_t_bmdnec1653142132264_p_"
+      "skeleton_t_92tbmh1653143422295_p_"
     ]
   }
 }
