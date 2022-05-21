@@ -68,4 +68,4 @@ tinymce.<span class="hljs-title function_">init</span>({
   ...
 })
 </code><div class="language-text" >js</div></pre>
-</div></div><PagesRouter  docPath="guide/contributing/syntax/tip-code.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="tip-code_t_e06uiw1653141421083_p_" />`});export{a as default};
+</div></div><PagesRouter  docPath="guide/contributing/syntax/tip-code.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="tip-code_t_2robyn1653141907456_p_" />`});export{a as default};

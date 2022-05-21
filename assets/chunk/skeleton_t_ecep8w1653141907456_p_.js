@@ -8,5 +8,7 @@ Five
 sdf
 asdsadasd
 testsdfsdf
-sdfs</p>
-</div></div><PagesRouter  docPath="guide/skill/skeleton.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="skeleton_t_8ljex41653141421083_p_" />`});export{e as default};
+sdfs
+sdsdgfdgdf
+FIVE</p>
+</div></div><PagesRouter  docPath="guide/skill/skeleton.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="skeleton_t_ecep8w1653141907456_p_" />`});export{e as default};

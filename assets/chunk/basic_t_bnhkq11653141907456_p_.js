@@ -196,7 +196,7 @@ import"./pinia.js";import{J as a}from"./vue.js";const s={};s.methods={source(){r
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 
-</code><div class="language-text" >html</div></pre>`},sourceCode(){return'<iframe scrolling="no" style="width:100%;margin:auto 0;border:0px; min-height: 519px"  onload="autoIframeHeight(this)"  src="/demo/demo-basic_t_koi7rp1653141421083_p_1653141426354/index.html"></iframe>'}};s.template=`<PreviewIframe class="demo-basic_t_koi7rp1653141421083_p_" idx="Demo0"  :source="source()" :sourceCode="sourceCode()">
+</code><div class="language-text" >html</div></pre>`},sourceCode(){return'<iframe scrolling="no" style="width:100%;margin:auto 0;border:0px; min-height: 519px"  onload="autoIframeHeight(this)"  src="/demo/demo-basic_t_bnhkq11653141907456_p_1653141912537/index.html"></iframe>'}};s.template=`<PreviewIframe class="demo-basic_t_bnhkq11653141907456_p_" idx="Demo0"  :source="source()" :sourceCode="sourceCode()">
                               
                             </PreviewIframe>`;const p=a({components:{Demo0:s},template:`<div class="fv-mardown-html"><div class="fv-mardown-main"><p class="language-html"><Demo0  data-isComponent="iframe" /></p>
-</div></div><PagesRouter  docPath="guide/examples/basic.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="basic_t_koi7rp1653141421083_p_" />`});export{p as default};
+</div></div><PagesRouter  docPath="guide/examples/basic.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="basic_t_bnhkq11653141907456_p_" />`});export{p as default};

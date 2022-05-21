@@ -54,4 +54,4 @@ import"./pinia.js";import{J as n}from"./vue.js";const i=n({components:{},templat
 <hr>
 <p><a href="https://opencollective.com/tinymce-plugin/contributors.svg?width=890&button=false"><img src="https://opencollective.com/tinymce-plugin/contributors.svg?width=890&button=false" /></a></p>
 <hr>
-</div></div><PagesRouter  docPath="guide/introduction.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="introduction_t_pz9yvr1653141421083_p_" />`});export{i as default};
+</div></div><PagesRouter  docPath="guide/introduction.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="introduction_t_vhe1jq1653141907456_p_" />`});export{i as default};
