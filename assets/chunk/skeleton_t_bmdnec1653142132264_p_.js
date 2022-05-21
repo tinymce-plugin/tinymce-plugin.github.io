@@ -11,4 +11,4 @@ testsdfsdf
 sdfs
 sdsdgfdgdf
 FIVE</p>
-</div></div><PagesRouter  docPath="guide/skill/skeleton.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="skeleton_t_ecep8w1653141907456_p_" />`});export{e as default};
+</div></div><PagesRouter  docPath="guide/skill/skeleton.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="skeleton_t_bmdnec1653142132264_p_" />`});export{e as default};
