@@ -1,6 +1,6 @@
 {
-  "TimeID": 1653213213372,
-  "sha": "8be8f159f542833f3db1bbb5f4b4d1085a2f081e",
+  "TimeID": 1653213614394,
+  "sha": "dc75b90b4fa00460b74269c02697840746e2c281",
   "siteMap": {
     "plugins": [],
     "pluginsDDDD": [],
@@ -236,14 +236,19 @@
               "name": "Five-great",
               "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
               "repo": "https://github.com/Five-great"
+            },
+            {
+              "name": "Five-great",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "https://github.com/Five-great"
             }
           ],
           "type": "file",
           "title": "如何开启骨架屏",
           "name": "skeleton",
           "en-title": "skeleton",
-          "path": "docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_768ips1653213212939_p_.md",
-          "upTime": 1653213213371
+          "path": "docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_tz6f881653213613934_p_.md",
+          "upTime": 1653213614393
         },
         "guide/skill/skill-info": {
           "contributors-list": [
@@ -753,7 +758,7 @@
       "name": "skill",
       "path": "/skill",
       "redirect": {
-        "name": "skeleton_t_768ips1653213212939_p_"
+        "name": "skeleton_t_tz6f881653213613934_p_"
       },
       "component": {
         "template": "<div class=\"skill\" ><router-view></router-view></div>"
@@ -763,9 +768,9 @@
       },
       "children": [
         {
-          "name": "skeleton_t_768ips1653213212939_p_",
+          "name": "skeleton_t_tz6f881653213613934_p_",
           "path": "skeleton.html",
-          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_768ips1653213212939_p_",
+          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_tz6f881653213613934_p_",
           "meta": {
             "title": "如何开启骨架屏"
           },
