@@ -1,6 +1,6 @@
 {
-  "TimeID": 1653198451829,
-  "sha": "25bb05a9e68506affa39ab0be8bb517f6a39c7f2",
+  "TimeID": 1653200660904,
+  "sha": "ee6dbbc8f95d38faa6645354254db26c4478956d",
   "siteMap": {
     "plugins": [],
     "pluginsDDDD": [],
@@ -348,6 +348,15 @@
               "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
               "repo": "https://github.com/Five-great"
             },
+            {
+              "name": "Five-great",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "https://github.com/Five-great"
+            }
+          ]
+        },
+        "./build/site/repos/tinymce-plugin-docs/guide/customize/customize-info": {
+          "contributors-list": [
             {
               "name": "Five-great",
               "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
@@ -927,7 +936,7 @@
     "updata": [
       {
         "repo": "tinymce-plugin-docs",
-        "path": "guide/skill/skeleton",
+        "path": "guide/customize/customize-info",
         "author": {
           "name": "Five-great",
           "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
@@ -936,10 +945,10 @@
       }
     ],
     "addList": [
-      "skeleton_t_n8sxcz1653198451072_p_"
+      ""
     ],
     "removeList": [
-      "skeleton_t_rh4y8r1653197952458_p_"
+      ""
     ],
     "upObj": {}
   }
