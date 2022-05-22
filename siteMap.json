@@ -1,6 +1,6 @@
 {
-  "TimeID": 1653213714865,
-  "sha": "8c2b8f49e1e46e08da499cc30e5b7ac3ec9fb8f5",
+  "TimeID": 1653228789863,
+  "sha": "88f6e24ee6cb605c7b2a8366a99d29c019ec9bcb",
   "siteMap": {
     "plugins": [],
     "pluginsDDDD": [],
@@ -340,6 +340,21 @@
           "en-title": "customize",
           "upTime": 1653212527941,
           "path": "docs/tinymce-plugin-docs/resources/guide/customize.md"
+        },
+        "guide/examples/advanced": {
+          "contributors-list": [
+            {
+              "name": "Five-great",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "https://github.com/Five-great"
+            }
+          ],
+          "type": "file",
+          "title": "高阶使用",
+          "name": "advanced",
+          "en-title": "advanced",
+          "path": "docs/tinymce-plugin-docs/resources/guide/examples/advanced_t_ummnpo1653228788990_p_.md",
+          "upTime": 1653228789862
         }
       },
       "tinymce-plugin": {
@@ -583,6 +598,12 @@
             "repo": "tinymce-plugin-docs",
             "path": "guide/examples/basic",
             "sort": "99"
+          },
+          {
+            "type": "docs",
+            "repo": "tinymce-plugin-docs",
+            "path": "guide/examples/advanced",
+            "sort": 0
           }
         ],
         "sort": 0,
@@ -756,6 +777,15 @@
             "title": "基础样例"
           },
           "dirRepo": "tinymce-plugin-docs"
+        },
+        {
+          "name": "advanced_t_ummnpo1653228788990_p_",
+          "path": "advanced.html",
+          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/examples/advanced_t_ummnpo1653228788990_p_",
+          "meta": {
+            "title": "高阶使用"
+          },
+          "dirRepo": "tinymce-plugin-docs"
         }
       ]
     },
@@ -908,25 +938,30 @@
     }
   ],
   "fileStatus": {
-    "add": [],
-    "remove": [],
-    "updata": [
+    "add": [
       {
         "repo": "tinymce-plugin-docs",
-        "path": "guide/examples/basic",
+        "path": "guide/examples/advanced",
         "author": {
           "name": "Five-great",
           "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
           "repo": "https://github.com/Five-great"
         }
+      },
+      {
+        "type": "docs",
+        "repo": "tinymce-plugin-docs",
+        "path": "guide/examples/advanced",
+        "sort": 0
       }
     ],
+    "remove": [],
+    "updata": [],
     "addList": [
+      "",
       ""
     ],
-    "removeList": [
-      ""
-    ],
+    "removeList": [],
     "upObj": {}
   }
 }
