@@ -1,6 +1,6 @@
 {
-  "TimeID": 1653200660904,
-  "sha": "ee6dbbc8f95d38faa6645354254db26c4478956d",
+  "TimeID": 1653203323780,
+  "sha": "e796ca162dfefcf6a41a9f1ca837f719a0715686",
   "siteMap": {
     "plugins": [],
     "pluginsDDDD": [],
@@ -357,6 +357,11 @@
         },
         "./build/site/repos/tinymce-plugin-docs/guide/customize/customize-info": {
           "contributors-list": [
+            {
+              "name": "Five-great",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "https://github.com/Five-great"
+            },
             {
               "name": "Five-great",
               "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
