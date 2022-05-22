@@ -1,6 +1,6 @@
 {
-  "TimeID": 1653210100429,
-  "sha": "ae5ae59658c05e9a69d95a967e9fcfb7486b0ed0",
+  "TimeID": 1653211079667,
+  "sha": "bcd5053038131de8e983045dacbba217d7613308",
   "siteMap": {
     "plugins": [],
     "pluginsDDDD": [],
@@ -320,10 +320,10 @@
         },
         "guide/customize": {
           "type": "dir",
-          "title": "魔改扩展专区",
-          "name": "customize",
-          "en-title": "customize",
-          "upTime": 1653197952975,
+          "title": "魔改扩展",
+          "name": "customize-info",
+          "en-title": "customize-info",
+          "upTime": 1653211079661,
           "path": "docs/tinymce-plugin-docs/resources/guide/customize.md"
         },
         "./build/site/repos/tinymce-plugin-docs/guide/skill/skeleton": {
@@ -367,6 +367,11 @@
         },
         "./build/site/repos/tinymce-plugin-docs/guide/customize/customize-info": {
           "contributors-list": [
+            {
+              "name": "Five-great",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "https://github.com/Five-great"
+            },
             {
               "name": "Five-great",
               "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
@@ -775,16 +780,16 @@
       ]
     },
     {
-      "name": "customize",
-      "path": "/customize",
+      "name": "customize-info",
+      "path": "/customize-info",
       "redirect": {
         "name": "images_t_66wxqz1653197952458_p_"
       },
       "component": {
-        "template": "<div class=\"customize\" ><router-view></router-view></div>"
+        "template": "<div class=\"customize-info\" ><router-view></router-view></div>"
       },
       "meta": {
-        "title": "魔改扩展专区"
+        "title": "魔改扩展"
       },
       "children": [
         {
