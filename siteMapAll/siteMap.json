@@ -1,6 +1,6 @@
 {
-  "TimeID": 1653208766835,
-  "sha": "267c23297fda7160137ceda5acefffa8c2b7fc09",
+  "TimeID": 1653209413733,
+  "sha": "014af6493a63c328cccfcf85dfb4aa1f06c3375d",
   "siteMap": {
     "plugins": [],
     "pluginsDDDD": [],
@@ -194,7 +194,12 @@
               "logo": "https://avatars.githubusercontent.com/u/43601963?s=40&amp;v=4",
               "name": "Five-great"
             }
-          ]
+          ],
+          "type": "dir",
+          "title": "魔改扩展",
+          "name": "customize-info",
+          "en-title": "customize-info",
+          "upTime": 1653209413729
         },
         "guide/examples/basic": {
           "contributors-list": [
@@ -362,6 +367,11 @@
         },
         "./build/site/repos/tinymce-plugin-docs/guide/customize/customize-info": {
           "contributors-list": [
+            {
+              "name": "Five-great",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "https://github.com/Five-great"
+            },
             {
               "name": "Five-great",
               "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
@@ -946,7 +956,7 @@
     "updata": [
       {
         "repo": "tinymce-plugin-docs",
-        "path": "guide/skill/skeleton",
+        "path": "guide/customize/customize-info",
         "author": {
           "name": "Five-great",
           "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
