@@ -1,6 +1,6 @@
 {
-  "TimeID": 1653228789863,
-  "sha": "88f6e24ee6cb605c7b2a8366a99d29c019ec9bcb",
+  "TimeID": 1653234856572,
+  "sha": "2a71ada79b699d3d17c3be4f49ad1d67b28a11b0",
   "siteMap": {
     "plugins": [],
     "pluginsDDDD": [],
@@ -501,13 +501,18 @@
           "title": "快速上手",
           "name": "quickStart",
           "en-title": "quickStart",
-          "path": "docs/tp-importword/resources/__docs__/quickStart_t_wbzlc31653101661167_p_.md",
-          "upTime": 1653101664785,
+          "path": "docs/tp-importword/resources/__docs__/quickStart_t_h84x6r1653234855865_p_.md",
+          "upTime": 1653234856571,
           "contributors-list": [
             {
               "repo": "/Five-great",
               "logo": "https://avatars.githubusercontent.com/u/43601963?s=40&amp;v=4",
               "name": "Five-great"
+            },
+            {
+              "name": "five",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "https://github.com/Five-great"
             }
           ]
         },
@@ -638,6 +643,27 @@
         ],
         "sort": 0,
         "oldLen": 1
+      },
+      {
+        "type": "docs",
+        "repo": "tinymce-plugin",
+        "path": "packages",
+        "children": [
+          {
+            "type": "docs",
+            "repo": "tp-importword",
+            "path": "__docs__",
+            "children": [
+              {
+                "type": "docs",
+                "repo": "tp-importword",
+                "path": "__docs__/quickStart",
+                "sort": 0
+              }
+            ],
+            "sort": 0
+          }
+        ]
       },
       {
         "type": "docs",
@@ -838,6 +864,45 @@
       ]
     },
     {
+      "name": "packages",
+      "path": "/packages",
+      "redirect": {
+        "name": "__docs__"
+      },
+      "component": {
+        "template": "<div class=\"packages\" ><router-view></router-view></div>"
+      },
+      "meta": {
+        "title": "插件集"
+      },
+      "children": [
+        {
+          "name": "tp-importword",
+          "path": "tp-importword",
+          "redirect": {
+            "name": "quickStart_t_h84x6r1653234855865_p_"
+          },
+          "component": {
+            "template": "<div class=\"tp-importword\" ><router-view></router-view></div>"
+          },
+          "meta": {
+            "title": "tp-importword"
+          },
+          "children": [
+            {
+              "name": "quickStart_t_h84x6r1653234855865_p_",
+              "path": "quickStart.html",
+              "component": "../build/site/docs/tp-importword/resources/__docs__/quickStart_t_h84x6r1653234855865_p_",
+              "meta": {
+                "title": "快速上手"
+              },
+              "dirRepo": "tp-importword"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "contributing",
       "path": "/contributing",
       "redirect": {
@@ -940,19 +1005,34 @@
   "fileStatus": {
     "add": [
       {
-        "repo": "tinymce-plugin-docs",
-        "path": "guide/examples/advanced",
+        "repo": "tp-importword",
+        "path": "__docs__/quickStart",
         "author": {
-          "name": "Five-great",
+          "name": "five",
           "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
           "repo": "https://github.com/Five-great"
         }
       },
       {
         "type": "docs",
-        "repo": "tinymce-plugin-docs",
-        "path": "guide/examples/advanced",
-        "sort": 0
+        "repo": "tinymce-plugin",
+        "path": "packages",
+        "children": [
+          {
+            "type": "docs",
+            "repo": "tp-importword",
+            "path": "__docs__",
+            "children": [
+              {
+                "type": "docs",
+                "repo": "tp-importword",
+                "path": "__docs__/quickStart",
+                "sort": 0
+              }
+            ],
+            "sort": 0
+          }
+        ]
       }
     ],
     "remove": [],

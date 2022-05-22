@@ -1,4 +1,4 @@
-import"./pinia.js";import{J as n}from"./vue.js";const l=n({components:{},template:`<div class="fv-mardown-html"><div class="fv-mardown-main"><h2 id="next \u8BA1\u5212" tabindex="-1"><a class="header-anchor" href="#next \u8BA1\u5212">#</a> next \u8BA1\u5212</h2>
+import"./pinia.js";import{J as n}from"./vue.js";const e=n({components:{},template:`<div class="fv-mardown-html"><div class="fv-mardown-main"><h2 id="next \u8BA1\u5212" tabindex="-1"><a class="header-anchor" href="#next \u8BA1\u5212">#</a> next \u8BA1\u5212</h2>
 <h3 id="\u4E0B\u4E00\u6B65\u63D2\u4EF6\u5F00\u53D1\u8BA1\u5212" tabindex="-1"><a class="header-anchor" href="#\u4E0B\u4E00\u6B65\u63D2\u4EF6\u5F00\u53D1\u8BA1\u5212">#</a> \u4E0B\u4E00\u6B65\u63D2\u4EF6\u5F00\u53D1\u8BA1\u5212</h3>
 <p>\u{1F680} \u8868\u793A\u5DF2\u7ECF\u5B9E\u73B0\u7684\u529F\u80FD
 \u{1F477} \u8868\u793A\u8FDB\u884C\u4E2D\u7684\u529F\u80FD
@@ -38,4 +38,4 @@ import"./pinia.js";import{J as n}from"./vue.js";const l=n({components:{},templat
 <ul>
 <li>[\u{1F4DD}] \u5C06\u63D2\u4EF6\u5347\u7EA7\u652F\u6301 tinymce6.0</li>
 </ul>
-</div></div>`});export{l as default};
+<PagesRouter pagesName="nextplainfo" /></div></div>`});export{e as default};
