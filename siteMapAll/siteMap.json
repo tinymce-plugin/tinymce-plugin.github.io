@@ -1,6 +1,6 @@
 {
-  "TimeID": 1653213614394,
-  "sha": "dc75b90b4fa00460b74269c02697840746e2c281",
+  "TimeID": 1653213714865,
+  "sha": "8c2b8f49e1e46e08da499cc30e5b7ac3ec9fb8f5",
   "siteMap": {
     "plugins": [],
     "pluginsDDDD": [],
@@ -207,14 +207,19 @@
               "repo": "/Five-great",
               "logo": "https://avatars.githubusercontent.com/u/43601963?s=40&amp;v=4",
               "name": "Five-great"
+            },
+            {
+              "name": "Five-great",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "https://github.com/Five-great"
             }
           ],
           "type": "file",
           "title": "基础样例",
           "name": "basic",
           "en-title": "basic",
-          "path": "docs/tinymce-plugin-docs/resources/guide/examples/basic_t_lfvze91653212526988_p_.md",
-          "upTime": 1653212527942
+          "path": "docs/tinymce-plugin-docs/resources/guide/examples/basic_t_31jzes1653213714006_p_.md",
+          "upTime": 1653213714863
         },
         "guide/examples/examples-info": {
           "contributors-list": [
@@ -550,21 +555,6 @@
       {
         "type": "docs",
         "repo": "tinymce-plugin-docs",
-        "path": "guide/examples",
-        "children": [
-          {
-            "type": "docs",
-            "repo": "tinymce-plugin-docs",
-            "path": "guide/examples/basic",
-            "sort": "99"
-          }
-        ],
-        "sort": "8",
-        "oldLen": 1
-      },
-      {
-        "type": "docs",
-        "repo": "tinymce-plugin-docs",
         "path": "guide/customize",
         "children": [
           {
@@ -582,6 +572,21 @@
         ],
         "sort": "1",
         "oldLen": 2
+      },
+      {
+        "type": "docs",
+        "repo": "tinymce-plugin-docs",
+        "path": "guide/examples",
+        "children": [
+          {
+            "type": "docs",
+            "repo": "tinymce-plugin-docs",
+            "path": "guide/examples/basic",
+            "sort": "99"
+          }
+        ],
+        "sort": 0,
+        "oldLen": 1
       },
       {
         "type": "docs",
@@ -698,30 +703,6 @@
       "dirRepo": ""
     },
     {
-      "name": "examples",
-      "path": "/examples",
-      "redirect": {
-        "name": "basic_t_lfvze91653212526988_p_"
-      },
-      "component": {
-        "template": "<div class=\"examples\" ><router-view></router-view></div>"
-      },
-      "meta": {
-        "title": "样例"
-      },
-      "children": [
-        {
-          "name": "basic_t_lfvze91653212526988_p_",
-          "path": "basic.html",
-          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/examples/basic_t_lfvze91653212526988_p_",
-          "meta": {
-            "title": "基础样例"
-          },
-          "dirRepo": "tinymce-plugin-docs"
-        }
-      ]
-    },
-    {
       "name": "customize",
       "path": "/customize",
       "redirect": {
@@ -749,6 +730,30 @@
           "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/customize/table_t_2otkd51653212526988_p_",
           "meta": {
             "title": "table 表格插件"
+          },
+          "dirRepo": "tinymce-plugin-docs"
+        }
+      ]
+    },
+    {
+      "name": "examples",
+      "path": "/examples",
+      "redirect": {
+        "name": "basic_t_31jzes1653213714006_p_"
+      },
+      "component": {
+        "template": "<div class=\"examples\" ><router-view></router-view></div>"
+      },
+      "meta": {
+        "title": "样例"
+      },
+      "children": [
+        {
+          "name": "basic_t_31jzes1653213714006_p_",
+          "path": "basic.html",
+          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/examples/basic_t_31jzes1653213714006_p_",
+          "meta": {
+            "title": "基础样例"
           },
           "dirRepo": "tinymce-plugin-docs"
         }
@@ -908,7 +913,7 @@
     "updata": [
       {
         "repo": "tinymce-plugin-docs",
-        "path": "guide/skill/skeleton",
+        "path": "guide/examples/basic",
         "author": {
           "name": "Five-great",
           "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
