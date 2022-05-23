@@ -10,7 +10,7 @@ import"./pinia.js";import{J as n}from"./vue.js";const e=n({components:{},templat
 <p>[\u{1F477}] tpTabs</p>
 </li>
 <li>
-<p>[\u{1F477} ] tpCollapse</p>
+<p>[\u{1F477}] tpCollapse</p>
 </li>
 <li>
 <p>[\u{1F477}] tpButtons</p>
