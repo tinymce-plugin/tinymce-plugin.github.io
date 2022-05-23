@@ -1,6 +1,6 @@
 {
-  "TimeID": 1653234856572,
-  "sha": "2a71ada79b699d3d17c3be4f49ad1d67b28a11b0",
+  "TimeID": 1653274329608,
+  "sha": "fdc46e5571978acd138fb52b90f0ec6596d71393",
   "siteMap": {
     "plugins": [],
     "pluginsDDDD": [],
@@ -501,13 +501,18 @@
           "title": "快速上手",
           "name": "quickStart",
           "en-title": "quickStart",
-          "path": "docs/tp-importword/resources/__docs__/quickStart_t_h84x6r1653234855865_p_.md",
-          "upTime": 1653234856571,
+          "path": "docs/tp-importword/resources/__docs__/quickStart_t_hkdhn41653274328306_p_.md",
+          "upTime": 1653274329606,
           "contributors-list": [
             {
               "repo": "/Five-great",
               "logo": "https://avatars.githubusercontent.com/u/43601963?s=40&amp;v=4",
               "name": "Five-great"
+            },
+            {
+              "name": "five",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "https://github.com/Five-great"
             },
             {
               "name": "five",
@@ -530,6 +535,36 @@
               "name": "Five-great"
             }
           ]
+        },
+        "__docs__/configure": {
+          "contributors-list": [
+            {
+              "name": "five",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "https://github.com/Five-great"
+            }
+          ],
+          "type": "file",
+          "title": "配置参考",
+          "name": "configure",
+          "en-title": "configure",
+          "path": "docs/tp-importword/resources/__docs__/configure_t_lssjxm1653274328306_p_.md",
+          "upTime": 1653274329606
+        },
+        "__docs__/tpImporatwordDemo": {
+          "contributors-list": [
+            {
+              "name": "five",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "https://github.com/Five-great"
+            }
+          ],
+          "type": "file",
+          "title": "demo",
+          "name": "tpImporatwordDemo",
+          "en-title": "tpImporatwordDemo",
+          "path": "docs/tp-importword/resources/__docs__/tpImporatwordDemo_t_1do45h1653274328306_p_.md",
+          "upTime": 1653274329607
         }
       },
       "tp-tabs": {
@@ -657,7 +692,19 @@
               {
                 "type": "docs",
                 "repo": "tp-importword",
+                "path": "__docs__/configure",
+                "sort": "8"
+              },
+              {
+                "type": "docs",
+                "repo": "tp-importword",
                 "path": "__docs__/quickStart",
+                "sort": "5"
+              },
+              {
+                "type": "docs",
+                "repo": "tp-importword",
+                "path": "__docs__/tpImporatwordDemo",
                 "sort": 0
               }
             ],
@@ -880,7 +927,7 @@
           "name": "tp-importword",
           "path": "tp-importword",
           "redirect": {
-            "name": "quickStart_t_h84x6r1653234855865_p_"
+            "name": "configure_t_lssjxm1653274328306_p_"
           },
           "component": {
             "template": "<div class=\"tp-importword\" ><router-view></router-view></div>"
@@ -890,11 +937,29 @@
           },
           "children": [
             {
-              "name": "quickStart_t_h84x6r1653234855865_p_",
+              "name": "configure_t_lssjxm1653274328306_p_",
+              "path": "configure.html",
+              "component": "../build/site/docs/tp-importword/resources/__docs__/configure_t_lssjxm1653274328306_p_",
+              "meta": {
+                "title": "配置参考"
+              },
+              "dirRepo": "tp-importword"
+            },
+            {
+              "name": "quickStart_t_hkdhn41653274328306_p_",
               "path": "quickStart.html",
-              "component": "../build/site/docs/tp-importword/resources/__docs__/quickStart_t_h84x6r1653234855865_p_",
+              "component": "../build/site/docs/tp-importword/resources/__docs__/quickStart_t_hkdhn41653274328306_p_",
               "meta": {
                 "title": "快速上手"
+              },
+              "dirRepo": "tp-importword"
+            },
+            {
+              "name": "tpImporatwordDemo_t_1do45h1653274328306_p_",
+              "path": "tpImporatwordDemo.html",
+              "component": "../build/site/docs/tp-importword/resources/__docs__/tpImporatwordDemo_t_1do45h1653274328306_p_",
+              "meta": {
+                "title": "demo"
               },
               "dirRepo": "tp-importword"
             }
@@ -1006,7 +1071,16 @@
     "add": [
       {
         "repo": "tp-importword",
-        "path": "__docs__/quickStart",
+        "path": "__docs__/configure",
+        "author": {
+          "name": "five",
+          "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+          "repo": "https://github.com/Five-great"
+        }
+      },
+      {
+        "repo": "tp-importword",
+        "path": "__docs__/tpImporatwordDemo",
         "author": {
           "name": "five",
           "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
@@ -1015,33 +1089,50 @@
       },
       {
         "type": "docs",
-        "repo": "tinymce-plugin",
-        "path": "packages",
-        "children": [
-          {
-            "type": "docs",
-            "repo": "tp-importword",
-            "path": "__docs__",
-            "children": [
-              {
-                "type": "docs",
-                "repo": "tp-importword",
-                "path": "__docs__/quickStart",
-                "sort": 0
-              }
-            ],
-            "sort": 0
-          }
-        ]
+        "repo": "tp-importword",
+        "path": "__docs__/configure",
+        "sort": "8"
+      },
+      {
+        "type": "docs",
+        "repo": "tp-importword",
+        "path": "__docs__/tpImporatwordDemo",
+        "sort": 0
       }
     ],
-    "remove": [],
-    "updata": [],
+    "remove": [
+      {
+        "repo": "tp-importword",
+        "path": "__docs__/tpImportword",
+        "author": {
+          "name": "five",
+          "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+          "repo": "https://github.com/Five-great"
+        }
+      }
+    ],
+    "updata": [
+      {
+        "repo": "tp-importword",
+        "path": "__docs__/quickStart",
+        "author": {
+          "name": "five",
+          "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+          "repo": "https://github.com/Five-great"
+        }
+      }
+    ],
     "addList": [
+      "",
+      "",
+      "",
       "",
       ""
     ],
-    "removeList": [],
+    "removeList": [
+      "",
+      ""
+    ],
     "upObj": {}
   }
 }
