@@ -1,6 +1,6 @@
 {
-  "TimeID": 1653290654880,
-  "sha": "eb46576401c0ee9b51259b010a52f53c6375c585",
+  "TimeID": 1653290692671,
+  "sha": "1853a660f8c6c5ae632c568dbf93e88431f2f50c",
   "siteMap": {
     "plugins": [],
     "pluginsDDDD": [],
@@ -622,19 +622,14 @@
               "name": "five",
               "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
               "repo": "/Five-great"
-            },
-            {
-              "name": "five",
-              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
-              "repo": "/Five-great"
             }
           ],
           "type": "file",
           "title": "插件介绍",
           "name": "introduction",
           "en-title": "introduction",
-          "path": "docs/tp-importword/resources/__docs__/introduction_t_ylz0ne1653290520982_p_.md",
-          "upTime": 1653290521648
+          "path": "docs/tp-importword/resources/__docs__/introduction_t_jub37m1653290392443_p_.md",
+          "upTime": 1653290393082
         }
       },
       "tp-tabs": {
@@ -890,7 +885,7 @@
           "name": "tp-importword",
           "path": "tp-importword",
           "redirect": {
-            "name": "introduction_t_ylz0ne1653290520982_p_"
+            "name": "introduction_t_jub37m1653290392443_p_"
           },
           "component": {
             "template": "<div class=\"tp-importword\" ><router-view></router-view></div>"
@@ -900,9 +895,9 @@
           },
           "children": [
             {
-              "name": "introduction_t_ylz0ne1653290520982_p_",
+              "name": "introduction_t_jub37m1653290392443_p_",
               "path": "introduction.html",
-              "component": "../build/site/docs/tp-importword/resources/__docs__/introduction_t_ylz0ne1653290520982_p_",
+              "component": "../build/site/docs/tp-importword/resources/__docs__/introduction_t_jub37m1653290392443_p_",
               "meta": {
                 "title": "插件介绍"
               },
