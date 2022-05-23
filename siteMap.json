@@ -1,6 +1,6 @@
 {
-  "TimeID": 1653296220957,
-  "sha": "ed84a3d75d3fa8bf29b5b8e543921db057cc70c8",
+  "TimeID": 1653296744622,
+  "sha": "ae2b1bd1d51648af19aa112098b89c34bd760eb0",
   "siteMap": {
     "plugins": [],
     "pluginsDDDD": [],
@@ -501,13 +501,18 @@
           "title": "快速上手",
           "name": "quickStart",
           "en-title": "quickStart",
-          "path": "docs/tp-importword/resources/__docs__/quickStart_t_6rffmy1653293524200_p_.md",
-          "upTime": 1653293524694,
+          "path": "docs/tp-importword/resources/__docs__/quickStart_t_gbbpd41653296744075_p_.md",
+          "upTime": 1653296744620,
           "contributors-list": [
             {
               "repo": "/Five-great",
               "logo": "https://avatars.githubusercontent.com/u/43601963?s=40&amp;v=4",
               "name": "Five-great"
+            },
+            {
+              "name": "five",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "/Five-great"
             }
           ]
         },
@@ -547,14 +552,19 @@
               "name": "five",
               "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
               "repo": "https://github.com/Five-great"
+            },
+            {
+              "name": "five",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "/Five-great"
             }
           ],
           "type": "file",
-          "title": "demo",
+          "title": "插件demo",
           "name": "tpImporatwordDemo",
           "en-title": "tpImporatwordDemo",
-          "path": "docs/tp-importword/resources/__docs__/tpImporatwordDemo_t_rtg8pf1653293524200_p_.md",
-          "upTime": 1653293524695
+          "path": "docs/tp-importword/resources/__docs__/tpImporatwordDemo_t_stobsx1653296744075_p_.md",
+          "upTime": 1653296744621
         },
         "__docs__/introduction": {
           "contributors-list": [
@@ -866,9 +876,9 @@
               "dirRepo": "tp-importword"
             },
             {
-              "name": "quickStart_t_6rffmy1653293524200_p_",
+              "name": "quickStart_t_gbbpd41653296744075_p_",
               "path": "quickStart.html",
-              "component": "../build/site/docs/tp-importword/resources/__docs__/quickStart_t_6rffmy1653293524200_p_",
+              "component": "../build/site/docs/tp-importword/resources/__docs__/quickStart_t_gbbpd41653296744075_p_",
               "meta": {
                 "title": "快速上手"
               },
@@ -884,11 +894,11 @@
               "dirRepo": "tp-importword"
             },
             {
-              "name": "tpImporatwordDemo_t_rtg8pf1653293524200_p_",
+              "name": "tpImporatwordDemo_t_stobsx1653296744075_p_",
               "path": "tpImporatwordDemo.html",
-              "component": "../build/site/docs/tp-importword/resources/__docs__/tpImporatwordDemo_t_rtg8pf1653293524200_p_",
+              "component": "../build/site/docs/tp-importword/resources/__docs__/tpImporatwordDemo_t_stobsx1653296744075_p_",
               "meta": {
-                "title": "demo"
+                "title": "插件demo"
               },
               "dirRepo": "tp-importword"
             }
@@ -1120,18 +1130,21 @@
     }
   ],
   "fileStatus": {
-    "add": [
-      {
-        "type": "docs",
-        "repo": "tp-importword",
-        "path": "README"
-      }
-    ],
+    "add": [],
     "remove": [],
     "updata": [
       {
         "repo": "tp-importword",
-        "path": "README",
+        "path": "__docs__/quickStart",
+        "author": {
+          "name": "five",
+          "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+          "repo": "/Five-great"
+        }
+      },
+      {
+        "repo": "tp-importword",
+        "path": "__docs__/tpImporatwordDemo",
         "author": {
           "name": "five",
           "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
@@ -1144,6 +1157,7 @@
       ""
     ],
     "removeList": [
+      "",
       ""
     ],
     "upObj": {}
