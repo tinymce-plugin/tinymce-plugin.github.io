@@ -2,8 +2,6 @@
   "TimeID": 1653313810972,
   "sha": "a56f24ec832402cd050cc616c60379a5fafdad09",
   "siteMap": {
-    "plugins": [],
-    "pluginsDDDD": [],
     "docsMap": {
       "tinymce-plugin-docs": {
         "guide": {},
@@ -218,26 +216,6 @@
           "path": "docs/tp-importword/resources/__docs__/tpImporatwordDemo_t_0i28zo1653313810177_p_.md",
           "upTime": 1653313810968
         }
-      },
-      "tp-indent2em": {
-        "__docs__/tpIndent2em": {
-          "type": "file",
-          "title": "test",
-          "name": "tpIndent2em",
-          "en-title": "tpIndent2em",
-          "path": "docs/tp-indent2em/resources/__docs__/tpIndent2em_t_45fxf91653313810177_p_.md",
-          "upTime": 1653313810968
-        }
-      },
-      "tp-layout": {
-        "README": {
-          "type": "file",
-          "title": "tp-layout",
-          "name": "tp-layout",
-          "en-title": "tp-layout",
-          "path": "docs/tp-layout/resources/README_t_801c6z1653313810177_p_.md",
-          "upTime": 1653313810966
-        }
       }
     },
     "routes": [],
@@ -365,30 +343,6 @@
         ],
         "sort": 0,
         "oldLen": 1
-      },
-      {
-        "type": "docs",
-        "repo": "tp-importword",
-        "path": "README"
-      },
-      {
-        "type": "docs",
-        "repo": "tp-layout",
-        "path": "README"
-      },
-      {
-        "type": "docs",
-        "repo": "tp-indent2em",
-        "path": "__docs__",
-        "children": [
-          {
-            "type": "docs",
-            "repo": "tp-indent2em",
-            "path": "__docs__/tpIndent2em",
-            "sort": 0
-          }
-        ],
-        "sort": 0
       },
       {
         "type": "docs",
@@ -589,15 +543,6 @@
       ]
     },
     {
-      "name": "README_t_801c6z1653313810177_p_",
-      "component": "../build/site/docs/tp-layout/resources/README_t_801c6z1653313810177_p_",
-      "path": "/tp-layout.html",
-      "meta": {
-        "title": "tp-layout"
-      },
-      "dirRepo": ""
-    },
-    {
       "name": "contributing",
       "path": "/contributing",
       "redirect": {
@@ -699,31 +644,11 @@
   ],
   "fileStatus": {
     "add": [
-      {
-        "type": "docs",
-        "repo": "tp-layout",
-        "path": "README"
-      },
-      {
-        "type": "docs",
-        "repo": "tp-indent2em",
-        "path": "__docs__",
-        "children": [
-          {
-            "type": "docs",
-            "repo": "tp-indent2em",
-            "path": "__docs__/tpIndent2em",
-            "sort": 0
-          }
-        ],
-        "sort": 0
-      }
+     
     ],
     "remove": [],
     "updata": [],
     "addList": [
-      "",
-      ""
     ],
     "removeList": [],
     "upObj": {}
