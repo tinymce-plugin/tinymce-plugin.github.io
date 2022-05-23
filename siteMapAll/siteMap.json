@@ -1,6 +1,6 @@
 {
-  "TimeID": 1653322264464,
-  "sha": "434d3f2a0426d2f17de148f3cdb2554a2133b4c3",
+  "TimeID": 1653322772202,
+  "sha": "e4ac3da8088dad0243a0ac2ab3d50078b3914318",
   "siteMap": {
     "docsMap": {
       "tinymce-plugin-docs": {
@@ -10,23 +10,23 @@
           "title": "前言",
           "name": "introduction",
           "en-title": "introduction",
-          "path": "docs/tinymce-plugin-docs/resources/guide/introduction_t_cm5kpl1653322263941_p_.md",
-          "upTime": 1653322264454
+          "path": "docs/tinymce-plugin-docs/resources/guide/introduction_t_hyk9ua1653322771034_p_.md",
+          "upTime": 1653322772194
         },
         "guide/quickStart": {
           "type": "file",
           "title": "快速上手",
           "name": "quickStart",
           "en-title": "quickStart",
-          "path": "docs/tinymce-plugin-docs/resources/guide/quickStart_t_i6prgz1653322263941_p_.md",
-          "upTime": 1653322264454
+          "path": "docs/tinymce-plugin-docs/resources/guide/quickStart_t_vq6i5o1653322771034_p_.md",
+          "upTime": 1653322772195
         },
         "guide/commonproblem": {
           "type": "dir",
           "title": "问答专区",
           "name": "commonproblem",
           "en-title": "commonproblem",
-          "upTime": 1653322264455,
+          "upTime": 1653322772196,
           "path": "docs/tinymce-plugin-docs/resources/guide/commonproblem.md"
         },
         "guide/commonproblem/images": {
@@ -34,15 +34,15 @@
           "title": "images相关问答",
           "name": "images",
           "en-title": "images",
-          "path": "docs/tinymce-plugin-docs/resources/guide/commonproblem/images_t_ydopk51653322263941_p_.md",
-          "upTime": 1653322264456
+          "path": "docs/tinymce-plugin-docs/resources/guide/commonproblem/images_t_qdszbj1653322771034_p_.md",
+          "upTime": 1653322772196
         },
         "guide/customize": {
           "type": "dir",
           "title": "魔改扩展",
           "name": "customize",
           "en-title": "customize",
-          "upTime": 1653322264456,
+          "upTime": 1653322772196,
           "path": "docs/tinymce-plugin-docs/resources/guide/customize.md"
         },
         "guide/customize/images": {
@@ -50,23 +50,23 @@
           "title": "image 插入编辑图片",
           "name": "images",
           "en-title": "images",
-          "path": "docs/tinymce-plugin-docs/resources/guide/customize/images_t_urdvvj1653322263941_p_.md",
-          "upTime": 1653322264456
+          "path": "docs/tinymce-plugin-docs/resources/guide/customize/images_t_xn80811653322771034_p_.md",
+          "upTime": 1653322772196
         },
         "guide/customize/table": {
           "type": "file",
           "title": "table 表格插件",
           "name": "table",
           "en-title": "table",
-          "path": "docs/tinymce-plugin-docs/resources/guide/customize/table_t_3quf5x1653322263941_p_.md",
-          "upTime": 1653322264457
+          "path": "docs/tinymce-plugin-docs/resources/guide/customize/table_t_2ebzjx1653322771034_p_.md",
+          "upTime": 1653322772196
         },
         "guide/examples": {
           "type": "dir",
           "title": "样例",
           "name": "examples",
           "en-title": "examples",
-          "upTime": 1653322264457,
+          "upTime": 1653322772197,
           "path": "docs/tinymce-plugin-docs/resources/guide/examples.md"
         },
         "guide/examples/advanced": {
@@ -74,23 +74,23 @@
           "title": "高阶使用",
           "name": "advanced",
           "en-title": "advanced",
-          "path": "docs/tinymce-plugin-docs/resources/guide/examples/advanced_t_8w3imz1653322263941_p_.md",
-          "upTime": 1653322264457
+          "path": "docs/tinymce-plugin-docs/resources/guide/examples/advanced_t_960h6y1653322771034_p_.md",
+          "upTime": 1653322772197
         },
         "guide/examples/basic": {
           "type": "file",
           "title": "基础样例",
           "name": "basic",
           "en-title": "basic",
-          "path": "docs/tinymce-plugin-docs/resources/guide/examples/basic_t_wya2951653322263941_p_.md",
-          "upTime": 1653322264457
+          "path": "docs/tinymce-plugin-docs/resources/guide/examples/basic_t_s299t91653322771034_p_.md",
+          "upTime": 1653322772197
         },
         "guide/skill": {
           "type": "dir",
           "title": "使用技巧",
           "name": "skill",
           "en-title": "skill",
-          "upTime": 1653322264458,
+          "upTime": 1653322772197,
           "path": "docs/tinymce-plugin-docs/resources/guide/skill.md"
         },
         "guide/skill/skeleton": {
@@ -98,15 +98,15 @@
           "title": "如何开启骨架屏",
           "name": "skeleton",
           "en-title": "skeleton",
-          "path": "docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_ljjxjo1653322263941_p_.md",
-          "upTime": 1653322264458
+          "path": "docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_hbd7sf1653322771034_p_.md",
+          "upTime": 1653322772197
         },
         "guide/contributing": {
           "type": "dir",
           "title": "参与贡献",
           "name": "contributing",
           "en-title": "contributing",
-          "upTime": 1653322264461,
+          "upTime": 1653322772199,
           "path": "docs/tinymce-plugin-docs/resources/guide/contributing.md"
         },
         "guide/contributing/plugin": {
@@ -114,15 +114,15 @@
           "title": "贡献插件",
           "name": "plugin",
           "en-title": "plugin",
-          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/plugin_t_3wr00m1653322263941_p_.md",
-          "upTime": 1653322264461
+          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/plugin_t_4i8tnt1653322771034_p_.md",
+          "upTime": 1653322772199
         },
         "guide/contributing/syntax": {
           "type": "dir",
           "title": "文档语法",
           "name": "syntax",
           "en-title": "syntax",
-          "upTime": 1653322264461,
+          "upTime": 1653322772200,
           "path": "docs/tinymce-plugin-docs/resources/guide/contributing/syntax.md"
         },
         "guide/contributing/syntax/link-images": {
@@ -130,23 +130,23 @@
           "title": "链接与图片",
           "name": "link-images",
           "en-title": "link-images",
-          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/syntax/link-images_t_rn5td51653322263941_p_.md",
-          "upTime": 1653322264461
+          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/syntax/link-images_t_iiahn51653322771034_p_.md",
+          "upTime": 1653322772200
         },
         "guide/contributing/syntax/tip-code": {
           "type": "file",
           "title": "提示与代码高亮",
           "name": "tip-code",
           "en-title": "tip-code",
-          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/syntax/tip-code_t_mm6eiz1653322263941_p_.md",
-          "upTime": 1653322264462
+          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/syntax/tip-code_t_gaoe0m1653322771034_p_.md",
+          "upTime": 1653322772200
         },
         "guide/contributing/writing-guide": {
           "type": "dir",
           "title": "文档编写指南",
           "name": "writing-guide",
           "en-title": "writing-guide",
-          "upTime": 1653322264462,
+          "upTime": 1653322772200,
           "path": "docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide.md"
         },
         "guide/contributing/writing-guide/grammar-demo": {
@@ -154,24 +154,24 @@
           "title": "实例 Demo 语法",
           "name": "grammar-demo",
           "en-title": "grammar-demo",
-          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/grammar-demo_t_hyx17i1653322263941_p_.md",
-          "upTime": 1653322264463
+          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/grammar-demo_t_zrf78s1653322771034_p_.md",
+          "upTime": 1653322772201
         },
         "guide/contributing/writing-guide/grammar": {
           "type": "file",
           "title": "文档语法",
           "name": "grammar",
           "en-title": "grammar",
-          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/grammar_t_uj38fi1653322263941_p_.md",
-          "upTime": 1653322264463
+          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/grammar_t_3y24n81653322771034_p_.md",
+          "upTime": 1653322772201
         },
         "guide/contributing/writing-guide/guide": {
           "type": "file",
           "title": "编写指南",
           "name": "guide",
           "en-title": "guide",
-          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/guide_t_6bt5h41653322263941_p_.md",
-          "upTime": 1653322264463
+          "path": "docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/guide_t_qezo831653322771034_p_.md",
+          "upTime": 1653322772201
         }
       },
       "tinymce-plugin": {
@@ -189,32 +189,32 @@
           "title": "配置参考",
           "name": "configure",
           "en-title": "configure",
-          "path": "docs/tp-importword/resources/__docs__/configure_t_p07vdr1653322263941_p_.md",
-          "upTime": 1653322264459
+          "path": "docs/tp-importword/resources/__docs__/configure_t_2ycf3n1653322771034_p_.md",
+          "upTime": 1653322772198
         },
         "__docs__/introduction": {
           "type": "file",
           "title": "插件介绍",
           "name": "introduction",
           "en-title": "introduction",
-          "path": "docs/tp-importword/resources/__docs__/introduction_t_pwxk921653322263941_p_.md",
-          "upTime": 1653322264460
+          "path": "docs/tp-importword/resources/__docs__/introduction_t_m4n5zw1653322771034_p_.md",
+          "upTime": 1653322772199
         },
         "__docs__/quickStart": {
           "type": "file",
           "title": "快速上手",
           "name": "quickStart",
           "en-title": "quickStart",
-          "path": "docs/tp-importword/resources/__docs__/quickStart_t_uqf6os1653322263941_p_.md",
-          "upTime": 1653322264460
+          "path": "docs/tp-importword/resources/__docs__/quickStart_t_eygi2o1653322771034_p_.md",
+          "upTime": 1653322772199
         },
         "__docs__/tpImporatwordDemo": {
           "type": "file",
           "title": "插件demo",
           "name": "tpImporatwordDemo",
           "en-title": "tpImporatwordDemo",
-          "path": "docs/tp-importword/resources/__docs__/tpImporatwordDemo_t_tfaqap1653322263941_p_.md",
-          "upTime": 1653322264460
+          "path": "docs/tp-importword/resources/__docs__/tpImporatwordDemo_t_sl9flq1653322771034_p_.md",
+          "upTime": 1653322772199
         }
       }
     },
@@ -245,6 +245,12 @@
               {
                 "type": "docs",
                 "repo": "tp-importword",
+                "path": "__docs__/configure",
+                "sort": "3"
+              },
+              {
+                "type": "docs",
+                "repo": "tp-importword",
                 "path": "__docs__/introduction",
                 "sort": "9"
               },
@@ -257,19 +263,15 @@
               {
                 "type": "docs",
                 "repo": "tp-importword",
-                "path": "__docs__/configure",
-                "sort": "3"
-              },
-              {
-                "type": "docs",
-                "repo": "tp-importword",
                 "path": "__docs__/tpImporatwordDemo",
                 "sort": 0
               }
             ],
-            "sort": 0
+            "sort": 0,
+            "oldLen": 4
           }
         ],
+        "oldLen": 1,
         "sort": 999990
       },
       {
@@ -411,8 +413,8 @@
   },
   "routes": [
     {
-      "name": "introduction_t_cm5kpl1653322263941_p_",
-      "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/introduction_t_cm5kpl1653322263941_p_",
+      "name": "introduction_t_hyk9ua1653322771034_p_",
+      "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/introduction_t_hyk9ua1653322771034_p_",
       "path": "/introduction.html",
       "meta": {
         "title": "前言"
@@ -420,8 +422,8 @@
       "dirRepo": ""
     },
     {
-      "name": "quickStart_t_i6prgz1653322263941_p_",
-      "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/quickStart_t_i6prgz1653322263941_p_",
+      "name": "quickStart_t_vq6i5o1653322771034_p_",
+      "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/quickStart_t_vq6i5o1653322771034_p_",
       "path": "/quickStart.html",
       "meta": {
         "title": "快速上手"
@@ -432,7 +434,7 @@
       "name": "examples",
       "path": "/examples",
       "redirect": {
-        "name": "basic_t_wya2951653322263941_p_"
+        "name": "basic_t_s299t91653322771034_p_"
       },
       "component": {
         "template": "<div class=\"examples\" ><router-view></router-view></div>"
@@ -442,18 +444,18 @@
       },
       "children": [
         {
-          "name": "basic_t_wya2951653322263941_p_",
+          "name": "basic_t_s299t91653322771034_p_",
           "path": "basic.html",
-          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/examples/basic_t_wya2951653322263941_p_",
+          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/examples/basic_t_s299t91653322771034_p_",
           "meta": {
             "title": "基础样例"
           },
           "dirRepo": "tinymce-plugin-docs"
         },
         {
-          "name": "advanced_t_8w3imz1653322263941_p_",
+          "name": "advanced_t_960h6y1653322771034_p_",
           "path": "advanced.html",
-          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/examples/advanced_t_8w3imz1653322263941_p_",
+          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/examples/advanced_t_960h6y1653322771034_p_",
           "meta": {
             "title": "高阶使用"
           },
@@ -465,7 +467,7 @@
       "name": "skill",
       "path": "/skill",
       "redirect": {
-        "name": "skeleton_t_ljjxjo1653322263941_p_"
+        "name": "skeleton_t_hbd7sf1653322771034_p_"
       },
       "component": {
         "template": "<div class=\"skill\" ><router-view></router-view></div>"
@@ -475,9 +477,9 @@
       },
       "children": [
         {
-          "name": "skeleton_t_ljjxjo1653322263941_p_",
+          "name": "skeleton_t_hbd7sf1653322771034_p_",
           "path": "skeleton.html",
-          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_ljjxjo1653322263941_p_",
+          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_hbd7sf1653322771034_p_",
           "meta": {
             "title": "如何开启骨架屏"
           },
@@ -489,7 +491,7 @@
       "name": "customize",
       "path": "/customize",
       "redirect": {
-        "name": "images_t_urdvvj1653322263941_p_"
+        "name": "images_t_xn80811653322771034_p_"
       },
       "component": {
         "template": "<div class=\"customize\" ><router-view></router-view></div>"
@@ -499,18 +501,18 @@
       },
       "children": [
         {
-          "name": "images_t_urdvvj1653322263941_p_",
+          "name": "images_t_xn80811653322771034_p_",
           "path": "images.html",
-          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/customize/images_t_urdvvj1653322263941_p_",
+          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/customize/images_t_xn80811653322771034_p_",
           "meta": {
             "title": "image 插入编辑图片"
           },
           "dirRepo": "tinymce-plugin-docs"
         },
         {
-          "name": "table_t_3quf5x1653322263941_p_",
+          "name": "table_t_2ebzjx1653322771034_p_",
           "path": "table.html",
-          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/customize/table_t_3quf5x1653322263941_p_",
+          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/customize/table_t_2ebzjx1653322771034_p_",
           "meta": {
             "title": "table 表格插件"
           },
@@ -522,7 +524,7 @@
       "name": "commonproblem",
       "path": "/commonproblem",
       "redirect": {
-        "name": "images_t_ydopk51653322263941_p_"
+        "name": "images_t_qdszbj1653322771034_p_"
       },
       "component": {
         "template": "<div class=\"commonproblem\" ><router-view></router-view></div>"
@@ -532,9 +534,9 @@
       },
       "children": [
         {
-          "name": "images_t_ydopk51653322263941_p_",
+          "name": "images_t_qdszbj1653322771034_p_",
           "path": "images.html",
-          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/commonproblem/images_t_ydopk51653322263941_p_",
+          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/commonproblem/images_t_qdszbj1653322771034_p_",
           "meta": {
             "title": "images相关问答"
           },
@@ -559,7 +561,7 @@
           "name": "writing-guide",
           "path": "writing-guide",
           "redirect": {
-            "name": "guide_t_6bt5h41653322263941_p_"
+            "name": "guide_t_qezo831653322771034_p_"
           },
           "component": {
             "template": "<div class=\"writing-guide\" ><router-view></router-view></div>"
@@ -569,27 +571,27 @@
           },
           "children": [
             {
-              "name": "guide_t_6bt5h41653322263941_p_",
+              "name": "guide_t_qezo831653322771034_p_",
               "path": "guide.html",
-              "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/guide_t_6bt5h41653322263941_p_",
+              "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/guide_t_qezo831653322771034_p_",
               "meta": {
                 "title": "编写指南"
               },
               "dirRepo": "tinymce-plugin-docs"
             },
             {
-              "name": "grammar_t_uj38fi1653322263941_p_",
+              "name": "grammar_t_3y24n81653322771034_p_",
               "path": "grammar.html",
-              "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/grammar_t_uj38fi1653322263941_p_",
+              "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/grammar_t_3y24n81653322771034_p_",
               "meta": {
                 "title": "文档语法"
               },
               "dirRepo": "tinymce-plugin-docs"
             },
             {
-              "name": "grammar-demo_t_hyx17i1653322263941_p_",
+              "name": "grammar-demo_t_zrf78s1653322771034_p_",
               "path": "grammar-demo.html",
-              "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/grammar-demo_t_hyx17i1653322263941_p_",
+              "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/grammar-demo_t_zrf78s1653322771034_p_",
               "meta": {
                 "title": "实例 Demo 语法"
               },
@@ -601,7 +603,7 @@
           "name": "syntax",
           "path": "syntax",
           "redirect": {
-            "name": "link-images_t_rn5td51653322263941_p_"
+            "name": "link-images_t_iiahn51653322771034_p_"
           },
           "component": {
             "template": "<div class=\"syntax\" ><router-view></router-view></div>"
@@ -611,18 +613,18 @@
           },
           "children": [
             {
-              "name": "link-images_t_rn5td51653322263941_p_",
+              "name": "link-images_t_iiahn51653322771034_p_",
               "path": "link-images.html",
-              "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/syntax/link-images_t_rn5td51653322263941_p_",
+              "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/syntax/link-images_t_iiahn51653322771034_p_",
               "meta": {
                 "title": "链接与图片"
               },
               "dirRepo": "tinymce-plugin-docs"
             },
             {
-              "name": "tip-code_t_mm6eiz1653322263941_p_",
+              "name": "tip-code_t_gaoe0m1653322771034_p_",
               "path": "tip-code.html",
-              "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/syntax/tip-code_t_mm6eiz1653322263941_p_",
+              "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/syntax/tip-code_t_gaoe0m1653322771034_p_",
               "meta": {
                 "title": "提示与代码高亮"
               },
@@ -631,9 +633,9 @@
           ]
         },
         {
-          "name": "plugin_t_3wr00m1653322263941_p_",
+          "name": "plugin_t_4i8tnt1653322771034_p_",
           "path": "plugin.html",
-          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/plugin_t_3wr00m1653322263941_p_",
+          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/plugin_t_4i8tnt1653322771034_p_",
           "meta": {
             "title": "贡献插件"
           },
