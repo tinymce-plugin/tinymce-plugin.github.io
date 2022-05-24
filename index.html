@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="module" src="/assets/polyfills-modern.fde55d65.js"></script>
+    <script type="module" src="/assets/polyfills-modern.2005470b.js"></script>
 
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
@@ -28,7 +28,16 @@
     <!-- <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script> -->
     <!-- <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
     <script src="/assets/ifarmeInit.js"></script>
-  
+    <!-- <script type="text/javascript" src="https://unpkg.com/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript">
+      // algoliasearchNetlify({
+      //   appId: 'CYK5SP44J0',
+      //   apiKey: 'a1737cb0706d8b360d23f581d49e0f08',
+      //   siteId: '07acf922-c4e5-4e7e-9e5e-7e1708a951ff',
+      //   branch: 'main',
+      //   selector: 'div#search',
+      // });
+    </script> -->
     <script type="module" crossorigin src="/assets/index.js"></script>
     <link rel="modulepreload" href="/assets/chunk/vue.js">
     <link rel="modulepreload" href="/assets/chunk/pinia.js">
@@ -40,10 +49,11 @@
   <body>
     <div id="tips"></div>
     <textarea id="inputCopy" style="position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;">复制专用</textarea>
+    <div id="search" ></div>
     <div id="app"></div>
     
     <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
-    <script nomodule id="vite-legacy-polyfill" src="/assets/polyfills-legacy.27ef8ded.js"></script>
+    <script nomodule id="vite-legacy-polyfill" src="/assets/polyfills-legacy.2417029a.js"></script>
     <script nomodule id="vite-legacy-entry" data-src="/assets/index-legacy.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
   </body>
 </html>
