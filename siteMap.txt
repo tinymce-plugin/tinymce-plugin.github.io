@@ -1,4 +1,4 @@
-/nextdisplay/vuedemo.html
+/introduction.html
 /packages/tp-importword/quickStart
 /packages/tp-importword/tpImportword
 /packages/tp-indent2em/tpIndent2em
@@ -7,7 +7,6 @@
 /contributing/writing-guide/grammar-demo
 /contributing/syntax/link-images
 /contributing/syntax/tip-code
-/introduction.html
 /introduction.html
 /introduction.html
 /packages/tp-layout
