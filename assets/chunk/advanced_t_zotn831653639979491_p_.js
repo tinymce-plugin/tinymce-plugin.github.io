@@ -2,4 +2,4 @@ import"./pinia.js";import{J as a}from"./vue.js";const n=a({components:{},templat
 <ul>
 <li>[x] test</li>
 </ul>
-</div></div><PagesRouter  docPath="guide/examples/advanced.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="advanced_t_2fbu3a1653638134255_p_" />`});export{n as default};
+</div></div><PagesRouter  docPath="guide/examples/advanced.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="advanced_t_zotn831653639979491_p_" />`});export{n as default};
