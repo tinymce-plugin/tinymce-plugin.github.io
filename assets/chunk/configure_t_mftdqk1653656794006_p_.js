@@ -69,10 +69,10 @@ import"./pinia.js";import{J as a}from"./vue.js";const s={};s.methods={source(){r
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 
-</code><div class="language-text" >html</div></pre>`},sourceCode(){return'<iframe scrolling="no" style="width:100%;margin:auto 0;border:0px; min-height: 319px"  onload="autoIframeHeight(this)"  src="/demo/demo-configure_t_drqf3s1653656247251_p_1653656251177/index.html"></iframe>'}};s.template=`<PreviewIframe class="demo-configure_t_drqf3s1653656247251_p_" idx="Demo0"  :source="source()" :sourceCode="sourceCode()">
+</code><div class="language-text" >html</div></pre>`},sourceCode(){return'<iframe scrolling="no" style="width:100%;margin:auto 0;border:0px; min-height: 319px"  onload="autoIframeHeight(this)"  src="/demo/demo-configure_t_mftdqk1653656794006_p_1653656797810/index.html"></iframe>'}};s.template=`<PreviewIframe class="demo-configure_t_mftdqk1653656794006_p_" idx="Demo0"  :source="source()" :sourceCode="sourceCode()">
                               
                             </PreviewIframe>`;const p=a({components:{Demo0:s},template:`<div class="fv-mardown-html"><div class="fv-mardown-main"><h1 id="\u914D\u7F6E\u53C2\u8003" tabindex="-1"><a class="header-anchor" href="#\u914D\u7F6E\u53C2\u8003">#</a> \u914D\u7F6E\u53C2\u8003</h1>
 <h2 id="\u5982\u4F55\u901A\u8FC7\u5916\u90E8\u6309\u94AE\u89E6\u53D1" tabindex="-1"><a class="header-anchor" href="#\u5982\u4F55\u901A\u8FC7\u5916\u90E8\u6309\u94AE\u89E6\u53D1">#</a> \u5982\u4F55\u901A\u8FC7\u5916\u90E8\u6309\u94AE\u89E6\u53D1</h2>
 <p>\u53EF\u4EE5\u7528\u901A\u8FC7 <code class="fv-code_inline">execCommand('mceTpImportword')</code> \u8C03\u7528</p>
 <p class="language-html"><Demo0  data-isComponent="iframe" /></p>
-</div></div><PagesRouter  docPath="__docs__/configure.md" mapType="docs" docRepo="tp-importword" pagesName="configure_t_drqf3s1653656247251_p_" />`});export{p as default};
+</div></div><PagesRouter  docPath="__docs__/configure.md" mapType="docs" docRepo="tp-importword" pagesName="configure_t_mftdqk1653656794006_p_" />`});export{p as default};
