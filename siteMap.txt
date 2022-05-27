@@ -7,7 +7,7 @@
 /contributing/writing-guide/grammar-demo
 /contributing/syntax/link-images
 /contributing/syntax/tip-code
-/nextplan/info.html
+/introduction.html
 /introduction.html
 /packages/tp-layout
 /examples/basic

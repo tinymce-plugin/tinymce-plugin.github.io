@@ -71,4 +71,4 @@ import"./pinia.js";import{J as s}from"./vue.js";const l=s({components:{},templat
 <p><strong>\u81EA\u884C\u4E0B\u8F7D\u4F7F\u7528</strong>
 \u8FD9\u4E9B\u6587\u4EF6\u53EF\u4EE5\u5728 <a href="https://unpkg.com/browse/tinymce-plugin/" target="_blank"><em><em><strong>unpkg</strong></em></em></a> \u6216\u8005<a href="https://cdn.jsdelivr.net/npm/tinymce-plugin/" target="_blank"><em><em><strong>jsDelivr</strong></em></em></a>  \u8FD9\u4E9B CDN \u4E0A\u6D4F\u89C8\u548C\u4E0B\u8F7D,\u81EA\u884C\u5B58\u653E\u4E0E\u4F7F\u7528</p>
 </blockquote>
-</div></div><PagesRouter  docPath="__docs__/quickStart.md" mapType="docs" docRepo="tp-importword" pagesName="quickStart_t_vbg9or1653650064416_p_" />`});export{l as default};
+</div></div><PagesRouter  docPath="__docs__/quickStart.md" mapType="docs" docRepo="tp-importword" pagesName="quickStart_t_0v1yuj1653656247251_p_" />`});export{l as default};
