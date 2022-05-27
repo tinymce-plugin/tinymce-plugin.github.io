@@ -1,6 +1,6 @@
 {
-  "TimeID": 1653639979933,
-  "sha": "b2ab7cbbb7ddfafd29dfcbbefcfd42edc505406e",
+  "TimeID": 1653642055219,
+  "sha": "afac52279c31b06c1458f78fa28c81e1bb9e1535",
   "siteMap": {
     "docsMap": {
       "tinymce-plugin-docs": {
@@ -279,6 +279,76 @@
           "name": "packages",
           "en-title": "packages",
           "path": "docs/tinymce-plugin/resources/packages.md"
+        }
+      },
+      "tp-importword": {
+        "__docs__": {
+          "type": "dir",
+          "title": "tp-importword",
+          "name": "tp-importword",
+          "en-title": "tp-importword",
+          "upTime": 1653642055215,
+          "path": "docs/tp-importword/resources/__docs__.md"
+        },
+        "__docs__/configure": {
+          "type": "file",
+          "title": "配置参考",
+          "name": "configure",
+          "en-title": "configure",
+          "path": "docs/tp-importword/resources/__docs__/configure_t_ggtqr41653642054275_p_.md",
+          "upTime": 1653642055216,
+          "contributors-list": [
+            {
+              "name": "five",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "/Five-great"
+            }
+          ]
+        },
+        "__docs__/introduction": {
+          "type": "file",
+          "title": "插件介绍",
+          "name": "introduction",
+          "en-title": "introduction",
+          "path": "docs/tp-importword/resources/__docs__/introduction_t_jsxlm71653642054275_p_.md",
+          "upTime": 1653642055218,
+          "contributors-list": [
+            {
+              "name": "five",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "/Five-great"
+            }
+          ]
+        },
+        "__docs__/quickStart": {
+          "type": "file",
+          "title": "快速上手",
+          "name": "quickStart",
+          "en-title": "quickStart",
+          "path": "docs/tp-importword/resources/__docs__/quickStart_t_fxh8vw1653642054275_p_.md",
+          "upTime": 1653642055218,
+          "contributors-list": [
+            {
+              "name": "five",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "/Five-great"
+            }
+          ]
+        },
+        "__docs__/tpImporatwordDemo": {
+          "type": "file",
+          "title": "插件demo",
+          "name": "tpImporatwordDemo",
+          "en-title": "tpImporatwordDemo",
+          "path": "docs/tp-importword/resources/__docs__/tpImporatwordDemo_t_0dhkhl1653642054275_p_.md",
+          "upTime": 1653642055218,
+          "contributors-list": [
+            {
+              "name": "five",
+              "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+              "repo": "/Five-great"
+            }
+          ]
         }
       }
     },
