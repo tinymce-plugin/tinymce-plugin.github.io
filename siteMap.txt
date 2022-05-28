@@ -8,7 +8,7 @@
 /contributing/syntax/link-images
 /contributing/syntax/tip-code
 /introduction.html
-/nextplan/demoall.html
+/introduction.html
 /packages/tp-layout
 /examples/basic
 /skill/skeleton
