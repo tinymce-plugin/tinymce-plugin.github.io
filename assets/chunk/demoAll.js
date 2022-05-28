@@ -1,6 +1,6 @@
 import "./pinia.js";
 import { _ as _export_sfc } from "../index.js";
-import { p as openBlock, q as createElementBlock, G as createVNode, s as createBaseVNode, J as resolveComponent } from "./vue.js";
+import { G as resolveComponent, p as createElementBlock, H as createVNode, q as createBaseVNode, z as openBlock } from "./vue.js";
 import "./tinymce.js";
 import "./tinymce-plugin-routes.js";
 const _sfc_main = {

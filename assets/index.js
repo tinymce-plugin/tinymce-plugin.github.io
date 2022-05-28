@@ -26,7 +26,7 @@ export function __vite_legacy_guard() {
 }
 ;
 import { d as defineStore, c as createPinia } from "./chunk/pinia.js";
-import { l as defineComponent, p as openBlock, q as createElementBlock, s as createBaseVNode, u as withModifiers, v as normalizeStyle, x as normalizeClass, F as Fragment, y as pushScopeId, z as popScopeId, i as inject, A as shallowRef, B as unref, j as computed, c as reactive, n as nextTick, C as h$1, D as provide, b as ref, w as watch, E as toRef, G as createVNode, H as renderList, I as createCommentVNode, J as resolveComponent, K as withCtx, L as createTextVNode, M as toDisplayString, N as createBlock, O as onMounted, P as version$1, Q as renderSlot, T as Teleport, R as createApp } from "./chunk/vue.js";
+import { l as defineComponent, p as createElementBlock, q as createBaseVNode, s as withModifiers, u as normalizeStyle, v as normalizeClass, F as Fragment, x as pushScopeId, y as popScopeId, z as openBlock, i as inject, A as shallowRef, B as unref, j as computed, c as reactive, n as nextTick, C as h$1, D as provide, b as ref, w as watch, E as toRef, G as resolveComponent, H as createVNode, I as renderList, J as createCommentVNode, K as withCtx, L as createTextVNode, M as toDisplayString, N as createBlock, O as onMounted, P as version$1, Q as renderSlot, T as Teleport, R as createApp } from "./chunk/vue.js";
 import { c as commonjsGlobal } from "./chunk/tinymce.js";
 import { g as getModulesList } from "./chunk/tinymce-plugin-routes.js";
 const p$1 = function polyfill() {
@@ -8391,6 +8391,16 @@ const _hoisted_1$3 = ["aria-selected"];
 const __default__$1 = defineComponent({
   name: "CodeGroupItem"
 });
+function setup$1(__props) {
+  return (_ctx, _cache) => {
+    return openBlock(), createElementBlock("div", {
+      class: normalizeClass(["code-group-item", { "code-group-item__active": __props.active }]),
+      "aria-selected": __props.active
+    }, [
+      renderSlot(_ctx.$slots, "default")
+    ], 10, _hoisted_1$3);
+  };
+}
 const _sfc_main$3 = /* @__PURE__ */ defineComponent(__spreadProps(__spreadValues({}, __default__$1), {
   props: {
     title: {
@@ -8403,16 +8413,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent(__spreadProps(__spreadValues
       default: false
     }
   },
-  setup(__props) {
-    return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", {
-        class: normalizeClass(["code-group-item", { "code-group-item__active": __props.active }]),
-        "aria-selected": __props.active
-      }, [
-        renderSlot(_ctx.$slots, "default")
-      ], 10, _hoisted_1$3);
-    };
-  }
+  setup: setup$1
 }));
 var loading_vue_vue_type_style_index_0_lang = "";
 const _hoisted_1$2 = { class: "lazyload-wrapper" };
@@ -8465,7 +8466,6 @@ const _hoisted_3$1 = [
   _hoisted_2$1
 ];
 const _sfc_main$2 = /* @__PURE__ */ defineComponent({
-  name: "loading",
   setup(__props) {
     console.log("loading");
     return (_ctx, _cache) => {
@@ -8490,7 +8490,7 @@ function _sfc_render(_ctx, _cache) {
   return openBlock(), createElementBlock("div", _hoisted_1$1, _hoisted_3);
 }
 var errorVue = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render]]);
-const modulesList = { "../../../build/site/docs/tinymce-plugin-docs/resources/README_t_5part61653704676656_p_.md": () => true ? __vitePreload(() => import("./chunk/README_t_5part61653704676656_p_.js"), ["assets/chunk/README_t_5part61653704676656_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/introduction_t_5eoktb1653704676656_p_.md": () => true ? __vitePreload(() => import("./chunk/introduction_t_5eoktb1653704676656_p_.js"), ["assets/chunk/introduction_t_5eoktb1653704676656_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/quickStart_t_x2a0wk1653704676656_p_.md": () => true ? __vitePreload(() => import("./chunk/quickStart_t_x2a0wk1653704676656_p_.js"), ["assets/chunk/quickStart_t_x2a0wk1653704676656_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/commonproblem/images_t_9gxyyr1653704676656_p_.md": () => true ? __vitePreload(() => import("./chunk/images_t_9gxyyr1653704676656_p_.js"), ["assets/chunk/images_t_9gxyyr1653704676656_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/plugin_t_ojw1b51653704676656_p_.md": () => true ? __vitePreload(() => import("./chunk/plugin_t_ojw1b51653704676656_p_.js"), ["assets/chunk/plugin_t_ojw1b51653704676656_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/customize/images_t_mcwejh1653704676656_p_.md": () => true ? __vitePreload(() => import("./chunk/images_t_mcwejh1653704676656_p_.js"), ["assets/chunk/images_t_mcwejh1653704676656_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/customize/table_t_vmifxw1653704676656_p_.md": () => true ? __vitePreload(() => import("./chunk/table_t_vmifxw1653704676656_p_.js"), ["assets/chunk/table_t_vmifxw1653704676656_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/examples/advanced_t_06skh51653704676656_p_.md": () => true ? __vitePreload(() => import("./chunk/advanced_t_06skh51653704676656_p_.js"), ["assets/chunk/advanced_t_06skh51653704676656_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/examples/basic_t_j7jch71653704676656_p_.md": () => true ? __vitePreload(() => import("./chunk/basic_t_j7jch71653704676656_p_.js"), ["assets/chunk/basic_t_j7jch71653704676656_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_kg05ik1653704676656_p_.md": () => true ? __vitePreload(() => import("./chunk/skeleton_t_kg05ik1653704676656_p_.js"), ["assets/chunk/skeleton_t_kg05ik1653704676656_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/syntax/link-images_t_hmmjxb1653704676656_p_.md": () => true ? __vitePreload(() => import("./chunk/link-images_t_hmmjxb1653704676656_p_.js"), ["assets/chunk/link-images_t_hmmjxb1653704676656_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/syntax/tip-code_t_iv6u4g1653704676656_p_.md": () => true ? __vitePreload(() => import("./chunk/tip-code_t_iv6u4g1653704676656_p_.js"), ["assets/chunk/tip-code_t_iv6u4g1653704676656_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/grammar-demo_t_cf2jw01653704676656_p_.md": () => true ? __vitePreload(() => import("./chunk/grammar-demo_t_cf2jw01653704676656_p_.js"), ["assets/chunk/grammar-demo_t_cf2jw01653704676656_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js","assets/chunk/tinymce.js","assets/chunk/plugin.min.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/grammar_t_aqcqb71653704676656_p_.md": () => true ? __vitePreload(() => import("./chunk/grammar_t_aqcqb71653704676656_p_.js"), ["assets/chunk/grammar_t_aqcqb71653704676656_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/guide_t_q8h9yp1653704676656_p_.md": () => true ? __vitePreload(() => import("./chunk/guide_t_q8h9yp1653704676656_p_.js"), ["assets/chunk/guide_t_q8h9yp1653704676656_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null };
+const modulesList = { "../../../build/site/docs/tinymce-plugin-docs/resources/README_t_g44uy41653705823546_p_.md": () => true ? __vitePreload(() => import("./chunk/README_t_g44uy41653705823546_p_.js"), ["assets/chunk/README_t_g44uy41653705823546_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/introduction_t_8uw5la1653705823546_p_.md": () => true ? __vitePreload(() => import("./chunk/introduction_t_8uw5la1653705823546_p_.js"), ["assets/chunk/introduction_t_8uw5la1653705823546_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/quickStart_t_om02lh1653705823546_p_.md": () => true ? __vitePreload(() => import("./chunk/quickStart_t_om02lh1653705823546_p_.js"), ["assets/chunk/quickStart_t_om02lh1653705823546_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/commonproblem/images_t_p7vthe1653705823546_p_.md": () => true ? __vitePreload(() => import("./chunk/images_t_p7vthe1653705823546_p_.js"), ["assets/chunk/images_t_p7vthe1653705823546_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/plugin_t_901you1653705823546_p_.md": () => true ? __vitePreload(() => import("./chunk/plugin_t_901you1653705823546_p_.js"), ["assets/chunk/plugin_t_901you1653705823546_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/customize/images_t_bt9e2a1653705823546_p_.md": () => true ? __vitePreload(() => import("./chunk/images_t_bt9e2a1653705823546_p_.js"), ["assets/chunk/images_t_bt9e2a1653705823546_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/customize/table_t_xqk7x81653705823546_p_.md": () => true ? __vitePreload(() => import("./chunk/table_t_xqk7x81653705823546_p_.js"), ["assets/chunk/table_t_xqk7x81653705823546_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/examples/advanced_t_cfhoja1653705823546_p_.md": () => true ? __vitePreload(() => import("./chunk/advanced_t_cfhoja1653705823546_p_.js"), ["assets/chunk/advanced_t_cfhoja1653705823546_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/examples/basic_t_viryhz1653705823546_p_.md": () => true ? __vitePreload(() => import("./chunk/basic_t_viryhz1653705823546_p_.js"), ["assets/chunk/basic_t_viryhz1653705823546_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_brpjf11653705823546_p_.md": () => true ? __vitePreload(() => import("./chunk/skeleton_t_brpjf11653705823546_p_.js"), ["assets/chunk/skeleton_t_brpjf11653705823546_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/syntax/link-images_t_ob0eds1653705823546_p_.md": () => true ? __vitePreload(() => import("./chunk/link-images_t_ob0eds1653705823546_p_.js"), ["assets/chunk/link-images_t_ob0eds1653705823546_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/syntax/tip-code_t_wwijvz1653705823546_p_.md": () => true ? __vitePreload(() => import("./chunk/tip-code_t_wwijvz1653705823546_p_.js"), ["assets/chunk/tip-code_t_wwijvz1653705823546_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/grammar-demo_t_xztuf61653705823546_p_.md": () => true ? __vitePreload(() => import("./chunk/grammar-demo_t_xztuf61653705823546_p_.js"), ["assets/chunk/grammar-demo_t_xztuf61653705823546_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js","assets/chunk/tinymce.js","assets/chunk/plugin.min.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/grammar_t_htfjtb1653705823546_p_.md": () => true ? __vitePreload(() => import("./chunk/grammar_t_htfjtb1653705823546_p_.js"), ["assets/chunk/grammar_t_htfjtb1653705823546_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null, "../../../build/site/docs/tinymce-plugin-docs/resources/guide/contributing/writing-guide/guide_t_wxnzat1653705823546_p_.md": () => true ? __vitePreload(() => import("./chunk/guide_t_wxnzat1653705823546_p_.js"), ["assets/chunk/guide_t_wxnzat1653705823546_p_.js","assets/chunk/pinia.js","assets/chunk/vue.js"]) : null };
 const setRoutes = (router2) => {
   http$1.request("get", `/siteMap.json`).then((resData) => {
     getModulesList(router2, resData, modulesList, _sfc_main$2, errorVue);
@@ -8584,6 +8584,16 @@ const _hoisted_1 = ["aria-selected"];
 const __default__ = defineComponent({
   name: "DemoGroupItem"
 });
+function setup(__props) {
+  return (_ctx, _cache) => {
+    return openBlock(), createElementBlock("div", {
+      class: normalizeClass(["demo-group-item", { "demo-group-item__active": __props.active }]),
+      "aria-selected": __props.active
+    }, [
+      renderSlot(_ctx.$slots, "default")
+    ], 10, _hoisted_1);
+  };
+}
 const _sfc_main = /* @__PURE__ */ defineComponent(__spreadProps(__spreadValues({}, __default__), {
   props: {
     title: {
@@ -8596,16 +8606,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent(__spreadProps(__spreadValues({
       default: false
     }
   },
-  setup(__props) {
-    return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", {
-        class: normalizeClass(["demo-group-item", { "demo-group-item__active": __props.active }]),
-        "aria-selected": __props.active
-      }, [
-        renderSlot(_ctx.$slots, "default")
-      ], 10, _hoisted_1);
-    };
-  }
+  setup
 }));
 function deepFreeze(obj) {
   if (obj instanceof Map) {

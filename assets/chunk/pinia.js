@@ -36,8 +36,7 @@ const isArray = Array.isArray;
 const isString = (val) => typeof val === "string";
 const isSymbol = (val) => typeof val === "symbol";
 const isObject = (val) => val !== null && typeof val === "object";
-const isReservedProp = /* @__PURE__ */ makeMap(",key,ref,ref_for,ref_key,onVnodeBeforeMount,onVnodeMounted,onVnodeBeforeUpdate,onVnodeUpdated,onVnodeBeforeUnmount,onVnodeUnmounted");
-const isBuiltInDirective = /* @__PURE__ */ makeMap("bind,cloak,else-if,else,for,html,if,model,on,once,pre,show,slot,text,memo");
+const isReservedProp = /* @__PURE__ */ makeMap(",key,ref,onVnodeBeforeMount,onVnodeMounted,onVnodeBeforeUpdate,onVnodeUpdated,onVnodeBeforeUnmount,onVnodeUnmounted");
 const cacheStringFunction$1 = (fn) => {
   const cache = /* @__PURE__ */ Object.create(null);
   return (str) => {
@@ -360,7 +359,7 @@ const isMemberExpressionBrowser = (path) => {
 };
 const isMemberExpression = isMemberExpressionBrowser;
 function getInnerRange(loc, offset, length) {
-  const source = loc.source.slice(offset, offset + length);
+  const source = loc.source.substr(offset, length);
   const newLoc = {
     source,
     start: advancePositionWithClone(loc.start, loc.source, offset),
@@ -405,12 +404,12 @@ function findProp(node, name, dynamicOnly = false, allowEmpty = false) {
       if (p.name === name && (p.value || allowEmpty)) {
         return p;
       }
-    } else if (p.name === "bind" && (p.exp || allowEmpty) && isStaticArgOf(p.arg, name)) {
+    } else if (p.name === "bind" && (p.exp || allowEmpty) && isBindKey(p.arg, name)) {
       return p;
     }
   }
 }
-function isStaticArgOf(arg, name) {
+function isBindKey(arg, name) {
   return !!(arg && isStaticExp(arg) && arg.content === name);
 }
 function hasDynamicKeyVBind(node) {
@@ -446,7 +445,8 @@ function getUnnormalizedProps(props, callPath = []) {
 }
 function injectProp(node, prop, context) {
   let propsWithInjection;
-  let props = node.type === 13 ? node.props : node.arguments[2];
+  const originalProps = node.type === 13 ? node.props : node.arguments[2];
+  let props = originalProps;
   let callPath = [];
   let parentCall;
   if (props && !isString(props) && props.type === 14) {
@@ -889,7 +889,7 @@ function isComponent(tag, props, context) {
     } else {
       if (p.name === "is") {
         return true;
-      } else if (p.name === "bind" && isStaticArgOf(p.arg, "is") && true && checkCompatEnabled("COMPILER_IS_ON_ELEMENT", context, p.loc)) {
+      } else if (p.name === "bind" && isBindKey(p.arg, "is") && true && checkCompatEnabled("COMPILER_IS_ON_ELEMENT", context, p.loc)) {
         return true;
       }
     }
@@ -967,9 +967,9 @@ function parseAttribute(context, nameSet) {
         isStatic = false;
         if (!content.endsWith("]")) {
           emitError(context, 27);
-          content = content.slice(1);
+          content = content.substr(1);
         } else {
-          content = content.slice(1, content.length - 1);
+          content = content.substr(1, content.length - 2);
         }
       } else if (isSlot) {
         content += match2[3] || "";
@@ -989,7 +989,7 @@ function parseAttribute(context, nameSet) {
       valueLoc.end = advancePositionWithClone(valueLoc.start, value.content);
       valueLoc.source = valueLoc.source.slice(1, -1);
     }
-    const modifiers = match2[3] ? match2[3].slice(1).split(".") : [];
+    const modifiers = match2[3] ? match2[3].substr(1).split(".") : [];
     if (isPropShorthand)
       modifiers.push("prop");
     if (dirName === "bind" && arg) {
@@ -1109,7 +1109,7 @@ function parseText(context, mode) {
 function parseTextData(context, length, mode) {
   const rawText = context.source.slice(0, length);
   advanceBy(context, length);
-  if (mode === 2 || mode === 3 || !rawText.includes("&")) {
+  if (mode === 2 || mode === 3 || rawText.indexOf("&") === -1) {
     return rawText;
   } else {
     return context.options.decodeEntities(rawText, mode === 4);
@@ -1187,7 +1187,7 @@ function isEnd(context, mode, ancestors) {
   return !s;
 }
 function startsWithEndTagOpen(source, tag) {
-  return startsWith(source, "</") && source.slice(2, 2 + tag.length).toLowerCase() === tag.toLowerCase() && /[\t\r\n\f />]/.test(source[2 + tag.length] || ">");
+  return startsWith(source, "</") && source.substr(2, tag.length).toLowerCase() === tag.toLowerCase() && /[\t\r\n\f />]/.test(source[2 + tag.length] || ">");
 }
 function hoistStatic(root, context) {
   walk(root, context, isSingleElementRoot(root, root.children[0]));
@@ -1197,6 +1197,7 @@ function isSingleElementRoot(root, child) {
   return children.length === 1 && child.type === 1 && !isSlotOutlet(child);
 }
 function walk(node, context, doNotHoistNode = false) {
+  let canStringify = true;
   const { children } = node;
   const originalCount = children.length;
   let hoistedCount = 0;
@@ -1205,6 +1206,9 @@ function walk(node, context, doNotHoistNode = false) {
     if (child.type === 1 && child.tagType === 0) {
       const constantType = doNotHoistNode ? 0 : getConstantType(child, context);
       if (constantType > 0) {
+        if (constantType < 3) {
+          canStringify = false;
+        }
         if (constantType >= 2) {
           child.codegenNode.patchFlag = -1 + ``;
           child.codegenNode = context.hoist(child.codegenNode);
@@ -1226,9 +1230,17 @@ function walk(node, context, doNotHoistNode = false) {
           }
         }
       }
-    } else if (child.type === 12 && getConstantType(child.content, context) >= 2) {
-      child.codegenNode = context.hoist(child.codegenNode);
-      hoistedCount++;
+    } else if (child.type === 12) {
+      const contentType = getConstantType(child.content, context);
+      if (contentType > 0) {
+        if (contentType < 3) {
+          canStringify = false;
+        }
+        if (contentType >= 2) {
+          child.codegenNode = context.hoist(child.codegenNode);
+          hoistedCount++;
+        }
+      }
     }
     if (child.type === 1) {
       const isComponent2 = child.tagType === 1;
@@ -1247,7 +1259,7 @@ function walk(node, context, doNotHoistNode = false) {
       }
     }
   }
-  if (hoistedCount && context.transformHoist) {
+  if (canStringify && hoistedCount && context.transformHoist) {
     context.transformHoist(children, context, node);
   }
   if (hoistedCount && hoistedCount === originalCount && node.type === 1 && node.tagType === 0 && node.codegenNode && node.codegenNode.type === 13 && isArray(node.codegenNode.children)) {
@@ -1267,9 +1279,6 @@ function getConstantType(node, context) {
       }
       const codegenNode = node.codegenNode;
       if (codegenNode.type !== 13) {
-        return 0;
-      }
-      if (codegenNode.isBlock && node.tag !== "svg" && node.tag !== "foreignObject") {
         return 0;
       }
       const flag = getPatchFlag(codegenNode);
@@ -1309,13 +1318,6 @@ function getConstantType(node, context) {
           }
         }
         if (codegenNode.isBlock) {
-          for (let i = 0; i < node.props.length; i++) {
-            const p = node.props[i];
-            if (p.type === 7) {
-              constantCache.set(node, 0);
-              return 0;
-            }
-          }
           context.removeHelper(OPEN_BLOCK);
           context.removeHelper(getVNodeBlockHelper(context.inSSR, codegenNode.isComponent));
           codegenNode.isBlock = false;
@@ -1647,7 +1649,6 @@ function createStructuralDirectiveTransform(name, fn) {
   };
 }
 const PURE_ANNOTATION = `/*#__PURE__*/`;
-const aliasHelper = (s) => `${helperNameMap[s]}: _${helperNameMap[s]}`;
 function createCodegenContext(ast, { mode = "function", prefixIdentifiers = mode === "module", sourceMap = false, filename = `template.vue.html`, scopeId = null, optimizeImports = false, runtimeGlobalName = `Vue`, runtimeModuleName = `vue`, ssrRuntimeModuleName = "vue/server-renderer", ssr = false, isTS = false, inSSR = false }) {
   const context = {
     mode,
@@ -1717,7 +1718,7 @@ function generate(ast, options = {}) {
     push(`with (_ctx) {`);
     indent();
     if (hasHelpers) {
-      push(`const { ${ast.helpers.map(aliasHelper).join(", ")} } = _Vue`);
+      push(`const { ${ast.helpers.map((s) => `${helperNameMap[s]}: _${helperNameMap[s]}`).join(", ")} } = _Vue`);
       push(`
 `);
       newline();
@@ -1775,6 +1776,7 @@ function generate(ast, options = {}) {
 function genFunctionPreamble(ast, context) {
   const { ssr, prefixIdentifiers, push, newline, runtimeModuleName, runtimeGlobalName, ssrRuntimeModuleName } = context;
   const VueBinding = runtimeGlobalName;
+  const aliasHelper = (s) => `${helperNameMap[s]}: _${helperNameMap[s]}`;
   if (ast.helpers.length > 0) {
     {
       push(`const _Vue = ${VueBinding}
@@ -2189,14 +2191,12 @@ function processIf(node, dir, context, processCodegen) {
   }
 }
 function createIfBranch(node, dir) {
-  const isTemplateIf = node.tagType === 3;
   return {
     type: 10,
     loc: node.loc,
     condition: dir.name === "else" ? void 0 : dir.exp,
-    children: isTemplateIf && !findDir(node, "for") ? node.children : [node],
-    userKey: findProp(node, `key`),
-    isTemplateIf
+    children: node.tagType === 3 && !findDir(node, "for") ? node.children : [node],
+    userKey: findProp(node, `key`)
   };
 }
 function createCodegenNodeForBranch(branch, keyIndex, context) {
@@ -2253,7 +2253,6 @@ const transformFor = createStructuralDirectiveTransform("for", (node, dir, conte
     const renderExp = createCallExpression(helper(RENDER_LIST), [
       forNode.source
     ]);
-    const isTemplate = isTemplateNode(node);
     const memo = findDir(node, "memo");
     const keyProp = findProp(node, `key`);
     const keyExp = keyProp && (keyProp.type === 6 ? createSimpleExpression(keyProp.value.content, true) : keyProp.exp);
@@ -2263,6 +2262,7 @@ const transformFor = createStructuralDirectiveTransform("for", (node, dir, conte
     forNode.codegenNode = createVNodeCall(context, helper(FRAGMENT), void 0, renderExp, fragmentFlag + ``, void 0, void 0, true, !isStableFragment, false, node.loc);
     return () => {
       let childBlock;
+      const isTemplate = isTemplateNode(node);
       const { children } = forNode;
       const needFragmentWrapper = children.length !== 1 || children[0].type !== 1;
       const slotOutlet = isSlotOutlet(node) ? node : isTemplate && node.children.length === 1 && isSlotOutlet(node.children[0]) ? node.children[0] : null;
@@ -2588,17 +2588,14 @@ const transformElement = (node, context) => {
     let vnodeDynamicProps;
     let dynamicPropNames;
     let vnodeDirectives;
-    let shouldUseBlock = isDynamicComponent || vnodeTag === TELEPORT || vnodeTag === SUSPENSE || !isComponent2 && (tag === "svg" || tag === "foreignObject");
+    let shouldUseBlock = isDynamicComponent || vnodeTag === TELEPORT || vnodeTag === SUSPENSE || !isComponent2 && (tag === "svg" || tag === "foreignObject" || findProp(node, "key", true));
     if (props.length > 0) {
-      const propsBuildResult = buildProps(node, context, void 0, isComponent2, isDynamicComponent);
+      const propsBuildResult = buildProps(node, context);
       vnodeProps = propsBuildResult.props;
       patchFlag = propsBuildResult.patchFlag;
       dynamicPropNames = propsBuildResult.dynamicPropNames;
       const directives = propsBuildResult.directives;
       vnodeDirectives = directives && directives.length ? createArrayExpression(directives.map((dir) => buildDirectiveArgs(dir, context))) : void 0;
-      if (propsBuildResult.shouldUseBlock) {
-        shouldUseBlock = true;
-      }
     }
     if (node.children.length > 0) {
       if (vnodeTag === KEEP_ALIVE) {
@@ -2671,13 +2668,12 @@ function resolveComponentType(node, context, ssr = false) {
   context.components.add(tag);
   return toValidAssetId(tag, `component`);
 }
-function buildProps(node, context, props = node.props, isComponent2, isDynamicComponent, ssr = false) {
-  const { tag, loc: elementLoc, children } = node;
+function buildProps(node, context, props = node.props, ssr = false) {
+  const { tag, loc: elementLoc } = node;
+  const isComponent2 = node.tagType === 1;
   let properties = [];
   const mergeArgs = [];
   const runtimeDirectives = [];
-  const hasChildren = children.length > 0;
-  let shouldUseBlock = false;
   let patchFlag = 0;
   let hasRef = false;
   let hasClassBinding = false;
@@ -2690,7 +2686,7 @@ function buildProps(node, context, props = node.props, isComponent2, isDynamicCo
     if (isStaticExp(key)) {
       const name = key.content;
       const isEventHandler = isOn(name);
-      if (isEventHandler && (!isComponent2 || isDynamicComponent) && name.toLowerCase() !== "onclick" && name !== "onUpdate:modelValue" && !isReservedProp(name)) {
+      if (!isComponent2 && isEventHandler && name.toLowerCase() !== "onclick" && name !== "onUpdate:modelValue" && !isReservedProp(name)) {
         hasHydrationEventBinding = true;
       }
       if (isEventHandler && isReservedProp(name)) {
@@ -2719,17 +2715,14 @@ function buildProps(node, context, props = node.props, isComponent2, isDynamicCo
     const prop = props[i];
     if (prop.type === 6) {
       const { loc, name, value } = prop;
-      let isStatic = true;
+      let valueNode = createSimpleExpression(value ? value.content : "", true, value ? value.loc : loc);
       if (name === "ref") {
         hasRef = true;
-        if (context.scopes.vFor > 0) {
-          properties.push(createObjectProperty(createSimpleExpression("ref_for", true), createSimpleExpression("true")));
-        }
       }
       if (name === "is" && (isComponentTag(tag) || value && value.content.startsWith("vue:") || isCompatEnabled("COMPILER_IS_ON_ELEMENT", context))) {
         continue;
       }
-      properties.push(createObjectProperty(createSimpleExpression(name, true, getInnerRange(loc, 0, name.length)), createSimpleExpression(value ? value.content : "", isStatic, value ? value.loc : loc)));
+      properties.push(createObjectProperty(createSimpleExpression(name, true, getInnerRange(loc, 0, name.length)), valueNode));
     } else {
       const { name, arg, exp, loc } = prop;
       const isVBind = name === "bind";
@@ -2743,17 +2736,11 @@ function buildProps(node, context, props = node.props, isComponent2, isDynamicCo
       if (name === "once" || name === "memo") {
         continue;
       }
-      if (name === "is" || isVBind && isStaticArgOf(arg, "is") && (isComponentTag(tag) || isCompatEnabled("COMPILER_IS_ON_ELEMENT", context))) {
+      if (name === "is" || isVBind && isBindKey(arg, "is") && (isComponentTag(tag) || isCompatEnabled("COMPILER_IS_ON_ELEMENT", context))) {
         continue;
       }
       if (isVOn && ssr) {
         continue;
-      }
-      if (isVBind && isStaticArgOf(arg, "key") || isVOn && hasChildren && isStaticArgOf(arg, "vue:before-update")) {
-        shouldUseBlock = true;
-      }
-      if (isVBind && isStaticArgOf(arg, "ref") && context.scopes.vFor > 0) {
-        properties.push(createObjectProperty(createSimpleExpression("ref_for", true), createSimpleExpression("true")));
       }
       if (!arg && (isVBind || isVOn)) {
         hasDynamicKeys = true;
@@ -2794,12 +2781,12 @@ function buildProps(node, context, props = node.props, isComponent2, isDynamicCo
             directiveImportMap.set(prop, needRuntime);
           }
         }
-      } else if (!isBuiltInDirective(name)) {
+      } else {
         runtimeDirectives.push(prop);
-        if (hasChildren) {
-          shouldUseBlock = true;
-        }
       }
+    }
+    if (prop.type === 6 && prop.name === "ref" && context.scopes.vFor > 0 && checkCompatEnabled("COMPILER_V_FOR_REF", context, prop.loc)) {
+      properties.push(createObjectProperty(createSimpleExpression("refInFor", true), createSimpleExpression("true", false)));
     }
   }
   let propsExpression = void 0;
@@ -2831,7 +2818,7 @@ function buildProps(node, context, props = node.props, isComponent2, isDynamicCo
       patchFlag |= 32;
     }
   }
-  if (!shouldUseBlock && (patchFlag === 0 || patchFlag === 32) && (hasRef || hasVnodeHook || runtimeDirectives.length > 0)) {
+  if ((patchFlag === 0 || patchFlag === 32) && (hasRef || hasVnodeHook || runtimeDirectives.length > 0)) {
     patchFlag |= 512;
   }
   if (!context.inSSR && propsExpression) {
@@ -2858,7 +2845,7 @@ function buildProps(node, context, props = node.props, isComponent2, isDynamicCo
           if (classProp && !isStaticExp(classProp.value)) {
             classProp.value = createCallExpression(context.helper(NORMALIZE_CLASS), [classProp.value]);
           }
-          if (styleProp && (hasStyleBinding || styleProp.value.type === 4 && styleProp.value.content.trim()[0] === `[` || styleProp.value.type === 17)) {
+          if (styleProp && !isStaticExp(styleProp.value) && (hasStyleBinding || styleProp.value.type === 17)) {
             styleProp.value = createCallExpression(context.helper(NORMALIZE_STYLE), [styleProp.value]);
           }
         } else {
@@ -2880,8 +2867,7 @@ function buildProps(node, context, props = node.props, isComponent2, isDynamicCo
     props: propsExpression,
     directives: runtimeDirectives,
     patchFlag,
-    dynamicPropNames,
-    shouldUseBlock
+    dynamicPropNames
   };
 }
 function dedupeProperties(properties) {
@@ -2956,7 +2942,7 @@ function stringifyDynamicPropNames(props) {
   return propsNamesString + `]`;
 }
 function isComponentTag(tag) {
-  return tag === "component" || tag === "Component";
+  return tag[0].toLowerCase() + tag.slice(1) === "component";
 }
 const cacheStringFunction = (fn) => {
   const cache = /* @__PURE__ */ Object.create(null);
@@ -3012,7 +2998,7 @@ function processSlotOutlet(node, context) {
         }
       }
     } else {
-      if (p.name === "bind" && isStaticArgOf(p.arg, "name")) {
+      if (p.name === "bind" && isBindKey(p.arg, "name")) {
         if (p.exp)
           slotName = p.exp;
       } else {
@@ -3024,7 +3010,7 @@ function processSlotOutlet(node, context) {
     }
   }
   if (nonNameProps.length > 0) {
-    const { props, directives } = buildProps(node, context, nonNameProps, false, false);
+    const { props, directives } = buildProps(node, context, nonNameProps);
     slotProps = props;
     if (directives.length) {
       context.onError(createCompilerError(36, directives[0].loc));
@@ -3044,10 +3030,7 @@ const transformOn$1 = (dir, node, context, augmentor) => {
   let eventName;
   if (arg.type === 4) {
     if (arg.isStatic) {
-      let rawName = arg.content;
-      if (rawName.startsWith("vue:")) {
-        rawName = `vnode-${rawName.slice(4)}`;
-      }
+      const rawName = arg.content;
       eventName = createSimpleExpression(toHandlerKey(camelize$1(rawName)), true, arg.loc);
     } else {
       eventName = createCompoundExpression([
@@ -3157,7 +3140,11 @@ const transformText = (node, context) => {
             const next = children[j];
             if (isText(next)) {
               if (!currentContainer) {
-                currentContainer = children[i] = createCompoundExpression([child], child.loc);
+                currentContainer = children[i] = {
+                  type: 8,
+                  loc: child.loc,
+                  children: [child]
+                };
               }
               currentContainer.children.push(` + `, next);
               children.splice(j, 1);
@@ -3604,7 +3591,7 @@ const transformVText = (dir, node, context) => {
   }
   return {
     props: [
-      createObjectProperty(createSimpleExpression(`textContent`, true), exp ? getConstantType(exp, context) > 0 ? exp : createCallExpression(context.helperString(TO_DISPLAY_STRING), [exp], loc) : createSimpleExpression("", true))
+      createObjectProperty(createSimpleExpression(`textContent`, true), exp ? createCallExpression(context.helperString(TO_DISPLAY_STRING), [exp], loc) : createSimpleExpression("", true))
     ]
   };
 };

@@ -2,7 +2,7 @@ import "./tinymce.js";
 import { T as TinymceEditor } from "./plugin.min.js";
 import "./pinia.js";
 import { _ as _export_sfc } from "../index.js";
-import { p as openBlock, q as createElementBlock, s as createBaseVNode, G as createVNode, y as pushScopeId, z as popScopeId, J as resolveComponent } from "./vue.js";
+import { G as resolveComponent, p as createElementBlock, q as createBaseVNode, H as createVNode, x as pushScopeId, y as popScopeId, z as openBlock } from "./vue.js";
 import "./tinymce-plugin-routes.js";
 var skin_min = "";
 var content_min = "";
