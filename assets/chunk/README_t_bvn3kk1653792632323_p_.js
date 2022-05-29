@@ -3,4 +3,4 @@ import"./pinia.js";import{J as t}from"./vue.js";const p=t({components:{},templat
 \u8BE6\u60C5\u53EF\u89C1
 <a href="https://tinymce-plugin.github.io" target="_blank">https://tinymce-plugin.github.io</a>
 <a href="https://tinymce-plugin.gitee.io" target="_blank">https://tinymce-plugin.gitee.io</a></p>
-</div></div><PagesRouter  docPath="README.md" mapType="docs" docRepo="tp-importword" pagesName="README_t_unksla1653792599197_p_" />`});export{p as default};
+</div></div><PagesRouter  docPath="README.md" mapType="docs" docRepo="tp-importword" pagesName="README_t_bvn3kk1653792632323_p_" />`});export{p as default};
