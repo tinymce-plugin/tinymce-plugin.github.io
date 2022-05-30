@@ -1,6 +1,6 @@
 {
-  "TimeID": 1653792647211,
-  "sha": "9a5f7b4e336858bb28f2b74da919690fa667752b",
+  "TimeID": 1653922725055,
+  "sha": "055cb15891d44482ba8e13245c1175f5d91b465a",
   "siteMap": {
     "docsMap": {
       "tinymce-plugin-docs": {
@@ -287,7 +287,7 @@
           "title": "tp-importword",
           "name": "tp-importword",
           "en-title": "tp-importword",
-          "upTime": 1653792647209,
+          "upTime": 1653922725053,
           "path": "docs/tp-importword/resources/__docs__.md"
         },
         "__docs__/configure": {
@@ -295,8 +295,8 @@
           "title": "配置参考",
           "name": "configure",
           "en-title": "configure",
-          "path": "docs/tp-importword/resources/__docs__/configure_t_uoplzi1653792646750_p_.md",
-          "upTime": 1653792647209,
+          "path": "docs/tp-importword/resources/__docs__/configure_t_bdt2pr1653922724213_p_.md",
+          "upTime": 1653922725053,
           "contributors-list": [
             {
               "name": "five",
@@ -310,8 +310,8 @@
           "title": "插件介绍",
           "name": "introduction",
           "en-title": "introduction",
-          "path": "docs/tp-importword/resources/__docs__/introduction_t_869ddm1653792646750_p_.md",
-          "upTime": 1653792647210,
+          "path": "docs/tp-importword/resources/__docs__/introduction_t_bfyaog1653922724213_p_.md",
+          "upTime": 1653922725054,
           "contributors-list": [
             {
               "name": "five",
@@ -325,8 +325,8 @@
           "title": "快速上手",
           "name": "quickStart",
           "en-title": "quickStart",
-          "path": "docs/tp-importword/resources/__docs__/quickStart_t_doy7il1653792646750_p_.md",
-          "upTime": 1653792647210,
+          "path": "docs/tp-importword/resources/__docs__/quickStart_t_y97f7a1653922724213_p_.md",
+          "upTime": 1653922725054,
           "contributors-list": [
             {
               "name": "five",
@@ -340,8 +340,8 @@
           "title": "插件demo",
           "name": "tpImporatwordDemo",
           "en-title": "tpImporatwordDemo",
-          "path": "docs/tp-importword/resources/__docs__/tpImporatwordDemo_t_g4qb1u1653792646750_p_.md",
-          "upTime": 1653792647210,
+          "path": "docs/tp-importword/resources/__docs__/tpImporatwordDemo_t_gn44ca1653922724213_p_.md",
+          "upTime": 1653922725054,
           "contributors-list": [
             {
               "name": "five",
@@ -571,7 +571,7 @@
           "name": "tp-importword",
           "path": "tp-importword",
           "redirect": {
-            "name": "introduction_t_869ddm1653792646750_p_"
+            "name": "introduction_t_bfyaog1653922724213_p_"
           },
           "component": {
             "template": "<div class=\"tp-importword\" ><router-view></router-view></div>"
@@ -581,36 +581,36 @@
           },
           "children": [
             {
-              "name": "introduction_t_869ddm1653792646750_p_",
+              "name": "introduction_t_bfyaog1653922724213_p_",
               "path": "introduction.html",
-              "component": "../build/site/docs/tp-importword/resources/__docs__/introduction_t_869ddm1653792646750_p_",
+              "component": "../build/site/docs/tp-importword/resources/__docs__/introduction_t_bfyaog1653922724213_p_",
               "meta": {
                 "title": "插件介绍"
               },
               "dirRepo": "tp-importword"
             },
             {
-              "name": "quickStart_t_doy7il1653792646750_p_",
+              "name": "quickStart_t_y97f7a1653922724213_p_",
               "path": "quickStart.html",
-              "component": "../build/site/docs/tp-importword/resources/__docs__/quickStart_t_doy7il1653792646750_p_",
+              "component": "../build/site/docs/tp-importword/resources/__docs__/quickStart_t_y97f7a1653922724213_p_",
               "meta": {
                 "title": "快速上手"
               },
               "dirRepo": "tp-importword"
             },
             {
-              "name": "configure_t_uoplzi1653792646750_p_",
+              "name": "configure_t_bdt2pr1653922724213_p_",
               "path": "configure.html",
-              "component": "../build/site/docs/tp-importword/resources/__docs__/configure_t_uoplzi1653792646750_p_",
+              "component": "../build/site/docs/tp-importword/resources/__docs__/configure_t_bdt2pr1653922724213_p_",
               "meta": {
                 "title": "配置参考"
               },
               "dirRepo": "tp-importword"
             },
             {
-              "name": "tpImporatwordDemo_t_g4qb1u1653792646750_p_",
+              "name": "tpImporatwordDemo_t_gn44ca1653922724213_p_",
               "path": "tpImporatwordDemo.html",
-              "component": "../build/site/docs/tp-importword/resources/__docs__/tpImporatwordDemo_t_g4qb1u1653792646750_p_",
+              "component": "../build/site/docs/tp-importword/resources/__docs__/tpImporatwordDemo_t_gn44ca1653922724213_p_",
               "meta": {
                 "title": "插件demo"
               },
