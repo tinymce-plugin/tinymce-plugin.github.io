@@ -9130,7 +9130,7 @@
           table(cellOrCaption, isRoot).filter(not(isRoot)).each(function (table) {
             var cursor = SugarElement.fromText('');
             after(table, cursor);
-           console.log(table)
+          //  console.log(table)
             editor.dom.setStyle(table.dom, 'width', table.dom.offsetWidth);
             editor.dom.setStyle(table.dom, 'height', table.dom.offsetHeight);
             domtoimage.toBlob(table.dom)
