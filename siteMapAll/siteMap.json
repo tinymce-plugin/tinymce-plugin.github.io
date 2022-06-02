@@ -1,6 +1,6 @@
 {
-  "TimeID": 1654106199740,
-  "sha": "972f268a5bf7ca3428625100804cfed44ec44009",
+  "TimeID": 1654133212086,
+  "sha": "215f7d8e2120abedc88a8433632fed4c30470922",
   "siteMap": {
     "docsMap": {
       "tinymce-plugin-docs": {
@@ -147,8 +147,8 @@
           "title": "如何开启骨架屏",
           "name": "skeleton",
           "en-title": "skeleton",
-          "path": "docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_mrf9511654106199277_p_.md",
-          "upTime": 1654106199731,
+          "path": "docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_2f7lde1654133211587_p_.md",
+          "upTime": 1654133212085,
           "contributors-list": [
             {
               "name": "five",
@@ -431,21 +431,6 @@
       {
         "type": "docs",
         "repo": "tinymce-plugin-docs",
-        "path": "guide/skill",
-        "children": [
-          {
-            "type": "docs",
-            "repo": "tinymce-plugin-docs",
-            "path": "guide/skill/skeleton",
-            "sort": 0
-          }
-        ],
-        "sort": "7",
-        "oldLen": 1
-      },
-      {
-        "type": "docs",
-        "repo": "tinymce-plugin-docs",
         "path": "guide/customize",
         "children": [
           {
@@ -463,6 +448,21 @@
         ],
         "sort": "1",
         "oldLen": 2
+      },
+      {
+        "type": "docs",
+        "repo": "tinymce-plugin-docs",
+        "path": "guide/skill",
+        "children": [
+          {
+            "type": "docs",
+            "repo": "tinymce-plugin-docs",
+            "path": "guide/skill/skeleton",
+            "sort": 0
+          }
+        ],
+        "sort": 0,
+        "oldLen": 1
       },
       {
         "type": "docs",
@@ -663,30 +663,6 @@
       ]
     },
     {
-      "name": "skill",
-      "path": "/skill",
-      "redirect": {
-        "name": "skeleton_t_mrf9511654106199277_p_"
-      },
-      "component": {
-        "template": "<div class=\"skill\" ><router-view></router-view></div>"
-      },
-      "meta": {
-        "title": "使用技巧"
-      },
-      "children": [
-        {
-          "name": "skeleton_t_mrf9511654106199277_p_",
-          "path": "skeleton.html",
-          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_mrf9511654106199277_p_",
-          "meta": {
-            "title": "如何开启骨架屏"
-          },
-          "dirRepo": "tinymce-plugin-docs"
-        }
-      ]
-    },
-    {
       "name": "customize",
       "path": "/customize",
       "redirect": {
@@ -714,6 +690,30 @@
           "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/customize/table_t_xpzchx1654106199277_p_",
           "meta": {
             "title": "table 表格插件"
+          },
+          "dirRepo": "tinymce-plugin-docs"
+        }
+      ]
+    },
+    {
+      "name": "skill",
+      "path": "/skill",
+      "redirect": {
+        "name": "skeleton_t_2f7lde1654133211587_p_"
+      },
+      "component": {
+        "template": "<div class=\"skill\" ><router-view></router-view></div>"
+      },
+      "meta": {
+        "title": "使用技巧"
+      },
+      "children": [
+        {
+          "name": "skeleton_t_2f7lde1654133211587_p_",
+          "path": "skeleton.html",
+          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_2f7lde1654133211587_p_",
+          "meta": {
+            "title": "如何开启骨架屏"
           },
           "dirRepo": "tinymce-plugin-docs"
         }
@@ -846,9 +846,23 @@
   "fileStatus": {
     "add": [],
     "remove": [],
-    "updata": [],
-    "addList": [],
-    "removeList": [],
+    "updata": [
+      {
+        "repo": "tinymce-plugin-docs",
+        "path": "guide/skill/skeleton",
+        "author": {
+          "name": "Five-great",
+          "logo": "https://avatars.githubusercontent.com/u/43601963?v=4",
+          "repo": "/Five-great"
+        }
+      }
+    ],
+    "addList": [
+      ""
+    ],
+    "removeList": [
+      ""
+    ],
     "upObj": {}
   }
 }
