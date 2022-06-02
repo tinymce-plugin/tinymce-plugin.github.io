@@ -1,6 +1,6 @@
 {
-  "TimeID": 1654152391627,
-  "sha": "fa31d3964167d1309ff69fea6274f353c08e22dc",
+  "TimeID": 1654163370294,
+  "sha": "e214e3183a00a78945cc8bf7fb02e08d6cdf967c",
   "siteMap": {
     "docsMap": {
       "tinymce-plugin-docs": {
@@ -147,8 +147,8 @@
           "title": "如何开启骨架屏",
           "name": "skeleton",
           "en-title": "skeleton",
-          "path": "docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_asybak1654152390841_p_.md",
-          "upTime": 1654152391621,
+          "path": "docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_o11tl51654163369566_p_.md",
+          "upTime": 1654163370293,
           "contributors-list": [
             {
               "name": "five",
@@ -699,7 +699,7 @@
       "name": "skill",
       "path": "/skill",
       "redirect": {
-        "name": "skeleton_t_asybak1654152390841_p_"
+        "name": "skeleton_t_o11tl51654163369566_p_"
       },
       "component": {
         "template": "<div class=\"skill\" ><router-view></router-view></div>"
@@ -709,9 +709,9 @@
       },
       "children": [
         {
-          "name": "skeleton_t_asybak1654152390841_p_",
+          "name": "skeleton_t_o11tl51654163369566_p_",
           "path": "skeleton.html",
-          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_asybak1654152390841_p_",
+          "component": "../build/site/docs/tinymce-plugin-docs/resources/guide/skill/skeleton_t_o11tl51654163369566_p_",
           "meta": {
             "title": "如何开启骨架屏"
           },
@@ -858,10 +858,10 @@
       }
     ],
     "addList": [
-      ""
+      "skeleton_t_o11tl51654163369566_p_"
     ],
     "removeList": [
-      ""
+      "skeleton_t_asybak1654152390841_p_"
     ],
     "upObj": {}
   }
