@@ -1,4 +1,4 @@
-import"./pinia.js";import{J as e}from"./vue.js";const n=e({components:{},template:`<div class="fv-mardown-html"><div class="fv-mardown-main"><h2 id="\u53CD\u9988" tabindex="-1"><a class="header-anchor" href="#\u53CD\u9988">#</a> \u53CD\u9988</h2>
+import"./pinia.js";import{L as e}from"./vue.js";const n=e({components:{},template:`<div class="fv-mardown-html"><div class="fv-mardown-main"><h2 id="\u53CD\u9988" tabindex="-1"><a class="header-anchor" href="#\u53CD\u9988">#</a> \u53CD\u9988</h2>
 <hr>
 <div class="tip fv-state-tip fv-tip"><p class="fv-state-title" >\u63D0\u793A</p>
 <p>\u6709\u4EFB\u4F55\u95EE\u9898\uFF0C\u60F3\u6CD5\uFF0C\u6216\u597D\u7684\u5EFA\u8BAE\uFF0C\u53EF\u4EE5\u5728 <a href="https://github.com/tinymce-plugin/tinymce-plugin/discussions" target="_blank"><em><em><strong>Discussions</strong></em></em></a>\u3002 \u60A8\u4E5F\u53EF\u4EE5\u5728<a href="https://github.com/tinymce-plugin/tinymce-plugin/issues" target="_blank"><em><em><strong>issues</strong></em></em></a>\u67E5\u770B\u522B\u4EBA\u63D0\u7684\u95EE\u9898\u548C\u7ED9\u51FA\u89E3\u51B3\u65B9\u6848\u3002</p>
