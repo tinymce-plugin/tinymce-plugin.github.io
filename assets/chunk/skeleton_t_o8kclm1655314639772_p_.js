@@ -12,4 +12,4 @@ tinymce.<span class="hljs-title function_">init</span>({
 </code><div class="language-text" >js</div></pre>
 <p>\u4F7F\u7528\u6548\u679C
 <img src="/assets/images/skt-demo.png?100%25" alt="skeletonScreen"></p>
-</div></div><PagesRouter  docPath="guide/skill/skeleton.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="skeleton_t_riffu91655312838293_p_" />`});export{t as default};
+</div></div><PagesRouter  docPath="guide/skill/skeleton.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="skeleton_t_o8kclm1655314639772_p_" />`});export{t as default};
