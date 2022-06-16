@@ -7,8 +7,8 @@
 /contributing/writing-guide/grammar-demo
 /contributing/syntax/link-images
 /contributing/syntax/tip-code
-/nextplan/info.html
-/nextplan/demoall.html
+/introduction.html
+/introduction.html
 /packages/tp-layout
 /examples/basic
 /skill/skeleton
@@ -17,6 +17,6 @@
 /commonproblem/images
 /contributing/plugin
 /introduction.html
-/supportandfeedback.html
+/introduction.html
 /introduction
 /quickStart
