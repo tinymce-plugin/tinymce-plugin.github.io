@@ -198,7 +198,7 @@ import"./pinia.js";import{M as a}from"./vue.js";const s={};s.methods={source(){r
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 
-</code><div class="language-text" >html</div></pre>`},sourceCode(){return'<iframe scrolling="no" width="100%" style="width:100%;margin:auto 0;border:0px; min-height: 519px"  onload="autoIframeHeight(this)"  src="/demo/demo-plugin_t_cl2gnt1657292074999_p_1657292129225/index.html"></iframe>'}};s.template=`<PreviewIframe class="demo-plugin_t_cl2gnt1657292074999_p_" idx="Demo0"  :source="source()" :sourceCode="sourceCode()">
+</code><div class="language-text" >html</div></pre>`},sourceCode(){return'<iframe scrolling="no" width="100%" style="width:100%;margin:auto 0;border:0px; min-height: 519px"  onload="autoIframeHeight(this)"  src="/demo/demo-plugin_t_cl2gnt1657292074999_p_1657293113943/index.html"></iframe>'}};s.template=`<PreviewIframe class="demo-plugin_t_cl2gnt1657292074999_p_" idx="Demo0"  :source="source()" :sourceCode="sourceCode()">
                               
                             </PreviewIframe>`;const p=a({components:{Demo0:s},template:`<div class="fv-mardown-html"><div class="fv-mardown-main tp-doc"><h1 id="\u8D21\u732E\u63D2\u4EF6" tabindex="-1"><a class="header-anchor" href="#\u8D21\u732E\u63D2\u4EF6">#</a> \u8D21\u732E\u63D2\u4EF6</h1>
 <h2 id="\u5982\u4F55\u8D21\u732E\u4E00\u4E2A\u63D2\u4EF6" tabindex="-1"><a class="header-anchor" href="#\u5982\u4F55\u8D21\u732E\u4E00\u4E2A\u63D2\u4EF6">#</a> \u5982\u4F55\u8D21\u732E\u4E00\u4E2A\u63D2\u4EF6</h2>

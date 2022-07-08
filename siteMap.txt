@@ -1,9 +1,16 @@
 /introduction.html
+/en/packages/tp-importword/quickStartdemo.html
+/en/packages/tp-importword/quickStart.html
 /en/contributing/writing-guide/guide.html
 /en/contributing/writing-guide/grammar.html
 /en/contributing/writing-guide/grammar-demo.html
 /en/contributing/syntax/link-images.html
 /en/contributing/syntax/tip-code.html
+/packages/tp-indent2em/tpIndent2em.html
+/packages/tp-importword/introduction.html
+/packages/tp-importword/quickStart.html
+/packages/tp-importword/configure.html
+/packages/tp-importword/tpImporatwordDemo.html
 /contributing/writing-guide/guide.html
 /contributing/writing-guide/grammar.html
 /contributing/writing-guide/grammar-demo.html
@@ -17,6 +24,7 @@
 /en/contributing/plugin.html
 /introduction.html
 /introduction.html
+/packages/tp-layout.html
 /examples/basic.html
 /examples/advanced.html
 /skill/skeleton.html
