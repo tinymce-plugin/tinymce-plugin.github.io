@@ -122,7 +122,7 @@ section.`).concat(s,`>article { margin-bottom: auto; }
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 
-</code><div class="language-text" >html</div></pre>`},sourceCode(){return'<iframe scrolling="no" width="100%" style="width:100%;margin:auto 0;border:0px; min-height: 319px"  onload="autoIframeHeight(this)"  src="/demo/demo-tpImporatwordDemo_t_afxkjh1657286605043_p_1657286608768/index.html"></iframe>'}};io.template=`<PreviewIframe class="demo-tpImporatwordDemo_t_afxkjh1657286605043_p_" idx="Demo0"  :source="source()" :sourceCode="sourceCode()">
+</code><div class="language-text" >html</div></pre>`},sourceCode(){return'<iframe scrolling="no" width="100%" style="width:100%;margin:auto 0;border:0px; min-height: 319px"  onload="autoIframeHeight(this)"  src="/demo/demo-tpImporatwordDemo_t_vangr71657290366590_p_1657290370211/index.html"></iframe>'}};io.template=`<PreviewIframe class="demo-tpImporatwordDemo_t_vangr71657290366590_p_" idx="Demo0"  :source="source()" :sourceCode="sourceCode()">
                               
                             </PreviewIframe>`;const ia={name:"domeVue3",components:{TinymceVue:ts},data(){return{content:"\u8FD9\u662F\u4E00\u4E2A\u5BFC\u5165word\u63D2\u4EF6",tinymceOptions:{min_height:300,max_height:700,skeletonScreen:!0,base_url:"/tinymce",plugins:"code tpImportword preview autoresize",toolbar:"code tpImportword preview"}}}};ia.methods?ia.methods.source=function(){return`<pre class="hljs fv-hljs "><ul class="highlight-line-number "  ><li ><span>1</span></li><li ><span>2</span></li><li ><span>3</span></li><li ><span>4</span></li><li ><span>5</span></li><li ><span>6</span></li><li ><span>7</span></li><li ><span>8</span></li><li ><span>9</span></li><li ><span>10</span></li><li ><span>11</span></li><li ><span>12</span></li><li ><span>13</span></li><li ><span>14</span></li><li ><span>15</span></li><li ><span>16</span></li><li ><span>17</span></li><li ><span>18</span></li><li ><span>19</span></li><li ><span>20</span></li><li ><span>21</span></li><li ><span>22</span></li><li ><span>23</span></li><li ><span>24</span></li><li ><span>25</span></li><li ><span>26</span></li><li ><span>27</span></li><li ><span>28</span></li><li ><span>29</span></li><li ><span>30</span></li><li ><span>31</span></li><li ><span>32</span></li><li ><span>33</span></li><li ><span>34</span></li></ul><code class=" hljs  hljs-js" @click.stop="()=>{}">&lt;template&gt;
 <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
@@ -192,7 +192,7 @@ section.`).concat(s,`>article { margin-bottom: auto; }
   }
 }
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
-</code><div class="language-text" >vue</div></pre>`}};ia.template=`<Preview class="demo-tpImporatwordDemo_t_afxkjh1657286605043_p_" :source="source()">
+</code><div class="language-text" >vue</div></pre>`}};ia.template=`<Preview class="demo-tpImporatwordDemo_t_vangr71657290366590_p_" :source="source()">
                                 <template v-slot:demo><div>
  <h1>\u63D2\u4EF6demo\u5C55\u793A\u533A\u57DF</h1>
   <div class="vueDemo">
@@ -279,7 +279,7 @@ section.`).concat(s,`>article { margin-bottom: auto; }
   }
 }
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
-</code><div class="language-text" >vue</div></pre>`}};Tn.template=`<PreviewVue2 class="demo-tpImporatwordDemo_t_afxkjh1657286605043_p_"  :template="template()"  :source="source()">
+</code><div class="language-text" >vue</div></pre>`}};Tn.template=`<PreviewVue2 class="demo-tpImporatwordDemo_t_vangr71657290366590_p_"  :template="template()"  :source="source()">
                               
                             </PreviewVue2>`;const lo={};lo.methods={source(){return`<pre class="hljs fv-hljs "><ul class="highlight-line-number "  ><li ><span>1</span></li><li ><span>2</span></li><li ><span>3</span></li><li ><span>4</span></li><li ><span>5</span></li><li ><span>6</span></li><li ><span>7</span></li><li ><span>8</span></li><li ><span>9</span></li><li ><span>10</span></li><li ><span>11</span></li><li ><span>12</span></li><li ><span>13</span></li><li ><span>14</span></li><li ><span>15</span></li><li ><span>16</span></li><li ><span>17</span></li><li ><span>18</span></li><li ><span>19</span></li><li ><span>20</span></li><li ><span>21</span></li><li ><span>22</span></li><li ><span>23</span></li><li ><span>24</span></li><li ><span>25</span></li><li ><span>26</span></li><li ><span>27</span></li><li ><span>28</span></li><li ><span>29</span></li><li ><span>30</span></li><li ><span>31</span></li><li ><span>32</span></li><li ><span>33</span></li><li ><span>34</span></li><li ><span>35</span></li><li ><span>36</span></li><li ><span>37</span></li><li ><span>38</span></li><li ><span>39</span></li><li ><span>40</span></li><li ><span>41</span></li><li ><span>42</span></li><li ><span>43</span></li></ul><code class=" hljs  hljs-html" @click.stop="()=>{}"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
 <span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
@@ -324,7 +324,7 @@ section.`).concat(s,`>article { margin-bottom: auto; }
 
    <span class="hljs-title class_">React</span>DOM.<span class="hljs-title function_">render</span>(<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ReactDemo</span> /&gt;</span></span>, <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&#x27;ReactRootID&#x27;</span>));
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-</code><div class="language-text" >html</div></pre>`},sourceCode(e){class t extends Cn.Component{constructor(a){super(a),this.state={reactDemoInitialValue:"<p>\u8FD9\u662F\u4E00\u4E2AREactDemo</p>"},this.reactDemoInit={min_height:220,base_url:"/tinymce",branding:!1,language:"zh_CN",menubar:!1,skeletonScreen:!0,plugins:"code tpImportword autoresize",toolbar:"undo redo code tpImportword",content_style:"body { font-family:Helvetica,Arial,sans-serif; font-size:14px }"},this.handleChange=i=>{this.setState({reactDemoInitialValue:i})}}render(){return Cn.createElement("div",null,Cn.createElement("h1",null,"\u8FD9\u662F\u4E00\u4E2AReact\u5B9E\u4F8B"),Cn.createElement("div",null,Cn.createElement(Xm,{initialValue:this.state.reactDemoInitialValue,init:this.reactDemoInit,onEditorChange:this.handleChange})),Cn.createElement("div",{dangerouslySetInnerHTML:{__html:this.state.reactDemoInitialValue}}))}}return Bm.render(Cn.createElement(t,null),e)}};lo.template=`<PreviewReact class="demo-tpImporatwordDemo_t_afxkjh1657286605043_p_" idx="Demo3"  :source="source()">
+</code><div class="language-text" >html</div></pre>`},sourceCode(e){class t extends Cn.Component{constructor(a){super(a),this.state={reactDemoInitialValue:"<p>\u8FD9\u662F\u4E00\u4E2AREactDemo</p>"},this.reactDemoInit={min_height:220,base_url:"/tinymce",branding:!1,language:"zh_CN",menubar:!1,skeletonScreen:!0,plugins:"code tpImportword autoresize",toolbar:"undo redo code tpImportword",content_style:"body { font-family:Helvetica,Arial,sans-serif; font-size:14px }"},this.handleChange=i=>{this.setState({reactDemoInitialValue:i})}}render(){return Cn.createElement("div",null,Cn.createElement("h1",null,"\u8FD9\u662F\u4E00\u4E2AReact\u5B9E\u4F8B"),Cn.createElement("div",null,Cn.createElement(Xm,{initialValue:this.state.reactDemoInitialValue,init:this.reactDemoInit,onEditorChange:this.handleChange})),Cn.createElement("div",{dangerouslySetInnerHTML:{__html:this.state.reactDemoInitialValue}}))}}return Bm.render(Cn.createElement(t,null),e)}};lo.template=`<PreviewReact class="demo-tpImporatwordDemo_t_vangr71657290366590_p_" idx="Demo3"  :source="source()">
                               
                             </PreviewReact>`;const la={name:"domeVue3",components:{TinymceVue:ts},data(){return{content:"\u8FD9\u662F\u4E00\u4E2A\u5BFC\u5165word\u63D2\u4EF6",tinymceOptions:{min_height:200,max_height:700,base_url:"/tinymce",plugins:"code tpImportword preview autoresize",toolbar:"code tpImportword preview"}}}};la.methods?la.methods.source=function(){return`<pre class="hljs fv-hljs highlight-line"><ul class="highlight-line-number "  ><li ><span>1</span></li><li ><span>2</span></li><li ><span>3</span></li><li ><span>4</span></li><li ><span>5</span></li><li ><span>6</span></li><li ><span>7</span></li><li ><span>8</span></li><li ><span>9</span></li><li ><span>10</span></li><li ><span>11</span></li><li ><span>12</span></li><li class="line"><span>13</span></li><li ><span>14</span></li><li ><span>15</span></li><li ><span>16</span></li><li ><span>17</span></li><li ><span>18</span></li><li ><span>19</span></li><li ><span>20</span></li><li ><span>21</span></li><li ><span>22</span></li><li ><span>23</span></li><li ><span>24</span></li><li ><span>25</span></li><li ><span>26</span></li><li ><span>27</span></li><li ><span>28</span></li><li ><span>29</span></li><li ><span>30</span></li><li ><span>31</span></li></ul><code class=" hljs  hljs-js" @click.stop="()=>{}">&lt;template&gt;
 <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
@@ -388,7 +388,7 @@ section.`).concat(s,`>article { margin-bottom: auto; }
   }
 }
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
-</code><div class="language-text" >vue</div></pre>`}};la.template=`<Preview class="demo-tpImporatwordDemo_t_afxkjh1657286605043_p_" :source="source()">
+</code><div class="language-text" >vue</div></pre>`}};la.template=`<Preview class="demo-tpImporatwordDemo_t_vangr71657290366590_p_" :source="source()">
                                 <template v-slot:demo><div>
  <h1>\u63D2\u4EF6demo\u5C55\u793A\u533A\u57DF</h1>
   <div class="vueDemo">
@@ -402,15 +402,15 @@ section.`).concat(s,`>article { margin-bottom: auto; }
 <Demo0  data-isComponent="iframe" />
  </demoGroupItem>
  <demoGroupItem title="Vue3" active>
-<Demo1 data-isComponent="vue" class="demo-tpImporatwordDemo_t_afxkjh1657286605043_p_" />
+<Demo1 data-isComponent="vue" class="demo-tpImporatwordDemo_t_vangr71657290366590_p_" />
  </demoGroupItem>
  <demoGroupItem title="Vue2">
-<Demo2 data-isComponent="vue" class="demo-tpImporatwordDemo_t_afxkjh1657286605043_p_" />
+<Demo2 data-isComponent="vue" class="demo-tpImporatwordDemo_t_vangr71657290366590_p_" />
  </demoGroupItem>
  <demoGroupItem title="React">
-<Demo3  data-isComponent="react"  class="demo-tpImporatwordDemo_t_afxkjh1657286605043_p_" />
+<Demo3  data-isComponent="react"  class="demo-tpImporatwordDemo_t_vangr71657290366590_p_" />
  </demoGroupItem>
 </demoGroup>
 <h2 id="\u4F7F\u7528@tinymce-plugin/tp-importword" tabindex="-1"><a class="header-anchor" href="#\u4F7F\u7528 @tinymce-plugin/tp-importword">#</a> \u4F7F\u7528 @tinymce-plugin/tp-importword</h2>
-<Demo4 data-isComponent="vue" class="demo-tpImporatwordDemo_t_afxkjh1657286605043_p_" />
-</div></div><PagesRouter  docPath="__docs__/tpImporatwordDemo.md" mapType="docs" docRepo="tp-importword" pagesName="tpImporatwordDemo_t_afxkjh1657286605043_p_" />`});export{r0 as default};
+<Demo4 data-isComponent="vue" class="demo-tpImporatwordDemo_t_vangr71657290366590_p_" />
+</div></div><PagesRouter  docPath="__docs__/tpImporatwordDemo.md" mapType="docs" docRepo="tp-importword" pagesName="tpImporatwordDemo_t_vangr71657290366590_p_" />`});export{r0 as default};

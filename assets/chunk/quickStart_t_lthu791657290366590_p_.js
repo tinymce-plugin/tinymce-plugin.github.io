@@ -71,4 +71,17 @@ import"./pinia.js";import{M as s}from"./vue.js";const l=s({components:{},templat
 <p><strong>\u81EA\u884C\u4E0B\u8F7D\u4F7F\u7528</strong>
 \u8FD9\u4E9B\u6587\u4EF6\u53EF\u4EE5\u5728 <a href="https://unpkg.com/browse/tinymce-plugin/" target="_blank"><em><em><strong>unpkg</strong></em></em></a> \u6216\u8005<a href="https://cdn.jsdelivr.net/npm/tinymce-plugin/" target="_blank"><em><em><strong>jsDelivr</strong></em></em></a>  \u8FD9\u4E9B CDN \u4E0A\u6D4F\u89C8\u548C\u4E0B\u8F7D,\u81EA\u884C\u5B58\u653E\u4E0E\u4F7F\u7528</p>
 </blockquote>
-</div></div><PagesRouter  docPath="__docs__/quickStart.md" mapType="docs" docRepo="tp-importword" pagesName="quickStart_t_1zls451657286605043_p_" />`});export{l as default};
+<div class="tip fv-state-tip fv-tip"><p class="fv-state-title" >\u63D0\u793A</p>
+<p>\u5BFC\u5165word \u63D2\u4EF6\u5BFC\u5165\u7684\u56FE\u7247\u9ED8\u8BA4\u662Fbase64 \uFF0C\u9700\u8981\u914D\u7F6E <strong><code class="fv-code_inline">automatic_uploads</code></strong> \u5C5E\u6027,\u540C\u65F6\u9700\u8981\u4FDD\u8BC1\u914D\u7F6E\u4E86 <strong><code class="fv-code_inline">images_upload_handler</code></strong>, \u53EF\u5C06\u5BFC\u5165\u7684\u56FE\u7247\u81EA\u52A8\u4E0A\u4F20\u670D\u52A1\u5668\u8F6C\u6210url\u94FE\u63A5</p>
+<pre class="hljs fv-hljs highlight-line"><ul class="highlight-line-number "  ><li ><span>1</span></li><li ><span>2</span></li><li ><span>3</span></li><li class="line"><span>4</span></li><li class="line"><span>5</span></li><li ><span>6</span></li><li ><span>7</span></li><li ><span>8</span></li><li ><span>9</span></li></ul><code class=" hljs  hljs-js" @click.stop="()=>{}"> <span class="hljs-keyword">import</span> <span class="hljs-string">&quot;@tinymce-plugin/tp-importword&quot;</span>;
+ tinymce.<span class="hljs-title function_">init</span>({
+  ...
+   <span class="hljs-attr">images_upload_handler</span>: <span class="hljs-function">(<span class="hljs-params">blobInfo, succFun, failFun</span>)=&gt;</span>{ ... }
+   <span class="hljs-attr">automatic_uploads</span>: <span class="hljs-literal">true</span>
+   <span class="hljs-attr">plugins</span>: <span class="hljs-string">&quot;tpImportword&quot;</span>
+   <span class="hljs-attr">toolbar</span>: <span class="hljs-string">&quot;tpImportword&quot;</span>
+  ...
+ })
+</code><div class="language-text" >js</div></pre>
+</div>
+</div></div><PagesRouter  docPath="__docs__/quickStart.md" mapType="docs" docRepo="tp-importword" pagesName="quickStart_t_lthu791657290366590_p_" />`});export{l as default};
