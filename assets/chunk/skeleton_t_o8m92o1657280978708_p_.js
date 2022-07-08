@@ -1,1 +1,0 @@
-import"./pinia.js";import{M as o}from"./vue.js";const s=o({components:{},template:'<div class="fv-mardown-html"><div class="fv-mardown-main tp-doc"></div></div><PagesRouter  docPath="en/guide/skill/skeleton.md" mapType="docs" docRepo="tinymce-plugin-docs" pagesName="skeleton_t_o8m92o1657280978708_p_" />'});export{s as default};

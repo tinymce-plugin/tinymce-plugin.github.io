@@ -2,6 +2,8 @@
 /en/packages/tp-importword/quickStartdemo
 /en/packages/tp-importword/quickStart
 /en/packages/tp-indent2em/tpIndent2em
+/en/integration/tinymce-vue/quickStartdemo
+/en/integration/tinymce-vue/quickStart
 /en/contributing/writing-guide/guide
 /en/contributing/writing-guide/grammar
 /en/contributing/writing-guide/grammar-demo
@@ -20,9 +22,10 @@
 /en/customize/table
 /en/commonproblem/images
 /en/contributing/plugin
-/nextplan/info.html
+/introduction.html
 /introduction.html
 /packages/tp-layout
+/integration/tinymce-vue
 /examples/basic
 /skill/skeleton
 /customize/images
