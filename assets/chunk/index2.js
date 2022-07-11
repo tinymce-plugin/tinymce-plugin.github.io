@@ -1,4 +1,4 @@
-var zt=(D,p)=>()=>(p||D((p={exports:{}}).exports,p),p.exports);var Dt=zt((It,C)=>{/*! 
+var zt=(D,p)=>()=>(p||D((p={exports:{}}).exports,p),p.exports);var Dt=zt((It,C)=>{/*! copy
 *  @plugin tinymce-plugin
 *  @version 0.0.3-beta.17 (2022-7-5)
 *  @description tinymce-plugin
