@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>#basic-example{
+    color: #333;
+}
+</style>
+
+      <script src="/tinymce/tinymce.js"></script>
+      <script src="/tinymce/tinymce-plugin.js"></script>
+    </head><body style="padding-bottom: 20px"> <textarea id='basic-example'>
+  <h1><strong>👋 Welcome !</strong></h1>
+  <p><img style="display: block; margin-left: auto; margin-right: auto;" title="Tiny Logo" src="/thinymce-pluginIcon.png" alt="TinyMCE Logo" width="128"  /></p>
+  <p>欢迎来到 <a href="https://github.com/tinymce-plugin" target="_blank"><strong><code class="fv-code_inline">Tinymce-plugin</code></strong></a></p><p>这是一个专注 提供 <strong>强大、好用、丰富</strong> 的 <a href="https://www.tiny.cloud" target="_blank"><code class="fv-code_inline">tinymce</code></a> 富文本编辑器 <strong>插件</strong>、<strong>扩展</strong> 和 <strong>技术</strong> 的技术社区，方便 <strong>交流讨论</strong>，<strong>分享经验</strong> 。</p><p>本社区有多个不错的插件或者项目，欢迎 Star ⭐ 关注~</p>
+  <h1> ✨Tinymce-plugin</h1>
+  <p><a href="https://github.com/tinymce-plugin" target="_blank"><img src="https://tinymce-plugin.github.io/badge.svg" alt="tinymce-plugin"></a>&nbsp; <a href="https://www.npmjs.com/package/tinymce-plugin" target="_blank"><img src="https://img.shields.io/npm/v/tinymce-plugin.svg" alt="release candidate"></a>&nbsp; <a href="https://www.tiny.cloud" target="_blank"><img src="https://img.shields.io/badge/tinymce-5.2.0~5.x.x-green.svg" alt="tinymce Version"></a>&nbsp; <a href="https://github.com/tinymce-plugin/tinymce-plugin/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/tinymce-plugin/tp-indent2em.svg" alt="GitHub license"></a>&nbsp; <a href="https://www.tiny.cloud" target="_blank"><img src="https://img.shields.io/npm/dm/tinymce-plugin" alt="tinymce Version"></a></p>
+</textarea>
+
+<script> tinymce.init({
+  selector: 'textarea#basic-example',
+  height: 500,
+  menubar: false,
+  skeletonScreen: true,
+  plugins: [
+    'advlist autolink lists link image charmap print preview anchor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table paste code help wordcount'
+  ],
+   images_upload_handler: function (blobInfo, succFun, failFun) {
+                    var file = blobInfo.blob();
+                    var reader = new FileReader();
+                    reader.onload = function(e){
+                     succFun(e.target.result)
+                    }
+                   reader.readAsDataURL(file)
+  },
+  toolbar: 'undo redo | formatselect | ' +
+  'bold italic backcolor | alignleft aligncenter ' +
+  'alignright alignjustify | bullist numlist outdent indent | ' +
+  'removeformat | help',
+  content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+});
+</script></body></html>
