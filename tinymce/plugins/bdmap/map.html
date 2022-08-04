@@ -444,12 +444,12 @@
 			map.clearOverlays();//清空原来的标注
 			var keyword = document.getElementById("kw").value;
 			localSearch.setSearchCompleteCallback(function (searchResult) {
-				// console.log(searchResult);
-				if(searchResult.Br.length==0){
+				console.log(searchResult);
+				if(searchResult.Ir?.length==0){
 					alert('搜索不到该地区');
 					return false;
 				}
-				var poi = searchResult.Br[0];
+				var poi = searchResult.Ir[0];
 				map.centerAndZoom(poi.point, 14);
 			    marker = new BMap.Marker(new BMap.Point(poi.point.lng, poi.point.lat));
 				parent.tinymceLng=poi.point.lng;

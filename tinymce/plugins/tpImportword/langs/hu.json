@@ -1,0 +1,6 @@
+{
+  "Import to Word succeeded": "A szóba történő importált sikeres",
+  "Converting...": "Megtérés ...",
+  "Currently only supports docx file format, if it is doc format, please convert it to docx": "Jelenleg csak a DOCX fájl formátumát támogatja, ha DOC formátumú, kérjük, konvertálja azt a DOCX -re",
+  "import word document": "Import szódokumentum"
+}

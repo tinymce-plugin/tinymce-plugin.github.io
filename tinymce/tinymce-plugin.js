@@ -2567,7 +2567,7 @@
           _items["" + defaultLangsObj[lang].title] = defaultLangsObj[lang].name;
           editor.editorManager.i18n.add("en", _items);
         }
-        let baseURL = editor.settings.tp_i18n_url || (((_a = editor.baseURL) === null || _a === void 0 ? void 0 : _a.replace(/\/$/, "")) ? (_b = editor.baseURL) === null || _b === void 0 ? void 0 : _b.replace(/\/$/, "") : "") + "/langs/" || "";
+        let baseURL = editor.settings.tp_i18n_url || "/tinymce/langs/" || "";
         defaultLangsDataList.map((_i18n) => {
           _i18n.items && editor.editorManager.i18n.add(_i18n.code, _i18n.items);
           _i18n.code !== "en" && editor.editorManager.ScriptLoader.add(_i18n.url || (baseURL === null || baseURL === void 0 ? void 0 : baseURL.replace(/\/$/, "")) + "/" + _i18n.code + ".js");
@@ -2622,10 +2622,12 @@
         });
       }
       editor.on("init", (e) => {
+        // console.log('2')
         createComponentsCustomTag(editor);
         editor.getTpContent = (args) => {
           return editor.getTpStyle(args) + editor.getContent(args);
         };
+        // editor.editorManager.i18n.setCode(editor.settings.language || editor.settings.tp_i18n || "en");
         editor.editorContainer.onmouseover = () => {
           let _language = editor.settings.language || editor.settings.tp_i18n || "en";
           let _currentCodeVal = editor.editorManager.i18n.getCode();
@@ -2657,11 +2659,12 @@
        if (arguments[0].tp_dark_light_mode &&_mode) {
         arguments[0].skin = "oxide" + (_mode == "dark" ? "-dark" : "");
         arguments[0].content_css =  _mode == "dark" ? "dark" : "default";
-          _mode == "dark"? document.getElementsByTagName('body')[0].style.background = '#2F2F2F' : document.getElementsByTagName('body')[0].style.background ='#fff'
+          _mode == "dark"? document.getElementsByTagName('body')[0].style.background = '#2F2F2F' : document.getElementsByTagName('body')[0].style.background ='#F9F9F9'
         }
+        //
         arguments[0].skeletonScreen && (sktDom = createSkeleton(arguments[0]));
         arguments[0].custom_elements = (arguments[0].custom_elements ? arguments[0].custom_elements + "," : "") + "tp-collapse,tp-tabs,tp-buttons";
-     //
+  
       if (typeof arguments[0].setup == "function") {
         arguments[0].setup = function(_setup) {
           return function(editor) {
@@ -2684,6 +2687,11 @@
             sktDom.remove();
             (_a = parentNode.querySelector(".skt.skt-loading")) === null || _a === void 0 ? void 0 : _a.remove();
           }
+          // setTimeout(()=>{
+          //   console.log(editor[0].settings.language);
+          //   editor[0].execCommand("mceTpI18n", false, editor[0].settings.language);
+          // },2000)
+          
         };
         if (editor[0]) {
           initFn();
@@ -2715,7 +2723,7 @@
             });
           }
           if (/APPEARANCE_KEY/.test(keyName)) {
-            keyValue == "dark"? document.getElementsByTagName('body')[0].style.background = '#2F2F2F' : document.getElementsByTagName('body')[0].style.background ='#fff'
+            keyValue == "dark"? document.getElementsByTagName('body')[0].style.background = '#2F2F2F' : document.getElementsByTagName('body')[0].style.background ='#F9F9F9'
             tp$tinymce.editors.forEach((editor) => {
               setTimeout(() => {
                 if (editor.settings.tp_dark_light_mode) {
@@ -2767,6 +2775,9 @@
   const tinymcePlugin2 = {
     global$1: tinymce.util.Tools,
     global$7: tinymce.html.Node,
+    I18n: {
+      add: tp$tinymce.i18n.add
+    },
     componentsApi,
     createSkt
   };

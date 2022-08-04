@@ -1,0 +1,6 @@
+{
+  "Import to Word succeeded": "단어로의 수입이 성공했습니다",
+  "Converting...": "변환 ...",
+  "Currently only supports docx file format, if it is doc format, please convert it to docx": "현재 DOCX 파일 형식 만 지원하고 DOC 형식 인 경우 DOCX로 변환하십시오.",
+  "import word document": "단어 문서 가져 오기"
+}

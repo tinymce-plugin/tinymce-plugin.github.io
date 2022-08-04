@@ -903,7 +903,7 @@
     var mediaInput = [{
         name: 'source',
         type: 'urlinput',
-        placeholder: '哈哈哈', 
+        placeholder: '', 
         filetype: 'media',
         label: 'Source'
       }];
@@ -1252,14 +1252,14 @@
   var setup = function (editor) {
     editor.on('preInit', function () {
       var specialElements = editor.schema.getSpecialElements();
-      global$1.each('video audio iframe object'.split(' '), function (name) {
+      global$1.each('video audio iframe object:not(data-tp-logicflow)'.split(' '), function (name) {
         specialElements[name] = new RegExp('</' + name + '[^>]*>', 'gi');
       });
       var boolAttrs = editor.schema.getBoolAttrs();
       global$1.each('webkitallowfullscreen mozallowfullscreen allowfullscreen'.split(' '), function (name) {
         boolAttrs[name] = {};
       });
-      editor.parser.addNodeFilter('iframe,video,audio,object,embed,script', placeHolderConverter(editor));
+      editor.parser.addNodeFilter('iframe,video,audio,object:not(data-tp-logicflow),embed,script', placeHolderConverter(editor));
       editor.serializer.addAttributeFilter('data-mce-object', function (nodes, name) {
         var i = nodes.length;
         var node;

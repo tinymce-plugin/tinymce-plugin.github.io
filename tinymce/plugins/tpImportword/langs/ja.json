@@ -1,0 +1,6 @@
+{
+  "Currently only supports docx file format, if it is doc format, please convert it to docx": "現在、docxファイル形式のみをサポートしています。これがdoc形式の場合は、docxに変換してください",
+  "Import to Word succeeded": "単語へのインポートは成功しました",
+  "Converting...": "変換...",
+  "import word document": "Wordドキュメントをインポートします"
+}

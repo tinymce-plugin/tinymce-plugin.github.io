@@ -1,0 +1,6 @@
+{
+  "Currently only supports docx file format, if it is doc format, please convert it to docx": "Hiện tại chỉ hỗ trợ định dạng tệp docx, nếu đó là định dạng tài liệu, vui lòng chuyển đổi nó thành docx",
+  "import word document": "Nhập tài liệu Word",
+  "Converting...": "Chuyển đổi ...",
+  "Import to Word succeeded": "Nhập vào Word đã thành công"
+}

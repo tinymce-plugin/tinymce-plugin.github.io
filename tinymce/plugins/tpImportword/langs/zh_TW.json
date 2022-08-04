@@ -1,0 +1,6 @@
+{
+  "Currently only supports docx file format, if it is doc format, please convert it to docx": "目前僅支持DOCX文件格式，如果是DOC格式，請將其轉換為DOCX",
+  "Import to Word succeeded": "導入到成功",
+  "Converting...": "轉換...",
+  "import word document": "導入Word文檔"
+}
