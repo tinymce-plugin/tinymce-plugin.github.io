@@ -1,0 +1,17 @@
+'use strict';
+require('./cs.js')
+require('./de.js')
+require('./es.js')
+require('./fr.js')
+require('./hu.js')
+require('./i18n.js')
+require('./ja.js')
+require('./ko.js')
+require('./nl.js')
+require('./pt.js')
+require('./readme.md')
+require('./ug.js')
+require('./vi.js')
+require('./zh_CN.js')
+require('./zh_TW.js')
+module.exports = {}

@@ -1,6 +1,6 @@
 /*! 
 *  @plugin tinymce-plugin
-*  @version 0.0.3-beta.16 (2022-7-5)
+*  @version 0.0.3-beta.22 (2022-8-5)
 *  @description tinymce-plugin
 *  @copyright (2022) Five(Li Hailong) . All rights reserved. https://github.com/tinymce-plugintinymce-plugin
 */
@@ -2113,6 +2113,9 @@
     I18n: {
       add: tp$tinymce.i18n.add
     },
+    isDev: () => {
+      return window === null || window === void 0 ? void 0 : window.__TP_DEV__;
+    },
     Tools: {
       getFormatStyle,
       autoToPX,
@@ -2490,7 +2493,7 @@
         "list-bull-tp-iconlists_tick": '<div style="width: 45px"><p style="height: 20px"><img style="width: 20px; height: 20px; display:inline-block; vertical-align: middle" src="/tinymce/icons/tp/tp-tick.png"/> <span style="display: inline-block;vertical-align: middle; width: 20px;background-color: #B9BCC1; height:5px" ></span><p  style="height: 20px" ><img style="width: 20px; height: 20px; display:inline-block; vertical-align: middle" src="/tinymce/icons/tp/tp-tick.png"/> <span style="display: inline-block;vertical-align: middle; width: 20px;background-color: #B9BCC1; height:5px" ></span></p></div>',
         "tpParagraph": '<svg t="1631187903361" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1637" width="24" height="24"><path d="M122.368 165.888h778.24c-9.216 0-16.384-7.168-16.384-16.384v713.728c0-9.216 7.168-16.384 16.384-16.384h-778.24c9.216 0 16.384 7.168 16.384 16.384V150.016c0 8.192-6.656 15.872-16.384 15.872z m-32.768 684.544c0 26.112 20.992 47.104 47.104 47.104h750.08c26.112 0 47.104-20.992 47.104-47.104V162.304c0-26.112-20.992-47.104-47.104-47.104H136.704c-26.112 0-47.104 20.992-47.104 47.104v688.128z" p-id="1638"></path><path d="M597.504 300.544h230.912v49.152h-230.912zM596.992 437.76h230.912v49.152h-230.912zM210.432 574.976h617.984v49.152H210.432zM210.432 712.192h617.984v49.152H210.432zM246.784 296.448h88.064V501.76h-29.184v29.184h117.248V501.76h-29.696V296.448H481.28v29.184h29.184V238.08H217.6v87.552h29.184z" p-id="1639"></path></svg>',
         "tpColumns": '<svg t="1631064221790" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="26578" width="20" height="20"><path d="M416 64H128c-35.2 0-64 28.8-64 64v768c0 35.2 28.8 64 64 64h288c35.2 0 64-28.8 64-64V128c0-35.2-28.8-64-64-64z m0 800c0 19.2-12.8 32-32 32H160c-19.2 0-32-12.8-32-32V160c0-19.2 12.8-32 32-32h224c19.2 0 32 12.8 32 32v704zM896 64H608c-35.2 0-64 28.8-64 64v768c0 35.2 28.8 64 64 64h288c35.2 0 64-28.8 64-64V128c0-35.2-28.8-64-64-64z m0 800c0 19.2-12.8 32-32 32H640c-19.2 0-32-12.8-32-32V160c0-19.2 12.8-32 32-32h224c19.2 0 32 12.8 32 32v704z"></path></svg>',
-        "tpLetterspacing": '<svg t="1610616201691" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="969" width="24" height="24"><path d="M682.666667 704l128 106.666667-128 106.666666v-85.333333H341.333333v85.333333L213.333333 810.666667l128-106.666667v85.333333h341.333334v-85.333333zM170.666667 170.666667v682.666666H85.333333V170.666667h85.333334z m768 0v682.666666h-85.333334V170.666667h85.333334z m-394.666667 0l202.666667 469.333333h-89.6l-38.4-93.866667h-213.333334L366.933333 640H277.333333l202.666667-469.333333h64zM512 255.146667L432.213333 469.333333h159.573334L512 255.146667z" p-id="970" fill="#222f3e"></path></svg>',
+        "tpLetterspacing": '<svg t="1610616201691" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="969" width="24" height="24"><path d="M682.666667 704l128 106.666667-128 106.666666v-85.333333H341.333333v85.333333L213.333333 810.666667l128-106.666667v85.333333h341.333334v-85.333333zM170.666667 170.666667v682.666666H85.333333V170.666667h85.333334z m768 0v682.666666h-85.333334V170.666667h85.333334z m-394.666667 0l202.666667 469.333333h-89.6l-38.4-93.866667h-213.333334L366.933333 640H277.333333l202.666667-469.333333h64zM512 255.146667L432.213333 469.333333h159.573334L512 255.146667z" p-id="970"></path></svg>',
         "tpIndent2em": '<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M170.666667 563.2v-102.4H887.466667v102.4zM170.666667 836.266667v-102.4H887.466667v102.4zM512 290.133333v-102.4H887.466667v102.4zM238.933333 341.333333V136.533333l204.8 102.4z"  p-id="5210"></path></svg>',
         "tpIconfont": '<svg t="1631797032825" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="16487" width="30" height="30"><path d="M805.096727 186.810182H218.903273c-17.687273 0-32.116364 14.405818-32.116364 32.116363v586.170182c0 17.687273 14.429091 32.116364 32.116364 32.116364h586.193454c17.687273 0 32.116364-14.429091 32.116364-32.116364V218.903273c0-17.687273-14.429091-32.116364-32.116364-32.116364z m0-46.545455a78.685091 78.685091 0 0 1 78.661818 78.661818v586.170182a78.685091 78.685091 0 0 1-78.661818 78.661818H218.903273a78.685091 78.685091 0 0 1-78.661818-78.661818V218.903273a78.685091 78.685091 0 0 1 78.661818-78.661818h586.193454z"  p-id="16488"></path><path d="M581.818182 465.454545h162.909091v-162.90909h-162.909091v162.90909z m-23.272727-186.181818h209.454545v209.454546h-209.454545v-209.454546zM372.363636 744.727273c51.386182 0 93.090909-41.751273 93.090909-93.090909 0-51.386182-41.751273-93.090909-93.090909-93.090909-51.386182 0-93.090909 41.751273-93.090909 93.090909 0 51.386182 41.751273 93.090909 93.090909 93.090909z m0 23.272727c-64.116364 0-116.363636-52.037818-116.363636-116.363636 0-64.116364 52.037818-116.363636 116.363636-116.363637 64.116364 0 116.363636 52.037818 116.363637 116.363637 0 64.116364-52.037818 116.363636-116.363637 116.363636zM736.907636 721.454545l-80.663272-139.636363-80.663273 139.636363h161.326545zM535.272727 744.727273l120.971637-209.454546 120.971636 209.454546H535.272727zM417.093818 393.774545l44.776727-43.52-61.812363-8.96L372.363636 285.253818l-27.694545 56.040727-61.905455 8.983273 44.683637 43.52-10.519273 61.672727 55.226182-29.090909 55.458909 29.137455-10.519273-61.742546z m24.994909 8.145455l16.384 96.116364-86.318545-45.381819-86.109091 45.381819 16.407273-96.116364L232.727273 334.010182l96.488727-13.963637L372.363636 232.727273l43.147637 87.296 96.488727 13.963636-69.911273 67.956364z"  ></path></svg>',
         "tp-columns-default": '<svg t="1631071826197" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="27031" width="60" height="40"  style="transform: translateX(7px)"; ><path  d="M213.333333 341.333333H85.333333v384h128V341.333333m85.333334 0v384a85.333333 85.333333 0 0 1-85.333334 85.333334H85.333333a85.333333 85.333333 0 0 1-85.333333-85.333334V341.333333a85.333333 85.333333 0 0 1 85.333333-85.333333h128a85.333333 85.333333 0 0 1 85.333334 85.333333z"  p-id="27032"></path><path d="M576 341.333333h-128v384h128V341.333333m85.333333 0v384a85.333333 85.333333 0 0 1-85.333333 85.333334h-128a85.333333 85.333333 0 0 1-85.333333-85.333334V341.333333a85.333333 85.333333 0 0 1 85.333333-85.333333h128a85.333333 85.333333 0 0 1 85.333333 85.333333z"  p-id="27033"></path></svg>',
@@ -2507,8 +2510,7 @@
     };
   }(tp$tinymce.IconManager.add);
   function initSetup(editor) {
-    var _a, _b;
-
+    var _a;
     editor.on("BeforeGetContent", (e) => {
       !e.source_view ? createTpComponentStyleSheet(e.target) : "";
     });
@@ -2560,14 +2562,14 @@
           { title: "Czech", code: "cs", items: { English: "angli\u010Dtina", Spanish: "\u0160pan\u011Bl\u0161tina", French: "Francouz\u0161tina", German: "N\u011Bm\u010Dina", Chinese: "\u010C\xEDn\u0161tina", Japanese: "Japon\u0161tina", Korean: "Korej\u0161tina", Dutch: "Nizozem\u0161tina", Hungarian: "Ma\u010Far\u0161tina", Portuguese: "Portugal\u0161tina", Czech: "\u010Ce\u0161tina", Uyghur: "Ujgursk\xE1", Vietnamese: "Vietnam\u0161tina" } },
           { title: "Vietnamese", code: "vi", items: { English: "Comment", Spanish: "T\xE2y Ban", French: "Ph\xE1p", German: "\u0110\u1EE9c", Chinese: "Hoa", Japanese: "Nh\u1EADt", Korean: "H\xE0n", Dutch: "H\xE0", Hungarian: "Hungary", Portuguese: "PortugueName", Czech: "S\xE9c", Uyghur: "ch\xE0o.", Vietnamese: "Vi\u1EC7tName" } }
         ];
-        var lang = navigator.language || navigator.userLanguage;
+        var lang = navigator.language || (navigator === null || navigator === void 0 ? void 0 : navigator.userLanguage);
         lang = lang.substr(0, 2);
         if (defaultLangsObj[lang]) {
           let _items = {};
           _items["" + defaultLangsObj[lang].title] = defaultLangsObj[lang].name;
           editor.editorManager.i18n.add("en", _items);
         }
-        let baseURL = editor.settings.tp_i18n_url || "/tinymce/langs/" || "";
+        let baseURL = editor.settings.tp_i18n_url || (((_a = editor.baseUri) === null || _a === void 0 ? void 0 : _a.source.replace(/\/$/, "")) ? editor.baseUri.source.replace(/\/$/, "") : "") + "/langs/" || "";
         defaultLangsDataList.map((_i18n) => {
           _i18n.items && editor.editorManager.i18n.add(_i18n.code, _i18n.items);
           _i18n.code !== "en" && editor.editorManager.ScriptLoader.add(_i18n.url || (baseURL === null || baseURL === void 0 ? void 0 : baseURL.replace(/\/$/, "")) + "/" + _i18n.code + ".js");
@@ -2601,7 +2603,7 @@
           editor.editorManager.settings = editor.settings;
           editor.editorManager.execCommand("mceAddEditor", false, editor.id);
         });
-        editor.ui.registry.getAll().icons["i18n"] || editor.ui.registry.addIcon("i18n", '<svg t="1656142365638" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2658" width="24" height="24"><path d="M864 64a96 96 0 0 1 96 96v704a96 96 0 0 1-96 96H160a96 96 0 0 1-96-96V160a96 96 0 0 1 96-96h704z m0 64H160a32 32 0 0 0-32 32v704a32 32 0 0 0 32 32h704a32 32 0 0 0 32-32V160a32 32 0 0 0-32-32z m-322.4 256c0-31.456 40.64-44.032 58.4-18.08l133.6 195.168V384a32 32 0 0 1 64 0v280.48c0 31.456-40.64 44.032-58.4 18.08l-133.6-195.168v177.088a32 32 0 1 1-64 0z" fill="#1C1C1E" p-id="2659"></path><path d="M448 352a32 32 0 0 1 0 64H288v80h160a32 32 0 0 1 31.776 28.256L480 528a32 32 0 0 1-32 32H288v72.48h160a32 32 0 1 1 0 64H256a32 32 0 0 1-32-32V384a32 32 0 0 1 32-32z"  p-id="2660" data-spm-anchor-id="a313x.7781069.0.i5" class="selected"></path></svg>');
+        editor.ui.registry.getAll().icons["i18n"] || editor.ui.registry.addIcon("i18n", '<svg t="1656142365638" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2658" width="24" height="24"><path d="M864 64a96 96 0 0 1 96 96v704a96 96 0 0 1-96 96H160a96 96 0 0 1-96-96V160a96 96 0 0 1 96-96h704z m0 64H160a32 32 0 0 0-32 32v704a32 32 0 0 0 32 32h704a32 32 0 0 0 32-32V160a32 32 0 0 0-32-32z m-322.4 256c0-31.456 40.64-44.032 58.4-18.08l133.6 195.168V384a32 32 0 0 1 64 0v280.48c0 31.456-40.64 44.032-58.4 18.08l-133.6-195.168v177.088a32 32 0 1 1-64 0z"  p-id="2659"></path><path d="M448 352a32 32 0 0 1 0 64H288v80h160a32 32 0 0 1 31.776 28.256L480 528a32 32 0 0 1-32 32H288v72.48h160a32 32 0 1 1 0 64H256a32 32 0 0 1-32-32V384a32 32 0 0 1 32-32z"  p-id="2660" data-spm-anchor-id="a313x.7781069.0.i5" class="selected"></path></svg>');
         editor.ui.registry.addNestedMenuItem("tpI18n", {
           text: "i18n",
           icon: "i18n",
@@ -2622,12 +2624,6 @@
         });
       }
       editor.on("init", (e) => {
-        // console.log('2')
-        createComponentsCustomTag(editor);
-        editor.getTpContent = (args) => {
-          return editor.getTpStyle(args) + editor.getContent(args);
-        };
-        // editor.editorManager.i18n.setCode(editor.settings.language || editor.settings.tp_i18n || "en");
         editor.editorContainer.onmouseover = () => {
           let _language = editor.settings.language || editor.settings.tp_i18n || "en";
           let _currentCodeVal = editor.editorManager.i18n.getCode();
@@ -2635,36 +2631,34 @@
         };
       });
     }
+    editor.on("init", (e) => {
+      createComponentsCustomTag(editor);
+      editor.getTpContent = (args) => {
+        return editor.getTpStyle(args) + editor.getContent(args);
+      };
+    });
   }
   tp$tinymce.init = function(_init) {
     return function() {
+      
       let sktDom = "";
-
-      //five 
       let _locale = window.localStorage.getItem('responsive-locale')
       let _mode= window.localStorage.getItem('APPEARANCE_KEY')
       _locale&&(_locale=JSON.parse(_locale))
       if (!arguments[0].tp_i18n_setCode &&_locale.locale&&!arguments[0].language) {
-       if(/^zh/.test(_locale.locale)){
-         arguments[0].language = 'zh_CN'
+      if(/^zh/.test(_locale.locale)){
+        arguments[0].language = 'zh_CN'
         } else{
           arguments[0].language = _locale.locale
         }
-     }
-     !arguments[0].language && (arguments[0].language = "en");
-   
-     !arguments[0].tp_i18n&&(arguments[0].tp_i18n = true)
-     !arguments[0].tp_dark_light_mode&&(arguments[0].tp_dark_light_mode = true)
-    
-       if (arguments[0].tp_dark_light_mode &&_mode) {
+      }
+      !arguments[0].tp_i18n&&(arguments[0].tp_i18n = true)
+      !arguments[0].tp_dark_light_mode&&(arguments[0].tp_dark_light_mode = true)
+      if (arguments[0].tp_dark_light_mode &&_mode) {
         arguments[0].skin = "oxide" + (_mode == "dark" ? "-dark" : "");
         arguments[0].content_css =  _mode == "dark" ? "dark" : "default";
-          _mode == "dark"? document.getElementsByTagName('body')[0].style.background = '#2F2F2F' : document.getElementsByTagName('body')[0].style.background ='#F9F9F9'
         }
-        //
-        arguments[0].skeletonScreen && (sktDom = createSkeleton(arguments[0]));
-        arguments[0].custom_elements = (arguments[0].custom_elements ? arguments[0].custom_elements + "," : "") + "tp-collapse,tp-tabs,tp-buttons";
-  
+      !arguments[0].language && (arguments[0].language = "en");
       if (typeof arguments[0].setup == "function") {
         arguments[0].setup = function(_setup) {
           return function(editor) {
@@ -2677,7 +2671,8 @@
           initSetup(editor);
         };
       }
-     
+      arguments[0].skeletonScreen && (sktDom = createSkeleton(arguments[0]));
+      arguments[0].custom_elements = (arguments[0].custom_elements ? arguments[0].custom_elements + "," : "") + "tp-collapse,tp-tabs,tp-buttons";
       const resEditor = _init.apply(this, arguments);
       resEditor.then((editor) => {
         let initFn = () => {
@@ -2687,11 +2682,6 @@
             sktDom.remove();
             (_a = parentNode.querySelector(".skt.skt-loading")) === null || _a === void 0 ? void 0 : _a.remove();
           }
-          // setTimeout(()=>{
-          //   console.log(editor[0].settings.language);
-          //   editor[0].execCommand("mceTpI18n", false, editor[0].settings.language);
-          // },2000)
-          
         };
         if (editor[0]) {
           initFn();
@@ -2707,7 +2697,19 @@
       return resEditor;
     };
   }(tp$tinymce.init);
-  window.addEventListener('storage',(e)=>{
+  let getContentStyle = function(content) {
+    return new Promise((resolve, reject) => {
+      let result = content.match(/<(style)\s*>([\s\S]+)<\/\1>/);
+      resolve(result && result[2] ? result[2].trim() : "");
+    });
+  };
+  tp$tinymce.Editor.prototype.setTpContent = function(content, args) {
+    getContentStyle(content).then((res) => {
+    });
+    return this.setContent(content, args);
+  };
+  
+window.addEventListener('storage',(e)=>{
     // console.log(e);
      let keyName = e.key
      let keyValue = e.newValue
@@ -2734,51 +2736,14 @@
             });
           }
   })
-  // window.localStorage.setItem = function(_setItem) {
 
-  //   return function(keyName, keyValue) {
-  //     console.log(keyName);
-  //     if (/locale$/.test(keyName)) {
-  //       tp$tinymce.editors.forEach((editor) => {
-  //         setTimeout(() => {
-  //           if (!editor.settings.tp_i18n_setCode && editor.settings.tp_i18n_Locale) {
-  //             editor.settings.tp_i18n_Locale(keyValue, (val) => {
-  //               editor.execCommand("mceTpI18n", false, val);
-  //             });
-  //           }
-  //         }, 50);
-  //       });
-  //     }
-  //     if (/APPEARANCE_KEY/.test(keyName)) {
-  //       tp$tinymce.editors.forEach((editor) => {
-  //         setTimeout(() => {
-  //           if (editor.settings.tp_dark_light_mode) {
-  //             editor.execCommand("tpDarkLightMode", false, { skin: "oxide" + (keyValue == "dark" ? "-dark" : ""), content_css: keyValue == "dark" ? "dark" : "" });
-  //           }
-  //         }, 50);
-  //       });
-  //     }
-  //     _setItem.apply(this, arguments);
-  //   };
-  // }(window.localStorage.__proto__.setItem);
-  let getContentStyle = function(content) {
-    return new Promise((resolve, reject) => {
-      let result = content.match(/<(style)\s*>([\s\S]+)<\/\1>/);
-      resolve(result && result[2] ? result[2].trim() : "");
-    });
-  };
-  tp$tinymce.Editor.prototype.setTpContent = function(content, args) {
-    getContentStyle(content).then((res) => {
-    });
-    return this.setContent(content, args);
-  };
   const tinymcePlugin2 = {
     global$1: tinymce.util.Tools,
     global$7: tinymce.html.Node,
-    I18n: {
-      add: tp$tinymce.i18n.add
-    },
     componentsApi,
+    setDev: () => {
+      window === null || window === void 0 ? void 0 : window.__TP_DEV__ = true;
+    },
     createSkt
   };
   var exportToModuleLoaders = function(_tinymcePlugin) {

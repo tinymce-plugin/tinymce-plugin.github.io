@@ -1,1 +1,2 @@
-require('./plugin.min.js');
+'use strict';
+module.exports = require('./plugin.min.js')
