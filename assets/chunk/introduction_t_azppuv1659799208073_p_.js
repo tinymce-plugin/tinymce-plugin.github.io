@@ -3,7 +3,7 @@ import"./pinia.js";import{M as s}from"./vue.js";const a=s({components:{},templat
 <a href="https://www.npmjs.com/package/@tinymce-plugin/tp-importword" target="_blank"><img src="https://img.shields.io/npm/v/@tinymce-plugin/tp-importword.svg" alt="release candidate"></a>\xA0
 <a href="https://www.tiny.cloud" target="_blank"><img src="https://img.shields.io/badge/tinymce-5.2.0~5.x.x-green.svg" alt="tinymce Version"></a>\xA0
 <a href="https://github.com/tinymce-plugin/tp-indent2em/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/tinymce-plugin/tp-indent2em.svg" alt="GitHub license"></a>\xA0
-<a href="https://www.tiny.cloud" target="_blank"><img src="https://img.shields.io/npm/dw/@tinymce-plugin/tp-importword" alt="tinymce Version"></a></p>
+<a href="https://github.com/tinymce-plugin/tp-importword" target="_blank"><img src="https://img.shields.io/npm/dw/@tinymce-plugin/tp-importword" alt="tinymce Version"></a></p>
 <p>tpImportword \u63D2\u4EF6\u7528\u4E8E <code class="fv-code_inline">tinymce</code> \u5BCC\u6587\u672C\u7F16\u8F91\u5668 \u5B9E\u73B0\u5BFC\u5165word\u529F\u80FD, \u5E76\u4E14\u6700\u5927\u53EF\u80FD\u4FDD\u5B58\u5E03\u5C40\u6837\u5F0F\u4E0E\u989C\u8272\u7B49</p>
 <p>\u6B22\u8FCE\u63D0\u4F9B\u597D\u7684\u5EFA\u8BAE \u6216\u8005\u53CD\u9988bug</p>
 <div class="warning fv-state-tip fv-warning"><p class="fv-state-title" ></p>
@@ -23,4 +23,4 @@ import"./pinia.js";import{M as s}from"./vue.js";const a=s({components:{},templat
  })
 </code><div class="language-text" >js</div></pre>
 </div>
-</div></div><PagesRouter  docPath="__docs__/introduction.md" mapType="docs" docRepo="tp-importword" pagesName="introduction_t_buwr1q1659790179535_p_" />`});export{a as default};
+</div></div><PagesRouter  docPath="__docs__/introduction.md" mapType="docs" docRepo="tp-importword" pagesName="introduction_t_azppuv1659799208073_p_" />`});export{a as default};
