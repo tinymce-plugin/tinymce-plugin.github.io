@@ -23,4 +23,4 @@ import"./pinia.js";import{M as s}from"./vue.js";const a=s({components:{},templat
  })
 </code><div class="language-text" >js</div></pre>
 </div>
-</div></div><PagesRouter  docPath="__docs__/introduction.md" mapType="docs" docRepo="tp-importword" pagesName="introduction_t_azppuv1659799208073_p_" />`});export{a as default};
+</div></div><PagesRouter  docPath="__docs__/introduction.md" mapType="docs" docRepo="tp-importword" pagesName="introduction_t_r5mzbw1659849932329_p_" />`});export{a as default};

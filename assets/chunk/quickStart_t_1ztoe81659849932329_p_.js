@@ -84,4 +84,4 @@ import"./pinia.js";import{M as s}from"./vue.js";const l=s({components:{},templat
  })
 </code><div class="language-text" >js</div></pre>
 </div>
-</div></div><PagesRouter  docPath="__docs__/en/quickStart.md" mapType="docs" docRepo="tp-importword" pagesName="quickStart_t_37jozz1659799208073_p_" />`});export{l as default};
+</div></div><PagesRouter  docPath="__docs__/quickStart.md" mapType="docs" docRepo="tp-importword" pagesName="quickStart_t_1ztoe81659849932329_p_" />`});export{l as default};
