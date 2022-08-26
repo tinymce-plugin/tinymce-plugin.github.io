@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="module" src="/v6/assets/polyfills-modern.95971613.js"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light">
+    <link rel="stylesheet" href="/v6/assets/highlight/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/tocbot/4.18.2/tocbot.min.css">
+    <title>Tinymce-Plugin</title>
+    <script src="/v6/assets/vue2/vue2.6.14.min.js"></script>
+    <script src="/v6/assets/libs/tocbot/index.js"></script>
+    <script src="/v6/assets/ifarmeInit.js"></script>
+    
+    <script type="module" crossorigin src="/v6/assets/index.js"></script>
+    <link rel="modulepreload" href="/v6/assets/chunk/vue.js">
+    <link rel="modulepreload" href="/v6/assets/chunk/pinia.js">
+    <link rel="modulepreload" href="/v6/assets/chunk/tinymce.js">
+    <link rel="modulepreload" href="/v6/assets/chunk/tinymce-plugin-routes.js">
+    <link rel="stylesheet" href="/v6/assets/index.css">
+    <script type="module">try{import("_").catch(()=>1);}catch(e){}window.__vite_is_dynamic_import_support=true;</script>
+    <script type="module">!function(){if(window.__vite_is_dynamic_import_support)return;console.warn("vite: loading legacy build because dynamic import is unsupported, syntax error above should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+  </head>
+  <body>
+    <div id="tips"></div>
+    <textarea id="inputCopy" style="position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;">复制专用</textarea>
+    <div id="app"></div>
+    
+    <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule id="vite-legacy-polyfill" src="/v6/assets/polyfills-legacy.46d68fb2.js"></script>
+    <script nomodule id="vite-legacy-entry" data-src="/v6/assets/index-legacy.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  </body>
+</html>
