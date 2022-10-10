@@ -435,6 +435,7 @@
             var isRoot = function (elem) {
               return elem.dom === editor.getBody();
             };
+            // return true
             return closest$1(sugarNode, 'table', isRoot).fold(function () {
               return closest(sugarNode, function (elem) {
                 return name(elem) in textBlockElementsMap && editor.dom.isEmpty(elem.dom);
